@@ -63,13 +63,13 @@
         }
 
         .o-p:hover {
-            color: white;
-            background: #c2002f;
+            color: #c2002f;
+            background: white;
         }
 
         .o-p {
-            background: white;
-            color: #c2002f;
+            background: #c2002f;
+            color: white;
             padding: 10px;
             text-align: center;
             border: 2px solid #c2002f;
@@ -81,9 +81,6 @@
     <div style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
     <!-- Your next order will be October -->
     <div id="next-october" style="text-align: center;">
-        <div class="o-div">
-            <p class="o-p" id="october-previous-button">< SHOW SEPTEMBER ORDER</p>
-        </div>
         <h1>Your next order will be:</h1>
         <div style="display: flex; width:650px;margin:0 auto;text-align: center;">
             <div style="width:33.33%;">
@@ -105,13 +102,17 @@
                 <p>(on or before)</p>
             </div>
         </div>
+        <div class="o-div">
+            <p class="o-p" id="october-previous-button">< SHOW SEPTEMBER ORDER</p>
+        </div>
         <hr style="opacity: 0.3; width: 70%">
         <div style="display: flex; width:800px;margin:0 auto;text-align: center;">
             <div class="order-info">
                 <p class="p-title">Payment Summary</p>
                 <p>- £16 Account Credit</p>
                 <!-- <a href="https://www.cornerstone.co.uk/account/topup" class="hl link">PLACE ONE-OFF ORDER</a> -->
-                <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="link">Delay by a month</a>
+                <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay by a month</a>
+                <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Cancel this box</a>
             </div>
             <div class="order-info">
                 <p class="p-title">Contents</p>
@@ -135,9 +136,6 @@
     </div>
     <!-- Your last order was September -->
     <div id="last-september" style="text-align: center; display: none;">
-        <div class="o-div" id="september-next-button">
-            <p class="o-p">SHOW OCTOBER ORDER ></p>
-        </div>
         <h1>Your last order was:</h1>
         <div style="display: flex; width:650px;margin:0 auto;text-align: center;">
             <div style="width:33.33%;">
@@ -158,6 +156,9 @@
                 <p>8th September</p>
                 <p>(on or before)</p>
             </div>
+        </div>
+        <div class="o-div">
+            <p class="o-p" id="september-next-button">SHOW OCTOBER ORDER ></p>
         </div>
         <hr style="opacity: 0.3; width: 70%">
         <div style="display: flex; width:800px;margin:0 auto;text-align: center;">
@@ -193,14 +194,14 @@
             <p style="margin:0;margin-bottom: 1em;"><img style="margin:0;width: 20px;top: 5px;position: relative;" src="https://static.thenounproject.com/png/151037-200.png">Every 1 month</p>
             <p style="margin:0">- Pre-Shave Face Scrub</p>
             <p style="margin:0;margin-bottom: 1em;"><img style="margin:0;width: 20px;top: 5px;position: relative;" src="https://static.thenounproject.com/png/151037-200.png">Every 2 months</p>
+            <a href="https://www.cornerstone.co.uk/account/upcoming-deliveries" class="link">View next 3 boxes</a>
             <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Change subscribed products</a>
             <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link">Change product frequency</a>
-            <a href="https://www.cornerstone.co.uk/account/upcoming-deliveries" class="link">View next 3 boxes</a>
         </div>
         <div class="sub-info">
             <p class="p-title">Account</p>
             <!-- <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link hl">Change date next sent</a> -->
-            <a href="https://www.cornerstone.co.uk/account/your-details" class="link">Manage account</a>
+            <a href="https://www.cornerstone.co.uk/account/your-details" class="link">Manage account <span class="hl"><-- cancel to be moved here</span></a>
             <a href="https://www.cornerstone.co.uk/account/order-history" class="link">Your order history</a>
             <!-- <p class="hl">Your next box will be billed on 8th October</p> -->
             <!-- <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay this box by 1 month</a> -->
