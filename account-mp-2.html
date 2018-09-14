@@ -88,10 +88,6 @@
             cursor: pointer;
         }
 
-        a {
-            text-decoration: none;
-        }
-
         @media (min-width: 650px) {
 
             .link {
@@ -196,7 +192,7 @@
     </style>
 </head>
 <body style="margin: 0;">
-    <div id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
+    <div style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
     <!-- Your next order will be October -->
     <div id="next-october">
         <p class="sub-title">Your October order will be:</p>
@@ -222,9 +218,7 @@
             </div>
         </div>
         <div class="o-div">
-            <a href="#top">
-                <p class="o-p" id="october-previous-button">< SHOW LAST ORDER</p>
-            </a>
+            <p class="o-p" id="october-previous-button">< SHOW LAST ORDER</p>
         </div>
         <hr style="opacity: 0.3; width: 70%">
         <div class="order-summary">
@@ -260,7 +254,7 @@
     </div>
     <!-- Your last order was September -->
     <div id="last-september" style="display: none;">
-        <p class="sub-title">Your September top-up order was:</p>
+        <h1>Your September top-up order was:</h1>
         <div class="order-status">
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
@@ -282,9 +276,7 @@
             </div>
         </div>
         <div class="o-div">
-            <a href="#top">
-                <p class="o-p" id="september-next-button">SHOW NEXT ORDER ></p>
-            </a>
+            <p class="o-p" id="september-next-button">SHOW NEXT ORDER ></p>
         </div>
         <hr style="opacity: 0.3; width: 70%">
         <div class="order-summary">
