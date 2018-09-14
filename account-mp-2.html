@@ -88,6 +88,10 @@
             cursor: pointer;
         }
 
+        a {
+            text-decoration: none;
+        }
+
         @media (min-width: 650px) {
 
             .link {
@@ -152,6 +156,14 @@
                 width: 100%;
             }
 
+            .desktop-status {
+                display: block;
+            }
+
+            .mobile-status {
+                display: none;
+            }
+
         }
 
         @media (max-width: 649px) {
@@ -187,38 +199,62 @@
                 margin-bottom: 2em;
             }
 
+            .desktop-status {
+                display: none;
+            }
+
+            .mobile-status {
+                display: block;
+            }
+
         }
         
     </style>
 </head>
 <body style="margin: 0;">
-    <div style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
+    <div id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
     <!-- Your next order will be October -->
     <div id="next-october">
         <p class="sub-title">Your October order will be:</p>
         <div class="order-status">
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-
-                <p>Billed</p>
-                <p>4th October</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Billed</p>
+                    <p>4th October</p>
+                    <p>(estimated)</p>
+                </div>    
+                <div class="mobile-status">
+                    <p>Billed 4th October<br>(estimated)</p>
+                </div>                
             </div>
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-                <p>Sent</p>
-                <p>6th October</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Sent</p>
+                    <p>6th October</p>
+                    <p>(estimated)</p>
+                </div>
+                <div class="mobile-status">
+                    <p>Sent 6th October<br>(estimated)</p>
+                </div>
             </div>
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-                <p>Delivered</p>
-                <p>8th October - 10th October</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Delivered</p>
+                    <p>10th October</p>
+                    <p>(estimated)</p>
+                </div>
+                <div class="mobile-status">
+                    <p>Delivered 10th October<br>(estimated)</p>
+                </div>
             </div>
         </div>
         <div class="o-div">
-            <p class="o-p" id="october-previous-button">< SHOW LAST ORDER</p>
+            <a href="#top">
+                <p class="o-p" id="october-previous-button">< SHOW LAST ORDER</p>
+            </a>
         </div>
         <hr style="opacity: 0.3; width: 70%">
         <div class="order-summary">
@@ -254,29 +290,46 @@
     </div>
     <!-- Your last order was September -->
     <div id="last-september" style="display: none;">
-        <h1>Your September top-up order was:</h1>
+        <p class="sub-title">Your September top-up order was:</p>
         <div class="order-status">
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-                <p>Billed</p>
-                <p>4th September</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Billed</p>
+                    <p>4th September</p>
+                    <p>(estimated)</p>
+                </div>
+                <div class="mobile-status">
+                    <p>Billed 4th September<br>(estimated)</p>
+                </div>
             </div>
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-                <p>Sent</p>
-                <p>6th September</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Sent</p> 
+                    <p>6th September</p>
+                    <p>(estimated)</p>
+                </div>
+                <div class="mobile-status">
+                    <p>Sent 6th September<br>(estimated)</p>
+                </div>
             </div>
             <div class="order-status-block">
                 <img src="http://via.placeholder.com/250x200">
-                <p>Delivered</p>
-                <p>8th September - 10th September</p>
-                <p>(estimated)</p>
+                <div class="desktop-status">
+                    <p>Delivered</p>
+                    <p>10th September</p>
+                    <p>(estimated)</p>
+                </div>
+                <div class="mobile-status">
+                    <p>Delivered 10th September<br>(estimated)</p>
+                </div>
             </div>
         </div>
         <div class="o-div">
-            <p class="o-p" id="september-next-button">SHOW NEXT ORDER ></p>
+            <a href="#top">
+                <p class="o-p" id="september-next-button">SHOW NEXT ORDER ></p>
+            </a>
         </div>
         <hr style="opacity: 0.3; width: 70%">
         <div class="order-summary">
