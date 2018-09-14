@@ -1,4 +1,5 @@
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -20,15 +21,13 @@
     </script>
     <style>
 
+        * {
+            font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
         .p-title {
             font-size: 17px;
-            font-weight: bold;
-        }
-        
-        .order-info {
-            width: 25%;
-            text-align: left;
-            padding: 10px;
+            font-weight: 500;
         }
 
         .hl {
@@ -38,28 +37,19 @@
         .sub-title {
             text-align: center;
             font-size: 30px;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         .link {
             color: #c2002f;
-            font-weight: bold;
+            font-weight: 500;
             text-decoration: none;
             display: block;
             margin-bottom: 10px;
-        }
-
-
-        .sub-info {
-            width: 50%;
-            text-align: left;
-            padding: 10px;
-        }
-
-        .o-div {
-            width: 400px;
-            margin: 0 auto;
-            cursor: pointer;
+            /*text-transform: uppercase;*/
+            border: 1px solid #c2002f;
+            padding: 5px;
+            border-radius: 5px;
         }
 
         .o-p:hover {
@@ -73,6 +63,118 @@
             padding: 10px;
             text-align: center;
             border: 2px solid #c2002f;
+            border-radius: 5px;
+        }
+
+        .sub-upsell {
+            text-align: center;
+        }
+
+        .o-div {
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 1em;
+        }
+
+        @media (min-width: 650px) {
+
+            .link {
+                text-align: center;
+            }
+            
+            .order-status {
+                display: flex; 
+                width:650px;
+                margin:0 auto;
+                text-align: center;
+            }
+
+            .order-status-block {
+                width: 33.33%;
+                margin: 0em 20px;
+            }
+
+            .order-summary {
+                display: flex; 
+                width:800px;
+                margin:0 auto;
+                text-align: center;
+            }
+
+            .order-info {
+                width: 25%;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .your-sub {
+                text-align:center; 
+                display: flex;
+                max-width: 650px;
+                margin: 0 auto;
+            }
+
+            .sub-info {
+                width: 50%;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .sub-upsell {
+                text-align:center; 
+                display: flex;
+                max-width: 650px;
+                margin: 0 auto;
+            }
+
+            .sub-upsell-item {
+                width: 25%;
+                margin: 0em 20px;
+            }
+
+            .o-div {
+                width: 400px;
+            }
+
+            img {
+                width: 100%;
+            }
+
+        }
+
+        @media (max-width: 649px) {
+
+            .sub-upsell {
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+            .sub-info {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .order-info {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .links-block {
+                text-align: center;
+            }
+
+            .order-status-block {
+                text-align: center;
+            }
+
+            .o-div {
+                width: 80%
+            }
+
         }
         
     </style>
@@ -80,23 +182,23 @@
 <body style="margin: 0;">
     <div style="background: #c2002f;height:40px;margin-bottom: 2em;"></div>
     <!-- Your next order will be October -->
-    <div id="next-october" style="text-align: center;">
+    <div id="next-october">
         <h1>Your October order will be:</h1>
-        <div style="display: flex; width:650px;margin:0 auto;text-align: center;">
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+        <div class="order-status">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Billed</p>
                 <p>4th October</p>
                 <p>(estimated)</p>
             </div>
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Sent</p>
                 <p>6th October</p>
                 <p>(estimated)</p>
             </div>
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Delivered</p>
                 <p>8th October - 10th October</p>
                 <p>(estimated)</p>
@@ -106,13 +208,15 @@
             <p class="o-p" id="october-previous-button">< SHOW SEPTEMBER ORDER</p>
         </div>
         <hr style="opacity: 0.3; width: 70%">
-        <div style="display: flex; width:800px;margin:0 auto;text-align: center;">
+        <div class="order-summary">
             <div class="order-info">
                 <p class="p-title">Payment Summary</p>
                 <p>- £16 Account Credit</p>
                 <!-- <a href="https://www.cornerstone.co.uk/account/topup" class="hl link">PLACE ONE-OFF ORDER</a> -->
-                <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay by a month</a>
-                <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Cancel this box</a>
+                <div class="links-block">
+                    <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay 1 month</a>
+                    <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Cancel this box</a>
+                </div>
             </div>
             <div class="order-info">
                 <p class="p-title">Contents</p>
@@ -135,23 +239,23 @@
         <hr>
     </div>
     <!-- Your last order was September -->
-    <div id="last-september" style="text-align: center; display: none;">
+    <div id="last-september" style="display: none;">
         <h1>Your September top-up order was:</h1>
-        <div style="display: flex; width:650px;margin:0 auto;text-align: center;">
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+        <div class="order-status">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Billed</p>
                 <p>4th September</p>
                 <p>(estimated)</p>
             </div>
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Sent</p>
                 <p>6th September</p>
                 <p>(estimated)</p>
             </div>
-            <div style="width:33.33%;">
-                <img src="http://via.placeholder.com/100x100">
+            <div class="order-status-block">
+                <img src="http://via.placeholder.com/250x200">
                 <p>Delivered</p>
                 <p>8th September - 10th September</p>
                 <p>(estimated)</p>
@@ -161,7 +265,7 @@
             <p class="o-p" id="september-next-button">SHOW OCTOBER ORDER ></p>
         </div>
         <hr style="opacity: 0.3; width: 70%">
-        <div style="display: flex; width:800px;margin:0 auto;text-align: center;">
+        <div class="order-summary">
             <div class="order-info">
                 <p class="p-title">Payment Summary</p>
                 <p>- £16 Account Credit</p>
@@ -185,7 +289,7 @@
     </div>
     <!-- Your subscription -->
     <p class="sub-title">Your Subscription</p>
-    <div style="text-align:center; display: flex;max-width: 650px;margin: 0 auto;">
+    <div class="your-sub">
         <div class="sub-info">
             <p class="p-title">Products</p>
             <p style="margin:0">- Shave Cream</p>
@@ -194,46 +298,50 @@
             <p style="margin:0;margin-bottom: 1em;"><img style="margin:0;width: 20px;top: 5px;position: relative;" src="https://static.thenounproject.com/png/151037-200.png">Every 1 month</p>
             <p style="margin:0">- Pre-Shave Face Scrub</p>
             <p style="margin:0;margin-bottom: 1em;"><img style="margin:0;width: 20px;top: 5px;position: relative;" src="https://static.thenounproject.com/png/151037-200.png">Every 2 months</p>
-            <a href="https://www.cornerstone.co.uk/account/upcoming-deliveries" class="link">View next 3 boxes</a>
-            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Change subscribed products</a>
-            <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link">Change product frequency</a>
+            <div class="links-block">
+                <a href="https://www.cornerstone.co.uk/account/upcoming-deliveries" class="link">View next 3 boxes</a>
+                <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Change subscribed products</a>
+                <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link">Change product frequency</a>
+            </div>
         </div>
         <div class="sub-info">
             <p class="p-title">Account</p>
-            <!-- <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link hl">Change date next sent</a> -->
-            <a href="https://www.cornerstone.co.uk/account/your-details" class="link">Manage account <span class="hl"><-- cancel to be moved here</span></a>
-            <a href="https://www.cornerstone.co.uk/account/order-history" class="link">Your order history</a>
-            <!-- <p class="hl">Your next box will be billed on 8th October</p> -->
-            <!-- <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay this box by 1 month</a> -->
-            <a href="https://www.cornerstone.co.uk/account/choose-next-billing-date" class="link" style="margin-bottom: 0em;">Change regular order date</a>
-            <p style="margin-top: 0em;">(Currently: 4th)</p>
-            <!-- <a href="https://www.cornerstone.co.uk/account/cancel" class="link">Cancel my subscription</a> -->
+            <div class="links-block">
+                <!-- <a href="https://www.cornerstone.co.uk/account/manage-deliveries" class="link hl">Change date next sent</a> -->
+                <a href="https://www.cornerstone.co.uk/account/your-details" class="link">Manage account <span class="hl"><-- cancel to be moved here</span></a>
+                <a href="https://www.cornerstone.co.uk/account/order-history" class="link">Your order history</a>
+                <!-- <p class="hl">Your next box will be billed on 8th October</p> -->
+                <!-- <a href="https://www.cornerstone.co.uk/account/delay-next-box" class="hl link">Delay this box by 1 month</a> -->
+                <a href="https://www.cornerstone.co.uk/account/choose-next-billing-date" class="link" style="margin-bottom: 0em;">Change regular order date</a>
+                <p style="margin-top: 5px;">(Currently: 4th)</p>
+                <!-- <a href="https://www.cornerstone.co.uk/account/cancel" class="link">Cancel my subscription</a> -->
+            </div>
         </div>
     </div>
     <!-- Order Extra Products -->
     <p class="sub-title">Add Products To Subscription</p>
-    <div style="text-align:center; display: flex;max-width: 650px;margin: 0 auto;">
-        <div style="width: 25%;">
-            <img src="http://via.placeholder.com/100x100">
+    <div class="sub-upsell">
+        <div class="sub-upsell-item">
+            <img src="http://via.placeholder.com/250x200">
             <p>Whitening <br>Toothpaste</p>
-            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">ADD TO SUBSCRIPTION</a>
+            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Add to Subscription</a>
         </div>
-        <div style="width: 25%;">
-            <img src="http://via.placeholder.com/100x100">
+        <div class="sub-upsell-item">
+            <img src="http://via.placeholder.com/250x200">
             <p>Daily <br>Floss Tape</p>
-            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">ADD TO SUBSCRIPTION</a>
+            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Add to Subscription</a>
         </div>
-        <div style="width: 25%;">
-            <img src="http://via.placeholder.com/100x100">
+        <div class="sub-upsell-item">
+            <img src="http://via.placeholder.com/250x200">
             <p>Daily <br>Face Wash</p>
-            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">ADD TO SUBSCRIPTION</a>
+            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Add to Subscription</a>
         </div>
-        <div style="width: 25%;">
-            <img src="http://via.placeholder.com/100x100">
+        <div class="sub-upsell-item">
+            <img src="http://via.placeholder.com/250x200">
             <p>Anti-Perspirant <br>Deodorant</p>
-            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">ADD TO SUBSCRIPTION</a>
+            <a href="https://www.cornerstone.co.uk/account/update-product-selection" class="link">Add to Subscription</a>
         </div>
     </div>
-    <a href="https://www.cornerstone.co.uk/account/update-product-selection" style="margin-top: 1em;margin-bottom:2em;text-align: center;" class="link">VIEW ALL PRODUCTS</a>
+    <a href="https://www.cornerstone.co.uk/account/update-product-selection" style="max-width: 80%;margin: 0 auto;margin-top: 1em;margin-bottom:2em;text-align: center;" class="link">View All Products</a>
     <div style="background: #c2002f;height:40px;"></div>
 </body>
