@@ -1,0 +1,70 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"></script>
+	<script>
+		$( document ).ready(function() {
+		});
+	</script>
+	<style>
+		body {
+			margin: 0;
+		}
+		h1 {
+			text-align: center;
+		}
+		.account-form {
+			display: inline-grid;
+			width: 100%;
+		}
+		.account-form input {
+			padding: 10px;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+		.account-form-div {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+		.password-p {
+			font-size: 14px;
+			font-style: italic;
+		}
+		.protection-p {
+			font-size: 14px;
+			margin-top: 10px;
+		}
+		.continue {
+			background: #c2002f;
+			color: white;
+			max-width: 250px;
+			display: block;
+			text-decoration: none;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		a {
+			display: block
+		}
+	</style>
+</head>
+<body>
+	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
+	<div>
+		<h1>Quick account set-up</h1>
+		<div class="account-form-div">
+			<form class="account-form">
+				<input type="text" name="email" placeholder="Email address">
+				<input type="text" name="pw" placeholder="Password">
+				<span class="password-p">Password needs to be at least 8 characters.</span>
+				<span class="protection-p">cornerstone.co.uk is secure and your personal information is protected</span>
+			</form>
+			<a href="review.html" class="continue">Continue</a>
+		</div>
+	</div>
+</body>
