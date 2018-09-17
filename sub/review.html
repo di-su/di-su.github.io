@@ -29,8 +29,9 @@
 			font-size: 16px;
 		}
 		.form-div {
-			max-width: 500px;
+			/*max-width: 500px;*/
 			margin: 0 auto;
+			width: 50%;
 		}
 		.countries {
 			font-size: 19px;
@@ -41,7 +42,7 @@
 		}
 		.checkout-div {
 			width: 100%;
-			border: 1px solid lightgrey;
+			/*border: 1px solid lightgrey;*/
 			margin-top: 20px;
 		}
 		.basket-h1 {
@@ -63,10 +64,12 @@
 		}
 		.prod-image {
 			width: 25%;
+						text-align: center;
 		}
 		.prod-image img {
 			width: 100%;
-			max-width: 120px;
+			max-width: 80px;
+			padding-top: 15px;
 		}
 		.prod-text {
 			width: 75%;
@@ -169,103 +172,151 @@
 			margin-top: 30px;
 			margin-bottom: 20px;
 		}
-a {
-display: block
-}
+		a {
+			display: block
+		}
+		.recurring-icon {
+			width: 25px;
+			height: 25px;
+			position: relative;
+			top: 13px;
+		}
+		.freq-overview {
+			display: flex;
+		}
+		.freq-overview p {
+			margin-left: 5px;
+		}
+		.review-div {
+			display: flex;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+		#payment-div {
+			margin: 0px 40px;
+		}
+		#sub-div {
+			border: 1px solid lightgrey;
+			padding: 40px;
+			padding-top: 0px;
+		}
+		.form-wrap {
+			border: 1px solid lightgrey;
+			padding: 0px 30px;
+		}
+		.sub-edit {
+			float: right;
+			font-size: 17px;
+			line-height: 30px;
+		}
 	</style>
 </head>
 <body>
 	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
 	<div>
 		<h1 class="review-h1">Review</h1>
-		<div class="form-div">
-			<h2>Delivery Address & Payment</h2>
-			<div class="form">
-				Your name
-				<input placeholder="First Name">
-				<input placeholder="Surname">
-			</div>
-			<div class="form">
-				Payment
-				<input placeholder="Card number">
-			</div>
-			<div class="form">
-				Delivery address
-				<select class="countries">
-					<option>United Kingdom</option>
-					<option>France</option>
-					<option>Germany</option>
-				</select>
-				<input placeholder="Start typing your postcode or address">
-			</div>
-		</div>
-		<div class="form-div">
-			<h2>Your subscription</h2>
-			<div class="basket-div">
-				<div class="prod-div">
-					<div class="prod-image">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?w=300">
+		<div class="review-div">
+			<div class="form-div" id="sub-div">
+				<h2>Your subscription<a href="basket.html" class="sub-edit">edit</a></h2>
+				<div class="basket-div">
+					<div class="prod-div">
+						<div class="prod-image">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?w=300">
+						</div>
+						<div class="prod-text">
+							<p>6 Razor Blades<span class="discounted-price"><span class="price-strike">£14</span> £10</span></p>
+							<div class="freq-overview">
+								<img class="recurring-icon" src="https://static.thenounproject.com/png/151037-200.png"><p>every 1 month</p>
+							</div>
+							<!-- 						<p class="freq-p">Delivery frequency:</p>
+							<select>
+								<option value="1-m">1 month</option>
+								<option value="2-m">2 months</option>
+								<option value="3-m">3 months</option>
+								<option value="4-m">4 months</option>
+							</select> -->
+						</div>
+						<div class="prod-freq">
+						</div>
 					</div>
-					<div class="prod-text">
-						<p>6 Razor Blades<span class="discounted-price"><span class="price-strike">£14</span> £10</span></p>
-						<p class="freq-p">Delivery frequency:</p>
-						<select>
-							<option value="1-m">1 month</option>
-							<option value="2-m">2 months</option>
-							<option value="3-m">3 months</option>
-							<option value="4-m">4 months</option>
+					<div class="prod-div">
+						<div class="prod-image">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/3G1024UpwAg06IoA0A6qSI/8a6fe86d5048598463ecda096198780e/Cornerstone-Deodrant-Image-500x500-1.png?w=300">
+						</div>
+						<div class="prod-text">
+							<p>Deodorant<span class="price">£3</span></p>
+							<div class="freq-overview">
+								<img class="recurring-icon" src="https://static.thenounproject.com/png/151037-200.png"><p>every 2 months</p>
+							</div>
+							<!-- 						<p class="freq-p">Delivery frequency:</p>
+							<select>
+								<option value="1-m">1 month</option>
+								<option value="2-m">2 months</option>
+								<option value="3-m">3 months</option>
+								<option value="4-m">4 months</option>
+							</select> -->
+						</div>
+						<div class="prod-freq">
+						</div>
+					</div>
+					<div class="prod-div">
+						<div class="prod-image">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
+						</div>
+						<div class="prod-text">
+							<p>Daily Floss<span class="price">£3</span></p>
+							<div class="freq-overview">
+								<img class="recurring-icon" src="https://static.thenounproject.com/png/151037-200.png"><p>every 1 month</p>
+							</div>
+							<!-- 						<p class="freq-p">Delivery frequency:</p>
+							<select>
+								<option value="1-m">1 month</option>
+								<option value="2-m">2 months</option>
+								<option value="3-m">3 months</option>
+								<option value="4-m">4 months</option>
+							</select> -->
+						</div>
+						<div class="prod-freq">
+						</div>
+					</div>
+				</div>
+				<div class="checkout-div">
+					<div class="checkout-text">
+						<h2>Summary</h2>
+						<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+						<hr>
+						<p>Subtotal:<span class="price-after-discount-span">£19</span></p>
+						<p>Delivery:<span class="price-after-discount-span">FREE</span></p>
+						<p">Discount:<span class="price-after-discount-span">-£4</span></p>
+						<p class="price-after-discount">Total:<span class="price-after-discount-span">£15</span></p>
+					</div>
+				</div>
+				<!-- 				<a href="products.html" class="join-now">Join Now</a> -->
+			</div>
+			<div class="form-div" id="payment-div">
+				<div class="form-wrap">
+					<h2>Delivery Address & Payment</h2>
+					<div class="form">
+						Your name
+						<input placeholder="First Name">
+						<input placeholder="Surname">
+					</div>
+					<div class="form">
+						Payment
+						<input placeholder="Card number">
+					</div>
+					<div class="form">
+						Delivery address
+						<select class="countries">
+							<option>United Kingdom</option>
+							<option>France</option>
+							<option>Germany</option>
 						</select>
+						<input placeholder="Start typing your postcode or address">
 					</div>
-					<div class="prod-freq">
-					</div>
-				</div>
-				<div class="prod-div">
-					<div class="prod-image">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/3G1024UpwAg06IoA0A6qSI/8a6fe86d5048598463ecda096198780e/Cornerstone-Deodrant-Image-500x500-1.png?w=300">
-					</div>
-					<div class="prod-text">
-						<p>Deodorant<span class="price">£3</span></p>
-						<p class="freq-p">Delivery frequency:</p>
-						<select>
-							<option value="1-m">1 month</option>
-							<option value="2-m">2 months</option>
-							<option value="3-m">3 months</option>
-							<option value="4-m">4 months</option>
-						</select>
-					</div>
-					<div class="prod-freq">
-					</div>
-				</div>
-				<div class="prod-div">
-					<div class="prod-image">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
-					</div>
-					<div class="prod-text">
-						<p>Daily Floss<span class="price">£3</span></p>
-						<p class="freq-p">Delivery frequency:</p>
-						<select>
-							<option value="1-m">1 month</option>
-							<option value="2-m">2 months</option>
-							<option value="3-m">3 months</option>
-							<option value="4-m">4 months</option>
-						</select>
-					</div>
-					<div class="prod-freq">
-					</div>
+					<a href="products.html" class="join-now">Join Now</a>
 				</div>
 			</div>
-			<div class="checkout-div">
-				<div class="checkout-text">
-					<h2>Summary</h2>
-					<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-					<hr>
-					<p>Subtotal:<span class="price-after-discount-span">£19</span></p>
-					<p>Delivery:<span class="price-after-discount-span">FREE</span></p>
-					<p">Discount:<span class="price-after-discount-span">-£4</span></p>
-					<p class="price-after-discount">Total:<span class="price-after-discount-span">£15</span></p>
-				</div>
-			</div>
-			<a href="products.html" class="join-now">Join Now</a>
 		</div>
 	</div>
 	<div id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
