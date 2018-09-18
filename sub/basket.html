@@ -63,6 +63,10 @@
 		}
 		.checkout-text {
 			padding: 10px 30px;
+			padding-bottom: 30px;
+			position: sticky;
+			top: 0;
+			border: 1px solid lightgrey;
 		}
 		hr {
 			opacity: 0.5;
@@ -131,6 +135,9 @@
 		a {
 			display: block
 		}
+		#summary {
+			border: none;
+		}
 		
 	</style>
 </head>
@@ -194,17 +201,53 @@
 					<div class="prod-freq">
 					</div>
 				</div>
+				<div class="prod-div">
+					<div class="prod-image">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
+					</div>
+					<div class="prod-text">
+						<p>Whitening Toothpaste<span class="remove">Remove</span></p>
+						<p>£4</p>
+						<p class="freq-p">Delivery frequency:</p>
+						<select>
+							<option value="1-m">1 month</option>
+							<option value="2-m">2 months</option>
+							<option value="3-m">3 months</option>
+							<option value="4-m">4 months</option>
+						</select>
+					</div>
+					<div class="prod-freq">
+					</div>
+				</div>
+				<div class="prod-div">
+					<div class="prod-image">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/4K71XnMDfyqoGqM6kgoYSg/6a5f17fe6c9b349693cecae1e397db3d/Body_Wash_Ingredients.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
+					</div>
+					<div class="prod-text">
+						<p>Body Wash<span class="remove">Remove</span></p>
+						<p>£5</p>
+						<p class="freq-p">Delivery frequency:</p>
+						<select>
+							<option value="1-m">1 month</option>
+							<option value="2-m">2 months</option>
+							<option value="3-m">3 months</option>
+							<option value="4-m">4 months</option>
+						</select>
+					</div>
+					<div class="prod-freq">
+					</div>
+				</div>
 				<p id="continue">Continue shopping</p>
 			</div>
-			<div class="checkout-div">
+			<div id="summary" class="checkout-div">
 				<div class="checkout-text">
 					<h2>Summary</h2>
 					<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
 					<hr>
-					<p>Subtotal:<span class="price-after-discount-span">£19</span></p>
+					<p>Subtotal:<span class="price-after-discount-span">£28</span></p>
 					<p>Delivery:<span class="price-after-discount-span">FREE</span></p>
 					<p">Discount:<span class="price-after-discount-span">-£4</span></p>
-					<p class="price-after-discount">Total today:<span class="price-after-discount-span">£15</span></p>
+					<p class="price-after-discount">Total today:<span class="price-after-discount-span">£24</span></p>
 					<a href="account-creation.html" class="checkout">Checkout</a>
 				</div>
 			</div>
