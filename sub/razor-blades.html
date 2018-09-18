@@ -1,0 +1,222 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"></script>
+	<script>
+		$( document ).ready(function() {
+			count = $('.cart-count').text();
+			parsedCount = parseInt(count);
+			$('.cta').click(function() {
+				$('.cart-count').show(0);
+				parsedCount++;
+				$('.cart-count').text(parsedCount);
+				$('.added-banner').show(0);
+				// $('.added-banner').hide(0);
+				setTimeout(
+					function()
+						{
+							$('.added-banner').hide(0);
+					}, 1500);
+							});
+		});
+	</script>
+</head>
+<style>
+	a {
+		display: block;
+	}
+	body {
+		margin: 0;
+	}
+	.prod-div {
+		display: flex;
+		max-width: 900px;
+		margin: 0 auto;
+		margin-top: 1.5em;
+	}
+	.prod-img {
+		width: 50%;
+	}
+	.prod-text {
+		width: 50%;
+	}
+	.prod-img img {
+		width: 100%;
+	}
+	.cta {
+		background: #c2002f;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		max-width: 250px;
+		margin: 0 auto;
+		font-size: 20px;
+		cursor: pointer;
+	}
+	.cart-div {
+		width: 100%;
+		max-width: 1300px;
+	}
+	.cart-img {
+		float: right;
+		filter: invert(100%);
+		width: 30px;
+		padding-top: 7px;
+		margin-right: 35px;
+	}
+	.cart-count {
+		float: right;
+		color: #c2002f;
+		background: white;
+		padding: 1px 6px;
+		border-radius: 50px;
+		left: 45px;
+		position: relative;
+		font-size: 15px;
+		margin-top: 1px;
+		display: none;
+	}
+	.added-banner {
+		background: green;
+		color: white;
+		text-align: center;
+		font-size: 18px;
+		padding: 10px;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		background: green;
+		/*display: none;*/
+		position: sticky;
+		margin-bottom: -42px;
+	}
+	#breadcrumb {
+		max-width: 550px;
+		margin: 0 auto;
+		margin-top: 3.5em;
+	}
+	.back-prod {
+		display: inline;
+		text-decoration: none;
+		color: #c2002f;
+		font-weight: bold;
+	}
+	.review-div {
+		max-width: 900px;
+		margin: 0 auto;
+		margin-top: 1em;
+	}
+	.toggle {
+		text-align: center;
+		border: 1px solid black;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.more-products-item {
+		width: 25%;
+		text-align: center;
+		padding: 20px;
+		border: 1px solid lightgrey;
+		margin: 10px;
+		cursor: pointer;
+	}
+	.more-products-item img {
+		width: 100%;
+	}
+	.more-products {
+		display: flex;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.also-bought-title {
+	text-align: center;
+	border-top: 1px solid lightgrey;
+	padding-top: 30px;
+	}
+	.more-info {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.carousel {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	.carousel img {
+		margin: 5px;
+	}
+</style>
+<body>
+	<a href="basket.html">
+		<div class="cart-div">
+			<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png"></img>
+			<span class="cart-count">0</span>
+		</div>
+	</a>
+	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 0em;"></a>
+	<div style="display:none;" class="added-banner">Added to basket</div>
+	<div>
+		<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> > Mens Razor Blades</div>
+		<div class="prod-div">
+			<div class="prod-img">
+				<img src="https://images.ctfassets.net/itvcls9imtx8/2l59zAideUYAqkgKo2EuE8/3b14cbe0424e7bd01cfe53d3f28e261d/Blades-6.png">
+			</div>
+			<div class="prod-text">
+				<p>Razor Blades</p>
+				<p>£14</p>
+				<hr>
+				<p>Our new razor has five super sharp, fine blades, optimally spaced to increase shave performance and reduce clogging, an Aloe Vera strip to help the blades glide smoothly, as well as a new precision trimmer blade for those hard to reach areas. Each blade is made from Japanese chromium steel to reduce micro-corrosion of its cutting edge, and coated in a layer of titanium and diamond grade carbon to ensure the cutting edge stays sharper for longer. Designed for men.</p>
+				<a class="cta">Add To Basket</a>
+			</div>
+		</div>
+		<div class="carousel">
+			<img src="http://via.placeholder.com/90x90">
+			<img src="http://via.placeholder.com/90x90">
+			<img src="http://via.placeholder.com/90x90">
+			<img src="http://via.placeholder.com/90x90">
+		</div>
+		<div class="carousel">
+			<img src="http://via.placeholder.com/90x90">
+			<img src="http://via.placeholder.com/90x90">
+		</div>
+		<div class="review-div">
+			<div>
+				<div class="toggle">
+					<p>Reviews <span>Learn more</span></p>
+				</div>
+				<p style="width: 90%;margin: 0 auto;margin-top: 1em;">Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+				<p style="width: 90%;margin: 0 auto;margin-top: 1em;">Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+				<p style="width: 90%;margin: 0 auto;margin-top: 1em;">Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+			</div>
+		</div>
+		<h2 class="also-bought-title">Customers also bought</h2>
+		<div class="more-products">
+			<div class="more-products-item">
+				<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+				<p>Daily Fresh Mint Mouthwash</p>
+				<p>£4</p>
+				<a class="more-info">More info</a>
+			</div>
+			<div class="more-products-item">
+				<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+				<p>Daily Fresh Mint Mouthwash</p>
+				<p>£4</p>
+				<a class="more-info">More info</a>
+			</div>
+			<div class="more-products-item">
+				<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+				<p>Daily Fresh Mint Mouthwash</p>
+				<p>£4</p>
+				<a class="more-info">More info</a>
+			</div>
+			<div class="more-products-item">
+				<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+				<p>Daily Fresh Mint Mouthwash</p>
+				<p>£4</p>
+				<a class="more-info">More info</a>
+			</div>
+		</div>
+	</div>
+	<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
+</body>

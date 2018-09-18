@@ -6,11 +6,27 @@
 	crossorigin="anonymous"></script>
 	<script>
 		$( document ).ready(function() {
+			count = $('.cart-count').text();
+			parsedCount = parseInt(count);
+			$('.bundle-add').click(function() {
+				$('.cart-count').show(0);
+				parsedCount++;
+				$('.cart-count').text(parsedCount);
+				$('.added-banner').show(0);
+				// $('.added-banner').hide(0);
+				setTimeout(
+					function()
+						{
+							$('.added-banner').hide(0);
+					}, 1500);
+							});
 		});
 	</script>
 	<style>
 		a {
 			display: block;
+			text-decoration: none;
+			color: black;
 		}
 		body {
 			margin: 0 auto;
@@ -69,35 +85,52 @@
 			position: relative;
 			font-size: 15px;
 			margin-top: 1px;
+			display: none;
+		}
+		.added-banner {
+			background: green;
+			color: white;
+			text-align: center;
+			font-size: 18px;
+			padding: 10px;
+			position: sticky;
+			top: 0;
+			width: 100%;
+			background: green;
+			/*display: none;*/
+			margin-bottom: -42px;
 		}
 	</style>
 </head>
 <body>
-	<div class="cart-div">
-		<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png"></img>
-		<span class="cart-count">1</span>
-	</div>
-	<a href="basket.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
+	<a href="basket.html">
+		<div class="cart-div">
+			<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png"></img>
+			<span class="cart-count">0</span>
+		</div>
+	</a>
+	<a href="basket.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 0em;"></a>
+	<div style="display:none;" class="added-banner">Added to basket</div>
 	<div>
 		<div>
-			<div class="cat-title">
+			<div style="margin-top: 3em;" class="cat-title">
 				<h2>Bundles</h2>
 				<p>Category description Category description Category description Category description Category description</p>
 			</div>
 			<div class="prod-line-div">
-				<div class="prod-div">
+				<div class="bundle-add prod-div">
 					<img src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&w=600">
 					<p>Shaving Set</p>
 					<p>£30</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
-				<div class="prod-div">
+				<div class="bundle-add prod-div">
 					<img src="https://images.ctfassets.net/itvcls9imtx8/2VOEbLWyKcSeSewCw2iyIq/72fd9717bf05378ce5d49fe5f20f9faf/Most-Popular.png?fl=progressive&w=600">
 					<p>Dental Set</p>
 					<p>£22</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
-				<div class="prod-div">
+				<div class="bundle-add prod-div">
 					<img src="http://via.placeholder.com/600x450">
 					<p>Another Set</p>
 					<p>£30</p>
@@ -110,20 +143,22 @@
 				<p>Category description Category description Category description Category description Category description</p>
 			</div>
 			<div class="prod-line-div">
+				<a href="razor-blades.html">
+					<div id="razor-blades" class="prod-div">
+						<img style="height: 209px;" src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+						<p>6 Razor Blades</p>
+						<p>£14</p>
+						<a class="more-info">More info</a>
+					</div>
+				</a>
 				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
-					<p>6 Razor Blades</p>
-					<p>£14</p>
-					<a class="more-info">More info</a>
-				</div>
-				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/2jgKFliTHeCU6WuI6OOEoC/f8f497b00af32155c0c348299754dbc4/Cornerstone_Daily_Face_Wash_-_transparent.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<img style="height: 209px;" src="https://images.ctfassets.net/itvcls9imtx8/2jgKFliTHeCU6WuI6OOEoC/f8f497b00af32155c0c348299754dbc4/Cornerstone_Daily_Face_Wash_-_transparent.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
 					<p>Daily Face Wash</p>
 					<p>£6</p>
 					<a class="more-info">More info</a>
 				</div>
 				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<img style="height:209px;" src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
 					<p>Face Scrub</p>
 					<p>£5</p>
 					<a class="more-info">More info</a>
