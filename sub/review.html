@@ -198,16 +198,19 @@
 		}
 		.review-div {
 			display: flex;
-			max-width: 900px;
+			max-width: 1000px;
 			margin: 0 auto;
 		}
 		#payment-div {
-			margin: 0px 40px;
+			margin: 0px 10px;
+			width: 40%
 		}
 		#sub-div {
 			border: 1px solid lightgrey;
 			padding: 40px;
 			padding-top: 0px;
+			width: 60%;
+			border: 0;
 		}
 		.form-wrap {
 			border: 1px solid lightgrey;
@@ -229,6 +232,10 @@
 			border-radius: 5px;
 			background-color: rgba(0,0,0,.5);
 			-webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+		}
+		#payment {
+			position: sticky;
+			top: 0;
 		}
 	</style>
 </head>
@@ -357,7 +364,7 @@
 				<!-- 				<a href="products.html" class="join-now">Join Now</a> -->
 			</div>
 			<div class="form-div" id="payment-div">
-				<div class="form-wrap">
+				<div class="form-wrap" id="payment">
 					<h2>Delivery Address & Payment</h2>
 					<div class="form">
 						Your name
