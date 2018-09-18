@@ -6,74 +6,180 @@
 	crossorigin="anonymous"></script>
 	<script>
 		$( document ).ready(function() {
-			$('#razor').click(function() {
-				$(this).clone().insertAfter('#basket');
-				$(this).css('color','lightgrey')
-			});
-			$('#gel').click(function() {
-				$(this).clone().insertAfter('#basket');
-				$(this).css('color','lightgrey')
-			});
-			$('#scrub').click(function() {
-				$(this).clone().insertAfter('#basket');
-				$(this).css('color','lightgrey')
-			});
-			$('#toothpaste').click(function() {
-				$(this).clone().insertAfter('#basket');
-				$(this).css('color','lightgrey')
-			});
-			$('#bodywash').click(function() {
-				$(this).clone().insertAfter('#basket');
-				$(this).css('color','lightgrey')
-			});
 		});
 	</script>
 	<style>
-		body {
-			margin: 0;
+		a {
+			display: block;
 		}
-		.add {
+		body {
+			margin: 0 auto;
+		}
+		.prod-line-div {
+			display: flex;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.prod-div {
+			width: 33.33%;
+			text-align: center;
+			padding: 2em;
+		}
+		.prod-div img {
+			max-height: 300px;
+			width: auto;
+			max-width: 100%;
 			cursor: pointer;
 		}
-		.products-div {
+		.cat-title {
 			text-align: center;
-			margin-top: 100px;
 		}
-		.basket-div {
-			text-align: center;
-			border: 1px solid #c2002f;
-			max-width: 350px;
+		.cat-title p {
+			max-width: 500px;
 			margin: 0 auto;
-			margin-top: 50px;
-			border-radius: 5px;
+			margin-top: 30px;
 		}
-		.checkout {
-			background: #c2002f;
-			color: white;
-			padding: 10px;
-			max-width: 250px;
-			margin: 0 auto;
-			margin-bottom: 1em;
-			display: block;
-			text-decoration: none;
+		.more-info {
+			text-decoration: underline;
+			cursor: pointer;
 		}
-		a {
-			display: block
+		hr {
+			opacity: 0.5;
+			margin-top: 5px;
+			margin-bottom: 25px;
+		}
+		.cart-div {
+			width: 100%;
+			max-width: 1300px;
+		}
+		.cart-img {
+			float: right;
+			filter: invert(100%);
+			width: 30px;
+			padding-top: 7px;
+			margin-right: 35px;
+		}
+		.cart-count {
+			float: right;
+			color: #c2002f;
+			background: white;
+			padding: 1px 6px;
+			border-radius: 50px;
+			left: 45px;
+			position: relative;
+			font-size: 15px;
+			margin-top: 1px;
 		}
 	</style>
 </head>
 <body>
-	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
-	<div class="products-div">
-		<h2>Products:</h2>
-		<p id="razor" class="add">6 Razor Blades</p>
-		<p id="gel" class="add">Deodorant</p>
-		<p id="scrub" class="add">Daily Floss</p>
-		<p id="toothpaste" class="add">Whitening Toothpaste</p>
-		<p id="bodywash" class="add">Body Wash</p>
+	<div class="cart-div">
+		<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png"></img>
+		<span class="cart-count">1</span>
 	</div>
-	<div class="basket-div">
-		<h2 id="basket">Basket</h2>
-		<a href="basket.html" class="checkout">Checkout</a>
+	<a href="basket.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
+	<div>
+		<div>
+			<div class="cat-title">
+				<h2>Bundles</h2>
+				<p>Category description Category description Category description Category description Category description</p>
+			</div>
+			<div class="prod-line-div">
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&w=600">
+					<p>Shaving Set</p>
+					<p>£30</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/2VOEbLWyKcSeSewCw2iyIq/72fd9717bf05378ce5d49fe5f20f9faf/Most-Popular.png?fl=progressive&w=600">
+					<p>Dental Set</p>
+					<p>£22</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Another Set</p>
+					<p>£30</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+			</div>
+			<hr>
+			<div class="cat-title">
+				<h2>Shaving</h2>
+				<p>Category description Category description Category description Category description Category description</p>
+			</div>
+			<div class="prod-line-div">
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<p>6 Razor Blades</p>
+					<p>£14</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/2jgKFliTHeCU6WuI6OOEoC/f8f497b00af32155c0c348299754dbc4/Cornerstone_Daily_Face_Wash_-_transparent.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<p>Daily Face Wash</p>
+					<p>£6</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<p>Face Scrub</p>
+					<p>£5</p>
+					<a class="more-info">More info</a>
+				</div>
+			</div>
+			<hr>
+			<div class="cat-title">
+				<h2>Dental</h2>
+				<p>Category description Category description Category description Category description Category description</p>
+			</div>
+			<div class="prod-line-div">
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+			</div>
+			<hr>
+			<div class="cat-title">
+				<h2>Body care</h2>
+				<p>Category description Category description Category description Category description Category description</p>
+			</div>
+			<div class="prod-line-div">
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Placeholder</p>
+					<p>£XX</p>
+					<a class="more-info">More info</a>
+				</div>
+			</div>
+		</div>
 	</div>
+	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
 </body>
