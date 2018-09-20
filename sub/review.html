@@ -29,9 +29,7 @@
 			font-size: 16px;
 		}
 		.form-div {
-			/*max-width: 500px;*/
 			margin: 0 auto;
-			width: 50%;
 		}
 		.countries {
 			font-size: 19px;
@@ -91,9 +89,6 @@
 			display: flex;
 			max-width: 1000px;
 			margin: auto;
-		}
-		.checkout-text {
-			padding: 0px 30px;
 		}
 		hr {
 			opacity: 0.5;
@@ -194,20 +189,7 @@
 		.freq-overview p {
 			margin-left: 5px;
 		}
-		.review-div {
-			display: flex;
-			max-width: 1000px;
-			margin: 0 auto;
-		}
-		#payment-div {
-			/*margin: 0px 10px;*/
-			width: 40%
-		}
 		#sub-div {
-			border: 1px solid lightgrey;
-			padding: 40px;
-			padding-top: 0px;
-			width: 60%;
 			border: 0;
 		}
 		.form-wrap {
@@ -234,6 +216,37 @@
 		#payment {
 			position: sticky;
 			top: 0;
+		}
+		@media (max-width: 799px) {
+			#sub-div {
+				padding: 15px;
+				padding-top: 0px;
+			}
+			.checkout-text {
+				/*padding: 0px 15px;*/
+			}
+			#payment {
+				padding: 15px;
+				padding-top: 0px;
+			}
+		}
+		@media (min-width: 800px) {
+			#sub-div {
+				width: 60%;
+				padding: 40px;
+				padding-top: 0px;
+			}
+			#payment-div {
+				width: 40%;
+			}
+			.review-div {
+				display: flex;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+			.checkout-text {
+				padding: 0px 30px;
+			}
 		}
 	</style>
 </head>

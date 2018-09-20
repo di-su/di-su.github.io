@@ -14,7 +14,7 @@
 		}
 		.checkout-div {
 			border: 1px solid lightgrey;
-			margin: 10px;
+			/*margin: 10px;*/
 		}
 		.basket-h1 {
 			border-top: 1px solid black;
@@ -45,18 +45,15 @@
 			padding: 0px 10px;
 		}
 		.prod-freq {
-			/*width: 25%;*/
+			
 		}
 		.remove {
 			float: right;
 			text-decoration: underline;
 		}
 		.checkout-text {
-			padding: 10px 30px;
-			padding-bottom: 30px;
 			position: sticky;
 			top: 0;
-			border: 1px solid lightgrey;
 		}
 		hr {
 			opacity: 0.5;
@@ -83,7 +80,6 @@
 			border-bottom: 1px solid lightgrey;
 			padding-bottom: 20px;
 			text-decoration: underline;
-			padding-left: 10px;
 			cursor: pointer;
 		}
 		.price-strike {
@@ -99,15 +95,14 @@
 			margin-bottom: 5px;
 		}
 		.more-products-item {
-			
 			text-align: center;
-			padding: 20px;
 			border: 1px solid lightgrey;
-			margin: 10px;
 			cursor: pointer;
+			padding: 20px;
 		}
 		.more-products-item img {
 			width: 100%;
+			max-width: 120px;
 		}
 		.also-bought-title {
 		text-align: center;
@@ -125,13 +120,29 @@
 			border: none;
 		}
 		@media (max-width: 799px) {
+			.prod-div {
+				margin: 0em 15px;
+			}
+			.checkout-text {
+				padding: 0px 15px;
+			}
+			#continue {
+				padding-left: 15px;
+			}
+			.more-products-item {
+				margin: 15px;
+			}
 		}
 		@media (min-width: 800px) {
+			.more-products-item {
+				margin: 10px;
+			}
 			.basket-div {
 				width: 60%;
 			}
 			.checkout-div {
 				width: 40%;
+				margin: 10px;
 				margin-left: 50px;
 			}
 			.order-div {
@@ -146,6 +157,14 @@
 			}
 			.more-products-item {
 				width: 25%;
+			}
+			.checkout-text {
+				border: 1px solid lightgrey;
+				padding: 10px 30px;
+				padding-bottom: 30px;
+			}
+			#continue {
+				padding-left: 10px;
 			}
 		}
 		
