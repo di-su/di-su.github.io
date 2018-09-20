@@ -12,14 +12,9 @@
 		body {
 			margin: 0;
 		}
-		.basket-div {
-			width: 60%;
-		}
 		.checkout-div {
-			width: 40%;
 			border: 1px solid lightgrey;
 			margin: 10px;
-			margin-left: 50px;
 		}
 		.basket-h1 {
 			border-top: 1px solid black;
@@ -55,11 +50,6 @@
 		.remove {
 			float: right;
 			text-decoration: underline;
-		}
-		.order-div {
-			display: flex;
-			max-width: 1000px;
-			margin: auto;
 		}
 		.checkout-text {
 			padding: 10px 30px;
@@ -109,7 +99,7 @@
 			margin-bottom: 5px;
 		}
 		.more-products-item {
-			width: 25%;
+			
 			text-align: center;
 			padding: 20px;
 			border: 1px solid lightgrey;
@@ -118,11 +108,6 @@
 		}
 		.more-products-item img {
 			width: 100%;
-		}
-		.more-products {
-			display: flex;
-			max-width: 900px;
-			margin: 0 auto;
 		}
 		.also-bought-title {
 		text-align: center;
@@ -138,6 +123,30 @@
 		}
 		#summary {
 			border: none;
+		}
+		@media (max-width: 799px) {
+		}
+		@media (min-width: 800px) {
+			.basket-div {
+				width: 60%;
+			}
+			.checkout-div {
+				width: 40%;
+				margin-left: 50px;
+			}
+			.order-div {
+			display: flex;
+			max-width: 1000px;
+			margin: auto;
+			}
+			.more-products {
+			display: flex;
+			max-width: 900px;
+			margin: 0 auto;
+			}
+			.more-products-item {
+				width: 25%;
+			}
 		}
 		
 	</style>

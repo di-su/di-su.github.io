@@ -12,13 +12,13 @@
 				$('.cart-count').show(0);
 				parsedCount++;
 				$('.cart-count').text(parsedCount);
-				$('.added-banner').show(0);
+				// $('.added-banner').show(0);
 				// $('.added-banner').hide(0);
-				setTimeout(
-					function()
-						{
-							$('.added-banner').hide(0);
-					}, 1500);
+				// setTimeout(
+					// 	function()
+						// 		{
+							// 			$('.added-banner').hide(0);
+					// 	}, 1500);
 							});
 		});
 	</script>
@@ -101,9 +101,28 @@
 			/*display: none;*/
 			margin-bottom: -42px;
 		}
+		.price-strike {
+			text-decoration: line-through;
+			text-decoration-color: #c2002f;
+			font-size: 16px;
+			padding-right: 5px;
+		}
 	</style>
 </head>
 <body>
+	<p style="
+		background: green;
+		color: white;
+		width: 100%;
+		padding: 8px 0px;
+		text-align: center;
+		margin-bottom: 0;
+		position: fixed;
+		top: 0;
+		position: sticky;
+		z-index: 99999;
+		/* display: none; */
+	">Get £10 off an order of £14 or more on our shaving range!</p>
 	<a href="basket.html">
 		<div class="cart-div">
 			<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png"></img>
@@ -122,7 +141,7 @@
 				<div class="bundle-add prod-div">
 					<img src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&w=600">
 					<p>Shaving Set</p>
-					<p>£30</p>
+					<p class="discounted-price"><span class="price-strike">£30</span> £20</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
 				<div class="bundle-add prod-div">
