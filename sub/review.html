@@ -67,7 +67,6 @@
 		}
 		.prod-text {
 			width: 75%;
-			padding: 0px 10px;
 		}
 		.prod-freq {
 			/*width: 25%;*/
@@ -234,10 +233,10 @@
 				max-height: 100%;
 			}
 			.prod-name {
-				margin-top: 10px;
+				margin-top: 11px;
 			}
 			.prod-div {
-				padding: 0px;
+				padding: 1px;
 			}
 			.extra-hr {
 				display: none;
@@ -254,8 +253,32 @@
 			.checkout-div {
 				margin-top: 10px;
 			}
+			.price, .discounted-price {
+				padding: 0;
+			}
+			.prod-text {
+				padding-right: 0px;
+			}
+			.checkout-text p {
+				margin: 5px 0px;
+			}
+			.mobile-split {
+				display: block;
+			}
+			#sub-div {
+				padding-bottom: 3px;
+			}
+			.checkout-text {
+				margin-top: 15px;
+			}
 		}
 		@media (min-width: 800px) {
+			.mobile-split {
+				display: none;
+			}
+			.prod-text {
+				padding: 0px 10px;
+			}
 			.form-wrap {
 				border: 1px solid lightgrey;
 			}
@@ -423,6 +446,7 @@
 				</div>
 				<!-- 				<a href="products.html" class="join-now">Join Now</a> -->
 			</div>
+			<hr class="mobile-split">
 			<div class="form-div" id="payment-div">
 				<div class="form-wrap" id="payment">
 					<h2>Delivery Address & Payment</h2>

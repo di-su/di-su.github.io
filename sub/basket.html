@@ -98,7 +98,6 @@
 			text-align: center;
 			border: 1px solid lightgrey;
 			cursor: pointer;
-			padding: 20px;
 		}
 		.more-products-item img {
 			width: 100%;
@@ -119,7 +118,14 @@
 		#summary {
 			border: none;
 		}
+		#top {
+			background: #c2002f;
+			height:40px;
+		}
 		@media (max-width: 799px) {
+			#top {
+				margin-bottom: 10px;
+			}
 			.prod-div {
 				margin: 0em 15px;
 			}
@@ -148,9 +154,25 @@
 			}
 			.basket-h1 {
 				margin-bottom: 5px;
+				margin-top: 0px;
 			}
 			.upsell {
 				display: none;
+			}
+			.prod-name span {
+			}
+			.h-summary {
+				margin: 0;
+			}
+			.prod-text {
+				padding-right: 0px;
+			}
+			#continue {
+				padding-bottom: 10px;
+				margin-top: 10px;
+			}
+			.more-products-item {
+				padding: 10px;
 			}
 		}
 		@media (min-width: 800px) {
@@ -163,6 +185,7 @@
 			}
 			.more-products-item {
 				margin: 10px;
+				padding: 20px;
 			}
 			.basket-div {
 				width: 60%;
@@ -201,7 +224,7 @@
 	</style>
 </head>
 <body>
-	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 2em;"></a>
+	<a href="products.html" id="top"></a>
 	<div>
 		<h1 class="basket-h1">Basket</h1>
 		<div class="order-div">
@@ -300,7 +323,7 @@
 			</div>
 			<div id="summary" class="checkout-div">
 				<div class="checkout-text">
-					<h2>Summary</h2>
+					<h2 class="h-summary">Summary</h2>
 					<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
 					<hr>
 					<p>Subtotal:<span class="price-after-discount-span">£28</span></p>
