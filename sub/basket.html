@@ -31,13 +31,13 @@
 			display: flex;
 			border-bottom: 1px solid #e6e6e6;
 			padding: 10px 0px;
-			padding-bottom: 20px;
+			/*padding-bottom: 20px;*/
 		}
 		.prod-image {
 			width: 25%;
+			text-align: center;
 		}
 		.prod-image img {
-			width: 100%;
 			max-width: 120px;
 		}
 		.prod-text {
@@ -132,8 +132,29 @@
 			.more-products-item {
 				margin: 15px;
 			}
+			.prod-image img {
+				width: 70px;
+				height: 80px;
+				padding-top: 5px;
+			}
+			.discounted-price, .price {
+				margin: 5px 0px;
+			}
+			.freq-p {
+				margin-top: 5px;
+			}
+			.prod-name {
+				margin: 5px 0px;
+			}
 		}
 		@media (min-width: 800px) {
+			.prod-div {
+				padding-bottom: 20px;
+			}
+			.prod-image img {
+				width: 100%;
+				padding-top: 10px;
+			}
 			.more-products-item {
 				margin: 10px;
 			}
@@ -181,7 +202,7 @@
 						<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?w=300">
 					</div>
 					<div class="prod-text">
-						<p>6 Razor Blades<span class="remove">Remove</span></p>
+						<p class="prod-name">6 Razor Blades<span class="remove">Remove</span></p>
 						<p class="discounted-price"><span class="price-strike">£14</span> £10</p>
 						<p class="freq-p">Delivery frequency:</p>
 						<select>
@@ -199,8 +220,8 @@
 						<img src="https://images.ctfassets.net/itvcls9imtx8/3G1024UpwAg06IoA0A6qSI/8a6fe86d5048598463ecda096198780e/Cornerstone-Deodrant-Image-500x500-1.png?w=300">
 					</div>
 					<div class="prod-text">
-						<p>Deodorant<span class="remove">Remove</span></p>
-						<p>£3</p>
+						<p class="prod-name">Deodorant<span class="remove">Remove</span></p>
+						<p class="price">£3</p>
 						<p class="freq-p">Delivery frequency:</p>
 						<select>
 							<option value="1-m">1 month</option>
@@ -217,8 +238,8 @@
 						<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
 					</div>
 					<div class="prod-text">
-						<p>Daily Floss<span class="remove">Remove</span></p>
-						<p>£2</p>
+						<p class="prod-name">Daily Floss<span class="remove">Remove</span></p>
+						<p class="price">£2</p>
 						<p class="freq-p">Delivery frequency:</p>
 						<select>
 							<option value="1-m">1 month</option>
@@ -235,8 +256,8 @@
 						<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 					</div>
 					<div class="prod-text">
-						<p>Whitening Toothpaste<span class="remove">Remove</span></p>
-						<p>£4</p>
+						<p class="prod-name">Whitening Toothpaste<span class="remove">Remove</span></p>
+						<p class="price">£4</p>
 						<p class="freq-p">Delivery frequency:</p>
 						<select>
 							<option value="1-m">1 month</option>
@@ -253,8 +274,8 @@
 						<img src="https://images.ctfassets.net/itvcls9imtx8/4K71XnMDfyqoGqM6kgoYSg/6a5f17fe6c9b349693cecae1e397db3d/Body_Wash_Ingredients.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 					</div>
 					<div class="prod-text">
-						<p>Body Wash<span class="remove">Remove</span></p>
-						<p>£5</p>
+						<p class="prod-name">Body Wash<span class="remove">Remove</span></p>
+						<p class="price">£5</p>
 						<p class="freq-p">Delivery frequency:</p>
 						<select>
 							<option value="1-m">1 month</option>
