@@ -32,7 +32,7 @@
 			width: auto;
 			max-width: 100%;
 			cursor: pointer;
-			height: 209px;
+			/*height: 209px;*/
 		}
 		.cat-title {
 			text-align: center;
@@ -41,7 +41,7 @@
 			max-width: 500px;
 			margin: 0 auto;
 			margin-top: 30px;
-			padding: 0px 15px;
+			padding: 0px 30px;
 		}
 		.more-info {
 			text-decoration: underline;
@@ -96,8 +96,16 @@
 		}
 		@media (max-width: 799px) {
 			.prod-div {
-				width: 100%;
+				width: 50%;
+				padding: 10px;
 				padding-top: 15px;
+			}
+			.prod-line-div {
+				display: flex;
+			}
+			.bundle-add {
+				width: 80%;
+				margin: 0 auto;
 			}
 		}
 		@media (min-width: 800px) {
@@ -109,6 +117,9 @@
 			.prod-div {
 				width: 33.33%;
 				padding: 2em;
+			}
+			.prod-div img {
+				height: 209px;
 			}
 		}
 	</style>
@@ -140,7 +151,7 @@
 				<h2>Bundles</h2>
 				<p class="cat-description">Our most popular product combinations</p>
 			</div>
-			<div class="prod-line-div">
+			<div style="display: block;" class="prod-line-div">
 				<div class="bundle-add prod-div">
 					<img src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&w=600">
 					<p>Shaving Set</p>
@@ -166,20 +177,36 @@
 				<p class="cat-description">Everything you need for a smooth, comfortable shave</p>
 			</div>
 			<div class="prod-line-div">
-				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405">
+				<div style="width: 100%" class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
 					<p>6 Razor Blades</p>
 					<p>£14</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
+			</div>
+			<div class="prod-line-div">
 				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/2jgKFliTHeCU6WuI6OOEoC/f8f497b00af32155c0c348299754dbc4/Cornerstone_Daily_Face_Wash_-_transparent.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
-					<p>Daily Face Wash</p>
+					<img src="http://via.placeholder.com/600x450">
+					<p>Shave Gel</p>
 					<p>£6</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
 				<div class="prod-div">
-					<img style="height:209px;" src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Shave Cream</p>
+					<p>£6</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+			</div>
+			<div class="prod-line-div">
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Post-Shave Balm</p>
+					<p>£6</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
 					<p>Face Scrub</p>
 					<p>£5</p>
 					<!-- <a class="more-info">More info</a> -->
@@ -203,9 +230,17 @@
 					<p>£2</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
+			</div>
+			<div class="prod-line-div">
 				<div class="prod-div">
 					<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
 					<p>Mouthwash</p>
+					<p>£4</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<p>Whitening Toothpaste</p>
 					<p>£4</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
@@ -216,20 +251,36 @@
 				<p class="cat-description">Keeping you fresh and confident all day long</p>
 			</div>
 			<div class="prod-line-div">
-				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/4K71XnMDfyqoGqM6kgoYSg/6a5f17fe6c9b349693cecae1e397db3d/Body_Wash_Ingredients.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+				<div style="width: 100%" class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
 					<p>Body Wash</p>
 					<p>£5</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
+			</div>
+			<div class="prod-line-div">
 				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/cwMjxuoJFuSOYYOkcW2Q0/06f1198126a1b0fa6cf055537d000722/Shampoo_Ingredients.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Daily Moisturiser</p>
+					<p>£5</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
 					<p>2 in 1 Shampoo & Conditioner</p>
 					<p>£7</p>
 					<!-- <a class="more-info">More info</a> -->
 				</div>
+			</div>
+			<div class="prod-line-div">
 				<div class="prod-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/3G1024UpwAg06IoA0A6qSI/8a6fe86d5048598463ecda096198780e/Cornerstone-Deodrant-Image-500x500-1.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+					<img src="http://via.placeholder.com/600x450">
+					<p>Face Wash</p>
+					<p>£6</p>
+					<!-- <a class="more-info">More info</a> -->
+				</div>
+				<div class="prod-div">
+					<img src="http://via.placeholder.com/600x450">
 					<p>Deodorant</p>
 					<p>£3</p>
 					<!-- <a class="more-info">More info</a> -->
@@ -251,104 +302,4 @@
 		</div>
 	</div>
 	<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
-	<div style="
-		margin-bottom: 4em;
-		">
-		<div>
-			
-			
-			
-			<div style="margin-bottom: 2em;" class="cat-title">
-				<h2 style="
-				margin-bottom: 15px;
-				">Shaving</h2>
-				<p class="cat-description" style="
-					width: 250px;
-					margin-top: 0px;
-				">Everything you need for a smooth, comfortable shave</p>
-			</div>
-			<div class="prod-line-div" style="
-				display: flex;
-				">
-				<div class="prod-div" style="
-					width: 50%;
-					margin-right: 0;
-					padding: 10px;
-					padding-top: 10px;
-					/*border: 2px solid #c2002f;*/
-					border-radius: 5px;
-					"><img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405" style="
-					height: 140px;
-					">
-					<p style="margin-bottom: 0px;">6 Razor Blades</p>
-					<p style="
-						margin-bottom: 5px;
-						margin-top: 5px;
-					">£14</p>
-					<!-- <a class="more-info">More info</a> -->
-				</div>
-				
-				<div class="prod-div" style="
-					width: 50%;
-					padding-top: 0;
-					border-radius: 5px;
-					padding: 10px;
-					">
-					<img style="height:209px;height: 150px;height: 140px;padding-top: 10px;" src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405">
-					<p style="
-						margin-bottom: 0;
-					">Face Scrub</p>
-					<p style="
-						<
-					p style=&quot;     margin-bottom: 10px;     margin-top: 5px; &quot;>£14</p>;
-					<
-				p style=&quot;     margin-bottom: 10px;     margin-top: 5px; &quot;>£14</p>;
-				margin-bottom: 10px;
-				margin-top: 5px;
-				margin-bottom: 5px;
-			">£5</p>
-			<!-- <a class="more-info">More info</a> -->
-		</div>
-	</div><div class="prod-line-div" style="
-	display: flex;
-	">
-	<div class="prod-div" style="
-		width: 50%;
-		margin-right: 0;
-		margin-top: 0;
-		padding: 10px;
-		padding-top: 10px;
-		border-radius: 5px;
-		">
-		<img src="https://images.ctfassets.net/itvcls9imtx8/2Vkg2gPYG4kGWi2i0S4Ag8/f368e0863796f41f5febc5ddb7dc0de3/product-shave-gel-3.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405" style="
-		height: 150px;
-		height: 140px;
-		">
-		<p style="
-			margin-bottom: 0;
-		">Shave Gel</p>
-		<!-- <a class="more-info">More info</a> -->
-	</div>
-	<div class="prod-div" style="
-		width: 50%;
-		margin-top: 0;
-		padding: 10px;
-		padding-top: 10px;
-		border-radius: 5px;
-		">
-		<img style="height:209px;height: 150px;height: 140px;" src="https://images.ctfassets.net/itvcls9imtx8/3uGN8FbQCAU4SwCiAOYOG/5499bd9086740df094f7849a45807bcb/product-post-shave-balm-2.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405">
-		<p style="
-			margin-bottom: 0;
-			margin-bottom: 5px;
-		">Shave Balm</p>
-		<p style="
-			margin-bottom: 0;
-			margin-bottom: 10px;
-			margin-top: 5px;
-		">£5</p>
-		<!-- <a class="more-info">More info</a> -->
-	</div>
-</div>
-</div>
-</div>
 </body>
