@@ -5,28 +5,26 @@
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
 	<script>
-		$( document ).ready(function() {
-			count = $('.cart-count').text();
-			parsedCount = parseInt(count);
-			$('.cta').click(function() {
-				$(this).hide();
-				$('.added').show();
-				$('.cart-count').show(0);
-				parsedCount++;
-				$('.cart-count').text(parsedCount);
-				$('.added-banner').show(0);
-				// $('.added-banner').hide(0);
-				setTimeout(
-					function()
-						{
-							$('.added-banner').hide(0);
-					}, 1500);
-							});
-			$('.added').click(function() {
-				$(this).hide();
-				$('.already-added').show();
-			});
-		});
+	$(document).ready(function() {
+	count = $('.cart-count').text();
+	parsedCount = parseInt(count);
+	$('.product-description').click(function() {
+	$('.cta').hide();
+	$('.added').show();
+	// $('.cart-count').show(0);
+	// parsedCount++;
+	// $('.cart-count').text(parsedCount);
+	// $('.added-banner').show(0);
+	// setTimeout(
+	//     function() {
+	//         $('.added-banner').hide(0);
+	//     }, 1500);
+	});
+	$('.added').click(function() {
+	$(this).hide();
+	$('.already-added').show();
+	});
+	});
 	</script>
 </head>
 <style>
@@ -57,6 +55,7 @@
 		cursor: pointer;
 		text-transform: uppercase;
 		border: 1px solid #c2002f;
+		text-decoration: none;
 	}
 	.cart-div {
 		width: 100%;
@@ -278,7 +277,7 @@
 					<hr>
 					<p class="product-description">Our new razor has five super sharp, fine blades, optimally spaced to increase shave performance and reduce clogging, an Aloe Vera strip to help the blades glide smoothly, as well as a new precision trimmer blade for those hard to reach
 					areas. Each blade is made from Japanese chromium steel to reduce micro-corrosion of its cutting edge, and coated in a layer of titanium and diamond grade carbon to ensure the cutting edge stays sharper for longer. Designed for men.</p>
-					<a
+					<a href="products.html#shaving"
 					class="cta">Add To Basket</a>
 					<div class="added"><a class="cta-added">Added!</a></div>
 					<div class="already-added"><a class="cta-already-added">Added!*</a>
