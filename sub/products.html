@@ -4,17 +4,17 @@
 	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
-	<script>
-		$( document ).ready(function() {
-			count = $('.cart-count').text();
-			parsedCount = parseInt(count);
-			$('.bundle-add').click(function() {
-				$('.cart-count').show(0);
-				parsedCount++;
-				$('.cart-count').text(parsedCount);
-							});
-		});
-	</script>
+	<!-- 	<script>
+	$( document ).ready(function() {
+	count = $('.cart-count').text();
+	parsedCount = parseInt(count);
+	$('.bundle-add').click(function() {
+	$('.cart-count').show(0);
+	parsedCount++;
+	$('.cart-count').text(parsedCount);
+	});
+	});
+	</script> -->
 	<style>
 		a {
 			display: block;
@@ -176,14 +176,16 @@
 				<h2>Shaving</h2>
 				<p class="cat-description">Everything you need for a smooth, comfortable shave</p>
 			</div>
-			<div class="prod-line-div">
-				<div style="width: 100%" class="prod-div">
-					<img src="http://via.placeholder.com/600x450">
-					<p>6 Razor Blades</p>
-					<p>£14</p>
-					<!-- <a class="more-info">More info</a> -->
+			<a href="razor-blades.html">
+				<div class="prod-line-div">
+					<div style="width: 100%" class="prod-div">
+						<img src="http://via.placeholder.com/600x450">
+						<p>6 Razor Blades</p>
+						<p>£14</p>
+						<!-- <a class="more-info">More info</a> -->
+					</div>
 				</div>
-			</div>
+			</a>
 			<div class="prod-line-div">
 				<div class="prod-div">
 					<img src="http://via.placeholder.com/600x450">
