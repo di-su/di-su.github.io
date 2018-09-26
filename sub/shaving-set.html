@@ -34,12 +34,15 @@
 		}
 	});
 	$(document).ready(function() {
-		if (localStorage.razorBlades) {
+	if (localStorage.razorBlades && localStorage.shaveCream && localStorage.shaveBalm && localStorage.faceScrub && localStorage.faceScrub) {
 			$('.cta').hide();
 			$('.added').show();
 		}
 		$('.cta').click(function(){
 			localStorage.setItem('razorBlades', 'added');
+			localStorage.setItem('shaveBalm', 'added');
+			localStorage.setItem('shaveCream', 'added');
+			localStorage.setItem('faceScrub', 'added');
 			location.reload();
 		});
 		$('.added').click(function(){
@@ -297,6 +300,12 @@
 	.learn-more-title {
 		font-weight: 500;
 	}
+	.price-strike {
+		text-decoration: line-through;
+		text-decoration-color: #c2002f;
+		font-size: 25px;
+		padding-right: 10px;
+	}
 	@media (max-width: 799px) {
 		.prod-img {
 			width: 100%;
@@ -335,9 +344,9 @@
 			</a><a href="products.html" id="top" style="background: #c2002f;height:40px;margin-bottom: 0em;"></a>
 			<div style="display:none;" class="added-banner">Added to basket</div>
 			<div>
-				<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> &gt; Mens Razor Blades</div>
+				<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> &gt; Shaving Set</div>
 				<div class="prod-div" style="margin-bottom: 0;padding-bottom: 0">
-					<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405"></div>
+					<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&w=405"></div>
 					<div>
 						<div style="padding-bottom: 0;" class="carousel">
 							<div class="carousel-div"><img class="highlighted carousel-div-image" src="http://via.placeholder.com/90x90"></div>
@@ -354,8 +363,8 @@
 					</div>
 					<div class="prod-text">
 						<p class="tagline">6 German Engineered</p>
-						<p class="product-name">Razor Blades</p>
-						<p class="product-price">£14</p>
+						<p class="product-name">Shaving Set</p>
+						<p class="product-price"><span class="price-strike">£30</span>£20</p>
 						<hr>
 						<p class="product-description">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description  Description Description  Description Description </p>
 						<div id="initials"><p id="initial-p">Handle personaliation:</p><div class="initial-div"><select class="initial-select">

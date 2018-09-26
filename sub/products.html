@@ -24,7 +24,19 @@
 			$('.cart-count').text(cartCount);
 		}
 		if (localStorage.razorBlades) {
-			$('.selector').addClass('selected');
+			$('.razor-selector').addClass('selected');
+		}
+		if (localStorage.shaveCream) {
+			$('.cream-selector').addClass('selected');
+		}
+		if (localStorage.shaveBalm) {
+			$('.balm-selector').addClass('selected');
+		}
+		if (localStorage.faceScrub) {
+			$('.scrub-selector').addClass('selected');
+		}
+		if (localStorage.razorBlades && localStorage.shaveCream && localStorage.shaveBalm && localStorage.faceScrub && localStorage.faceScrub) {
+			$('.shaving-bundle-selector').addClass('selected');
 		}
 		$('#clear').click(function(){
 			localStorage.clear();
@@ -75,6 +87,7 @@
 		.cat-title p {
 			max-width: 500px;
 			margin: 0 auto;
+			margin-bottom: 15px;
 			margin-top: 30px;
 			padding: 0px 30px;
 		}
@@ -145,7 +158,7 @@
 			.prod-div {
 				width: 50%;
 				padding: 10px;
-				padding-top: 15px;
+				padding-top: 0px;
 			}
 			.prod-line-div {
 				display: flex;
@@ -197,24 +210,28 @@
 					<p class="cat-description">Our most popular product combinations</p>
 				</div>
 				<div style="display: block;" class="prod-line-div">
-					<div class="bundle-add prod-div">
-						<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&amp;w=600">
-						<p class="product-name">Shaving Set</p>
-						<p class="discounted-price"><span class="price-strike">£30</span> £20</p>
-						<!-- <a class="more-info">More info</a> -->
-					</div>
-					<div class="bundle-add prod-div">
-						<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/2VOEbLWyKcSeSewCw2iyIq/72fd9717bf05378ce5d49fe5f20f9faf/Most-Popular.png?fl=progressive&amp;w=600">
-						<p class="product-name">Dental Set</p>
-						<p class="price">£22</p>
-						<!-- <a class="more-info">More info</a> -->
-					</div>
-					<div style="display: none;" class="bundle-add prod-div">
-						<img class="bundle-image" src="http://via.placeholder.com/600x450">
-						<p class="product-name">Contact Lenses / Hair Loss / Viagra</p>
-						<p class="price">£XX</p>
-						<!-- <a class="more-info">More info</a> -->
-					</div>
+					<a href="shaving-set.html">
+						<div class="shaving-bundle-selector bundle-add prod-div">
+							<div>
+								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&amp;w=600">
+								<p class="product-name">Shaving Set</p>
+								<p class="discounted-price"><span class="price-strike">£30</span> £20</p>
+								<!-- <a class="more-info">More info</a> -->
+							</div>
+						</div>
+						<div class="bundle-add prod-div">
+							<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/2VOEbLWyKcSeSewCw2iyIq/72fd9717bf05378ce5d49fe5f20f9faf/Most-Popular.png?fl=progressive&amp;w=600">
+							<p class="product-name">Dental Set</p>
+							<p class="price">£22</p>
+							<!-- <a class="more-info">More info</a> -->
+						</div>
+						<div style="display: none;" class="bundle-add prod-div">
+							<img class="bundle-image" src="http://via.placeholder.com/600x450">
+							<p class="product-name">Contact Lenses / Hair Loss / Viagra</p>
+							<p class="price">£XX</p>
+							<!-- <a class="more-info">More info</a> -->
+						</div>
+					</a>
 				</div>
 				<hr>
 				<div class="cat-title" id="shaving">
@@ -224,7 +241,7 @@
 				<a href="razor-blades.html">
 					<div class="prod-line-div">
 						<div style="width: 100%;" class="prod-div">
-							<div class="selector">
+							<div class="razor-selector">
 								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
 								<p class="product-name">Razor Blades</p>
 								<p class="price">£14</p>
@@ -241,24 +258,30 @@
 						<!-- <a class="more-info">More info</a> -->
 					</div>
 					<div class="prod-div">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/1q1j9d6qRmEQ8wqskQO0G/abad3f7ec16b202b18cf42e9b81f33fe/product-shave-cream-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
-						<p class="product-name">Shave Cream</p>
-						<p class="price">£6</p>
-						<!-- <a class="more-info">More info</a> -->
+						<div class="cream-selector">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/1q1j9d6qRmEQ8wqskQO0G/abad3f7ec16b202b18cf42e9b81f33fe/product-shave-cream-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+							<p class="product-name">Shave Cream</p>
+							<p class="price">£6</p>
+							<!-- <a class="more-info">More info</a> -->
+						</div>
 					</div>
 				</div>
 				<div class="prod-line-div">
 					<div class="prod-div">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/3uGN8FbQCAU4SwCiAOYOG/5499bd9086740df094f7849a45807bcb/product-post-shave-balm-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
-						<p class="product-name">Post-Shave Balm</p>
-						<p class="price">£6</p>
-						<!-- <a class="more-info">More info</a> -->
+						<div class="balm-selector">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/3uGN8FbQCAU4SwCiAOYOG/5499bd9086740df094f7849a45807bcb/product-post-shave-balm-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+							<p class="product-name">Post-Shave Balm</p>
+							<p class="price">£6</p>
+							<!-- <a class="more-info">More info</a> -->
+						</div>
 					</div>
 					<div class="prod-div">
-						<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
-						<p class="product-name">Face Scrub</p>
-						<p class="price">£5</p>
-						<!-- <a class="more-info">More info</a> -->
+						<div class="scrub-selector">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
+							<p class="product-name">Face Scrub</p>
+							<p class="price">£5</p>
+							<!-- <a class="more-info">More info</a> -->
+						</div>
 					</div>
 				</div>
 				<hr>
