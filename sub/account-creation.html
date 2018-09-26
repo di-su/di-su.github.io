@@ -4,11 +4,26 @@
 	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 	<script>
 		$( document ).ready(function() {
 		});
 	</script>
 	<style>
+		#clear {
+			position: fixed;
+			z-index: 9999;
+			bottom: 0;
+			font-size: 20px;
+			margin-left: 1em;
+			background: black;
+			color: white;
+			padding: 10px;
+			display: block;
+		}
+		* {
+			font-family: Montserrat;
+		}
 		body {
 			margin: 0;
 		}
@@ -27,6 +42,7 @@
 		.account-form-div {
 			max-width: 400px;
 			margin: 0 auto;
+			padding: 15px 0px;
 		}
 		.password-p {
 			font-size: 14px;

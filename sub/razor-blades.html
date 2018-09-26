@@ -40,6 +40,7 @@
 		}
 		$('.cta').click(function(){
 			localStorage.setItem('razorBlades', 'added');
+			location.reload();
 		});
 		$('.added').click(function(){
 			$(this).hide();
@@ -151,7 +152,7 @@
 		max-width: 900px;
 		margin: 0 auto;
 		margin-top: 1em;
-		margin-bottom: 3em;
+		margin-bottom: 0em;
 	}
 	.toggle {
 		text-align: center;
@@ -283,7 +284,13 @@
 		display: flex;
 	}
 	#initial-p {
-						margin: 10px	;
+		margin: 10px;
+	}
+	.learn-more-div {
+		margin: 0px 15px;
+	}
+	.learn-more-title {
+		font-weight: 500;
 	}
 	@media (max-width: 799px) {
 		.prod-img {
@@ -357,7 +364,7 @@
 				<option value="C" selected>C</option>
 			</select></div></div>
 			
-			<a href="products.html#shaving"
+			<a
 			class="cta">Add To Subscription</a>
 			<div class="added"><a class="cta-added">Added!</a></div>
 			<div class="already-added"><a class="cta-already-added">Added!*</a>
@@ -386,6 +393,14 @@
 					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
 				</div>
 			</div>
+		</div>
+		<div class="learn-more-div">
+			<p class="learn-more-title">
+				What makes them so good for sensitive skin?
+			</p>
+			<p class="learn-more-paragraph">
+				Our super sharp blades cut through stubble very efficiently, reducing the chance of your skin flaring up. Each blade is made with a combination of high quality ingredients, optimal blade spacing to reduce clogging, and a blade coating designed to reduce uncomfortable drag and friction. Please note, although our razors are perfect for your face, we do not recommend using them for head-shaving.
+			</p>
 		</div>
 		<div style="display: none;">
 			<h2 class="also-bought-title">Customers also bought</h2>
