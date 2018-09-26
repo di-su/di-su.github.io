@@ -6,9 +6,24 @@
 	crossorigin="anonymous"></script>
 	<script>
 		$( document ).ready(function() {
+			$('#clear').click(function(){
+			localStorage.clear();
+			location.reload();
+			});
 		});
 	</script>
 	<style>
+		#clear {
+			position: fixed;
+			z-index: 9999;
+			bottom: 0;
+			font-size: 20px;
+			margin-left: 1em;
+			background: black;
+			color: white;
+			padding: 10px;
+			display: block;
+		}
 		body {
 			margin: 0;
 		}
@@ -497,5 +512,6 @@
 			</div>
 		</div>
 	</div>
+	<p id="clear">CLEAR</p>
 	<div id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
 </body>

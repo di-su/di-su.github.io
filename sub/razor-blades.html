@@ -34,16 +34,20 @@
 		}
 	});
 	$(document).ready(function() {
-		if (localStorage.blades) {
+		if (localStorage.razorBlades) {
 			$('.cta').hide();
 			$('.added').show();
 		}
 		$('.cta').click(function(){
-			localStorage.setItem('blades', 'added');
+			localStorage.setItem('razorBlades', 'added');
 		});
 		$('.added').click(function(){
 			$(this).hide();
 			$('.already-added').show();
+		});
+		$('#clear').click(function(){
+			localStorage.clear();
+			location.reload();
 		});
 	});
 	</script>
@@ -55,6 +59,17 @@
 	</style>
 </head>
 <style>
+	#clear {
+		position: fixed;
+		z-index: 9999;
+		bottom: 0;
+		font-size: 20px;
+		margin-left: 1em;
+		background: black;
+		color: white;
+		padding: 10px;
+		display: block;
+	}
 	a {
 		display: block;
 	}
@@ -344,5 +359,6 @@
 						<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
 					</div>
 				</div>
+				<p id="clear">CLEAR</p>
 				<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
 			</body>
