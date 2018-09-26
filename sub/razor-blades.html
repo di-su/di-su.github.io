@@ -5,12 +5,12 @@
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
 	<script>
-	$(document).ready(function() {
-	count = $('.cart-count').text();
-	parsedCount = parseInt(count);
-	$('.product-description').click(function() {
-	$('.cta').hide();
-	$('.added').show();
+	// $(document).ready(function() {
+	// count = $('.cart-count').text();
+	// parsedCount = parseInt(count);
+	// $('.product-description').click(function() {
+	// $('.cta').hide();
+	// $('.added').show();
 	// $('.cart-count').show(0);
 	// parsedCount++;
 	// $('.cart-count').text(parsedCount);
@@ -19,13 +19,40 @@
 	//     function() {
 	//         $('.added-banner').hide(0);
 	//     }, 1500);
+	// });
+	// $('.added').click(function() {
+	// $(this).hide();
+	// $('.already-added').show();
+	// });
+	// });
+	$( document ).ready(function() {
+		cartCount = localStorage.length;
+		if (cartCount === 0) {
+			$('.cart-count').hide()
+		} else {
+			$('.cart-count').text(cartCount);
+		}
 	});
-	$('.added').click(function() {
-	$(this).hide();
-	$('.already-added').show();
-	});
+	$(document).ready(function() {
+		if (localStorage.blades) {
+			$('.cta').hide();
+			$('.added').show();
+		}
+		$('.cta').click(function(){
+			localStorage.setItem('blades', 'added');
+		});
+		$('.added').click(function(){
+			$(this).hide();
+			$('.already-added').show();
+		});
 	});
 	</script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<style>
+		* {
+			font-family: Montserrat;
+		}
+	</style>
 </head>
 <style>
 	a {
@@ -72,13 +99,12 @@
 		float: right;
 		color: #c2002f;
 		background: white;
-		padding: 1px 6px;
+		padding: 1px 8px;
 		border-radius: 50px;
 		left: 45px;
 		position: relative;
 		font-size: 15px;
 		margin-top: 1px;
-		display: none;
 	}
 	.added-banner {
 		background: green;
@@ -110,6 +136,7 @@
 		max-width: 900px;
 		margin: 0 auto;
 		margin-top: 1em;
+		margin-bottom: 3em;
 	}
 	.toggle {
 		text-align: center;
@@ -255,7 +282,7 @@
 		<div>
 			<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> &gt; Mens Razor Blades</div>
 			<div class="prod-div" style="margin-bottom: 0;padding-bottom: 0">
-				<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/2l59zAideUYAqkgKo2EuE8/3b14cbe0424e7bd01cfe53d3f28e261d/Blades-6.png"></div>
+				<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405"></div>
 				<div>
 					<div style="padding-bottom: 0;" class="carousel">
 						<div class="carousel-div"><img class="highlighted carousel-div-image" src="http://via.placeholder.com/90x90"></div>
@@ -287,29 +314,35 @@
 		</div>
 		<div class="review-div">
 			<div>
-				<div class="toggle" style="margin: 0px 15px;border-bottom: 0;border-left: 0;border-right: 0;">
+				<div class="toggle" style="margin: 0px 15px;border-left: 0;border-right: 0;">
 					<div style="display: flex;">
-						<div style="display: flex;width: 100%;border-bottom: 0;border-left: none;">
+						<div style="display: flex;width: 100%;border-left: none;">
 							<p style="width: 100%;margin-left: 25px;">LEARN MORE </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;"></div>
 						</div>
 					</div>
-					<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
-						<div style="display: flex;margin: 0;">
-							<div style="display: flex;width: 100%;border-left: 0;">
-								<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
+					<div style="display: none;">
+						<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
+							<div style="display: flex;margin: 0;">
+								<div style="display: flex;width: 100%;border-left: 0;">
+									<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
+								</div>
+								
 							</div>
+							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
 						</div>
 					</div>
-					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
 				</div>
-				<h2 class="also-bought-title">Customers also bought</h2>
-				<div class="more-products">
-					<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
-						<p>Daily Fresh Mint Mouthwash</p>
-						<p>£4</p><a class="more-info">More info</a></div>
+				<div style="display: none;">
+					<h2 class="also-bought-title">Customers also bought</h2>
+					<div class="more-products">
+						<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+							<p>Daily Fresh Mint Mouthwash</p>
+							<p>£4</p><a class="more-info">More info</a></div>
+						</div>
+						<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
 					</div>
-					<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
 				</div>
+				<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
 			</body>
