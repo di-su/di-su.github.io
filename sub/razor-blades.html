@@ -262,6 +262,27 @@
 	.product-description {
 		font-size: 17px;
 	}
+	.initial-div {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.initial-select {
+		width: 33%;
+		text-align: center;
+	}
+	#initials {
+		border: 1px solid black;
+		margin-bottom: 10px;
+	}
+	.initial-div {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	#initial-p {
+		margin: 10px;
+	}
 	@media (max-width: 799px) {
 		.prod-img {
 			width: 100%;
@@ -319,46 +340,61 @@
 					<hr>
 					<p class="product-description">Our new razor has five super sharp, fine blades, optimally spaced to increase shave performance and reduce clogging, an Aloe Vera strip to help the blades glide smoothly, as well as a new precision trimmer blade for those hard to reach
 					areas. Each blade is made from Japanese chromium steel to reduce micro-corrosion of its cutting edge, and coated in a layer of titanium and diamond grade carbon to ensure the cutting edge stays sharper for longer. Designed for men.</p>
-					<a href="products.html#shaving"
-					class="cta">Add To Subscription</a>
-					<div class="added"><a class="cta-added">Added!</a></div>
-					<div class="already-added"><a class="cta-already-added">Added!*</a>
-					<p style="text-align: center;">*You cannot add more than 1 to your subscription</p>
+					<div id="initials"><p id="initial-p">Razor personaliation:</p><div class="initial-div"><select class="initial-select">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+				</select>
+				<select class="initial-select">
+					<option value="A">A</option>
+					<option value="B" selected>B</option>
+					<option value="C">C</option>
+				</select class="initial-select"><select>
+				<option value="A">A</option>
+				<option value="B">B</option>
+				<option value="C" selected>C</option>
+			</select></div></div>
+			
+			<a href="products.html#shaving"
+			class="cta">Add To Subscription</a>
+			<div class="added"><a class="cta-added">Added!</a></div>
+			<div class="already-added"><a class="cta-already-added">Added!*</a>
+			<p style="text-align: center;">*You cannot add more than 1 to your subscription</p>
+		</div>
+	</div>
+</div>
+<div class="review-div">
+	<div>
+		<div class="toggle" style="margin: 0px 15px;border-left: 0;border-right: 0;">
+			<div style="display: flex;">
+				<div style="display: flex;width: 100%;border-left: none;">
+					<p style="width: 100%;margin-left: 25px;">LEARN MORE </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;"></div>
+				</div>
+			</div>
+			<div style="display: none;">
+				<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
+					<div style="display: flex;margin: 0;">
+						<div style="display: flex;width: 100%;border-left: 0;">
+							<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
+						</div>
+						
+					</div>
+					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+					<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
 				</div>
 			</div>
 		</div>
-		<div class="review-div">
-			<div>
-				<div class="toggle" style="margin: 0px 15px;border-left: 0;border-right: 0;">
-					<div style="display: flex;">
-						<div style="display: flex;width: 100%;border-left: none;">
-							<p style="width: 100%;margin-left: 25px;">LEARN MORE </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;"></div>
-						</div>
-					</div>
-					<div style="display: none;">
-						<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
-							<div style="display: flex;margin: 0;">
-								<div style="display: flex;width: 100%;border-left: 0;">
-									<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
-								</div>
-								
-							</div>
-							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-							<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-						</div>
-					</div>
+		<div style="display: none;">
+			<h2 class="also-bought-title">Customers also bought</h2>
+			<div class="more-products">
+				<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+					<p>Daily Fresh Mint Mouthwash</p>
+					<p>£4</p><a class="more-info">More info</a></div>
 				</div>
-				<div style="display: none;">
-					<h2 class="also-bought-title">Customers also bought</h2>
-					<div class="more-products">
-						<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
-							<p>Daily Fresh Mint Mouthwash</p>
-							<p>£4</p><a class="more-info">More info</a></div>
-						</div>
-						<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
-					</div>
-				</div>
-				<p id="clear">CLEAR</p>
-				<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
-			</body>
+				<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
+			</div>
+		</div>
+		<p id="clear">CLEAR</p>
+		<a href="products.html" id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
+	</body>
