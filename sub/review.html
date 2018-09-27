@@ -12,6 +12,34 @@
 	}
 	});
 		$( document ).ready(function() {
+			if (localStorage.razorBlades) {
+				$('#razor-handle').removeClass('hidden');
+				$('#razor-blades').removeClass('hidden');
+			}
+			if (localStorage.shaveBalm) {
+				$('#shave-balm').removeClass('hidden');
+			}
+			if (localStorage.shaveCream) {
+				$('#shave-cream').removeClass('hidden');
+			}
+			if (localStorage.faceScrub) {
+				$('#face-scrub').removeClass('hidden');
+			}
+			if (localStorage.toothpaste) {
+				$('#toothpaste').removeClass('hidden');
+			}
+			if (localStorage.toothbrushHeads) {
+				$('#toothbrush-heads').removeClass('hidden');
+			}
+			if (localStorage.mouthwash) {
+				$('#mouthwash').removeClass('hidden');
+			}
+			if (localStorage.floss) {
+				$('#floss').removeClass('hidden');
+			}
+			if (localStorage.shaveGel) {
+				$('#shave-gel').removeClass('hidden');
+			}
 			$('#clear').click(function(){
 			localStorage.clear();
 			location.reload();
@@ -394,8 +422,8 @@
 							<div class="form-div" id="sub-div">
 								<!-- <h2>Your subscription<a href="basket.html" class="sub-edit">edit</a></h2> -->
 								<hr>
-								<div style="" class="basket-div">
-									<div id="razor-handle" class="prod-div">
+								<div class="basket-div">
+									<div id="razor-handle" class="prod-div hidden">
 										<div class="prod-image">
 											<img src="https://images.ctfassets.net/itvcls9imtx8/3saxfwzvjOoYUuwem8qWeU/d3fc57295bb0557a187e817202219493/handle.png">
 										</div>
@@ -414,7 +442,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div id="razor-blades" class="prod-div">
+								<div id="razor-blades" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?w=300">
 									</div>
@@ -434,7 +462,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="shave-gel" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/2Vkg2gPYG4kGWi2i0S4Ag8/f368e0863796f41f5febc5ddb7dc0de3/product-shave-gel-3.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -454,7 +482,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="shave-cream" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/1q1j9d6qRmEQ8wqskQO0G/abad3f7ec16b202b18cf42e9b81f33fe/product-shave-cream-2.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -474,7 +502,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="shave-balm" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/3uGN8FbQCAU4SwCiAOYOG/5499bd9086740df094f7849a45807bcb/product-post-shave-balm-2.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -494,7 +522,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="face-scrub" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -514,7 +542,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="toothbrush-heads" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/1tGRXRh0T60sk40moWsAUa/9b9900930f5df753867b5a7b6838a84d/Toothbrush-Heads-Square-2500.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=405">
 									</div>
@@ -534,7 +562,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="floss" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
 									</div>
@@ -554,7 +582,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="mouthwash" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -574,7 +602,7 @@
 									<div class="prod-freq">
 									</div>
 								</div>
-								<div class="prod-div">
+								<div id="toothpaste" class="prod-div hidden">
 									<div class="prod-image">
 										<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=300">
 									</div>
@@ -617,7 +645,7 @@
 					<!-- <h2>Your subscription<a href="basket.html" class="sub-edit">edit</a></h2> -->
 					<hr>
 					<div style="display: none;" class="basket-div">
-						<div id="razor-handle" class="prod-div">
+						<div id="razor-handle" class="prod-div hidden">
 							<div class="prod-image">
 								<img src="https://images.ctfassets.net/itvcls9imtx8/3saxfwzvjOoYUuwem8qWeU/d3fc57295bb0557a187e817202219493/handle.png">
 							</div>
@@ -636,7 +664,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div id="razor-blades" class="prod-div">
+					<div id="razor-blades" class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/ADaIedP5Liw2qiQQOiUeg/35548e61dc29fe63ce97e382c27c5b1a/blades.png?w=300">
 						</div>
@@ -656,7 +684,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/2Vkg2gPYG4kGWi2i0S4Ag8/f368e0863796f41f5febc5ddb7dc0de3/product-shave-gel-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -676,7 +704,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/1q1j9d6qRmEQ8wqskQO0G/abad3f7ec16b202b18cf42e9b81f33fe/product-shave-cream-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -696,7 +724,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/3uGN8FbQCAU4SwCiAOYOG/5499bd9086740df094f7849a45807bcb/product-post-shave-balm-2.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -716,7 +744,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/6YVfKX2EO4Ys2wG4EgKsiu/0da138e433f4ac9e99afafa08875248b/product-face-scrub-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -736,7 +764,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/1tGRXRh0T60sk40moWsAUa/9b9900930f5df753867b5a7b6838a84d/Toothbrush-Heads-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=405">
 						</div>
@@ -756,7 +784,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
 						</div>
@@ -776,7 +804,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -796,7 +824,7 @@
 						<div class="prod-freq">
 						</div>
 					</div>
-					<div class="prod-div">
+					<div class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
@@ -821,7 +849,7 @@
 				<div class="checkout-div">
 					<div class="checkout-text">
 						<p>Subtotal:<span class="price-after-discount-span">£000</span></p>
-						<p>Delivery:<span class="price-after-discount-span">FREE</span></p>
+						<p>Delivery:<span class="price-after-discount-span">FREE</span><
 						<p">Discount:<span class="price-after-discount-span">-£000</span></p>
 						<p class="price-after-discount">Total today:<span class="price-after-discount-span">£000</span></p>
 						<!-- 					<hr>
