@@ -30,6 +30,26 @@
 				$('#summary').removeClass('hidden');
 				$('#upsell-div').removeClass('hidden')
 			}
+			if (localStorage.toothpaste) {
+				$('#toothpaste').removeClass('hidden');
+				$('#summary').removeClass('hidden');
+				$('#upsell-div').removeClass('hidden')
+			}
+			if (localStorage.toothbrushHeads) {
+				$('#toothbrush-heads').removeClass('hidden');
+				$('#summary').removeClass('hidden');
+				$('#upsell-div').removeClass('hidden')
+			}
+			if (localStorage.mouthwash) {
+				$('#mouthwash').removeClass('hidden');
+				$('#summary').removeClass('hidden');
+				$('#upsell-div').removeClass('hidden')
+			}
+			if (localStorage.floss) {
+				$('#floss').removeClass('hidden');
+				$('#summary').removeClass('hidden');
+				$('#upsell-div').removeClass('hidden')
+			}
 			$('#remove-blades').click(function(){
 				localStorage.removeItem('razorBlades');
 			});
@@ -41,6 +61,18 @@
 			});
 			$('#remove-scrub').click(function(){
 				localStorage.removeItem('faceScrub');
+			});
+			$('#remove-toothpaste').click(function(){
+				localStorage.removeItem('toothpaste');
+			});
+			$('#remove-toothbrush-heads').click(function(){
+				localStorage.removeItem('toothbrushHeads');
+			});
+			$('#remove-mouthwash').click(function(){
+				localStorage.removeItem('mouthwash');
+			});
+			$('#remove-floss').click(function(){
+				localStorage.removeItem('floss');
 			});
 			$('#clear').click(function(){
 			localStorage.clear();
@@ -398,28 +430,12 @@
 							</select>
 						</div>
 					</div>
-					<div id="floss" class="prod-div hidden">
-						<div class="prod-image">
-							<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
-						</div>
-						<div class="prod-text">
-							<p class="prod-name">Daily Floss<span class="remove">Remove</span></p>
-							<p class="price">£2</p>
-							<p class="freq-p">Delivery frequency:</p>
-							<select class="freq-drop">
-								<option value="1-m">1 month</option>
-								<option value="2-m" selected="selected">2 months (recommended)</option>
-								<option value="3-m">3 months</option>
-								<option value="4-m">4 months</option>
-							</select>
-						</div>
-					</div>
 					<div id="toothpaste" class="prod-div hidden">
 						<div class="prod-image">
 							<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Whitening Toothpaste<span class="remove">Remove</span></p>
+							<p class="prod-name">Whitening Toothpaste<span id="remove-toothpaste" class="remove">Remove</span></p>
 							<p class="price">£4</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -435,7 +451,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/1tGRXRh0T60sk40moWsAUa/9b9900930f5df753867b5a7b6838a84d/Toothbrush-Heads-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">4 Toothbrush Heads<span class="remove">Remove</span></p>
+							<p class="prod-name">4 Toothbrush Heads<span id="remove-toothbrush-heads" class="remove">Remove</span></p>
 							<p class="price">£12</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -451,8 +467,24 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Mouthwash<span class="remove">Remove</span></p>
+							<p class="prod-name">Mouthwash<span id="mouthwash" class="remove">Remove</span></p>
 							<p class="price">£4</p>
+							<p class="freq-p">Delivery frequency:</p>
+							<select class="freq-drop">
+								<option value="1-m">1 month</option>
+								<option value="2-m" selected="selected">2 months (recommended)</option>
+								<option value="3-m">3 months</option>
+								<option value="4-m">4 months</option>
+							</select>
+						</div>
+					</div>
+					<div id="floss" class="prod-div hidden">
+						<div class="prod-image">
+							<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
+						</div>
+						<div class="prod-text">
+							<p class="prod-name">Daily Floss<span id="floss" class="remove">Remove</span></p>
+							<p class="price">£2</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
 								<option value="1-m">1 month</option>
