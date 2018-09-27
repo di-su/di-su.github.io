@@ -16,6 +16,11 @@
 	});
 	</script> -->
 	<script>
+		$(window).bind("pageshow", function(event) {
+	if (event.originalEvent.persisted) {
+	window.location.reload()
+	}
+	});
 	$( document ).ready(function() {
 		cartCount = localStorage.length;
 		if (cartCount === 0) {
