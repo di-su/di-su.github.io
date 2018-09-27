@@ -111,10 +111,11 @@
 			float: right;
 			text-decoration: underline;
 			color: black;
+			font-weight: normal;
 		}
 		.checkout-text {
 			position: sticky;
-			top: 0;
+			top: 40;
 		}
 		hr {
 			opacity: 0.5;
@@ -190,6 +191,13 @@
 		#empty-basket {
 			text-align: center;
 			border-bottom: 1px solid black;
+		}
+		.prod-name {
+			font-weight: 500;
+		}
+		.freq-drop {
+			padding: 10px 0px;
+			font-size: 12px;
 		}
 		@media (max-width: 799px) {
 			#top {
@@ -318,7 +326,7 @@
 							<p class="prod-name">6 Razor Blades<a href="basket.html" id="remove-blades" class="remove">Remove</a></p>
 							<p class="price">£14</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -334,7 +342,7 @@
 							<p class="prod-name">Shave Gel<span class="remove">Remove</span></p>
 							<p class="discounted-price">£6</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -350,7 +358,7 @@
 							<p class="prod-name">Shave Cream<a href="basket.html" id="remove-cream" class="remove">Remove</a></p>
 							<p class="discounted-price">£6</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -366,7 +374,7 @@
 							<p class="prod-name">Shave Balm<a href="basket.html" id="remove-balm" class="remove">Remove</a></p>
 							<p class="discounted-price">£6</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -382,7 +390,7 @@
 							<p class="prod-name">Face Scrub<a href="basket.html" id="remove-scrub" class="remove">Remove</a></p>
 							<p class="discounted-price">£5</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -398,7 +406,7 @@
 							<p class="prod-name">Daily Floss<span class="remove">Remove</span></p>
 							<p class="price">£2</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -414,7 +422,7 @@
 							<p class="prod-name">Whitening Toothpaste<span class="remove">Remove</span></p>
 							<p class="price">£4</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -430,7 +438,7 @@
 							<p class="prod-name">4 Toothbrush Heads<span class="remove">Remove</span></p>
 							<p class="price">£12</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -446,7 +454,7 @@
 							<p class="prod-name">Mouthwash<span class="remove">Remove</span></p>
 							<p class="price">£4</p>
 							<p class="freq-p">Delivery frequency:</p>
-							<select>
+							<select class="freq-drop">
 								<option value="1-m">1 month</option>
 								<option value="2-m" selected="selected">2 months (recommended)</option>
 								<option value="3-m">3 months</option>
@@ -469,7 +477,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="upsell-div" class="hidden">
+				<div style="display: none;" id="upsell-div" class="hidden">
 					<h2 class="also-bought-title">Customers also bought</h2>
 					<div class="more-products">
 						<div class="more-products-item">
