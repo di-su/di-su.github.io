@@ -5,6 +5,11 @@
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
 	<script>
+		$(window).bind("pageshow", function(event) {
+	if (event.originalEvent.persisted) {
+	window.location.reload()
+	}
+	});
 		$(document).ready(function() {
 			if (localStorage.length == 0) {
 				$('#empty-basket').removeClass('hidden');
@@ -50,8 +55,16 @@
 				$('#summary').removeClass('hidden');
 				$('#upsell-div').removeClass('hidden')
 			}
+			if (localStorage.shaveGel) {
+				$('#shave-gel').removeClass('hidden');
+				$('#summary').removeClass('hidden');
+				$('#upsell-div').removeClass('hidden')
+			}
 			$('#remove-blades').click(function(){
 				localStorage.removeItem('razorBlades');
+			});
+			$('#remove-gel').click(function(){
+				localStorage.removeItem('shaveGel');
 			});
 			$('#remove-cream').click(function(){
 				localStorage.removeItem('shaveCream');
@@ -371,7 +384,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/2Vkg2gPYG4kGWi2i0S4Ag8/f368e0863796f41f5febc5ddb7dc0de3/product-shave-gel-3.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Shave Gel<span class="remove">Remove</span></p>
+							<p class="prod-name">Shave Gel<a href="basket.html"><span id="remove-gel" class="remove">Remove</span></a></p>
 							<p class="discounted-price">£6</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -435,7 +448,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Whitening Toothpaste<span id="remove-toothpaste" class="remove">Remove</span></p>
+							<p class="prod-name">Whitening Toothpaste<a href="basket.html"><span id="remove-toothpaste" class="remove">Remove</span></a></p>
 							<p class="price">£4</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -451,7 +464,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/1tGRXRh0T60sk40moWsAUa/9b9900930f5df753867b5a7b6838a84d/Toothbrush-Heads-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">4 Toothbrush Heads<span id="remove-toothbrush-heads" class="remove">Remove</span></p>
+							<p class="prod-name">4 Toothbrush Heads<a href="basket.html"><span id="remove-toothbrush-heads" class="remove">Remove</span></a></p>
 							<p class="price">£12</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -467,7 +480,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Mouthwash<span id="mouthwash" class="remove">Remove</span></p>
+							<p class="prod-name">Mouthwash<a href="basket.html"><span id="remove-mouthwash" class="remove">Remove</span></a></p>
 							<p class="price">£4</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">
@@ -483,7 +496,7 @@
 							<img src="https://images.ctfassets.net/itvcls9imtx8/4UqSvXdiXmoaOq2s884Wsq/e740c83a30ad5f461ed759d82338c24d/Floss-Square-2500.png?w=300">
 						</div>
 						<div class="prod-text">
-							<p class="prod-name">Daily Floss<span id="floss" class="remove">Remove</span></p>
+							<p class="prod-name">Daily Floss<a href="basket.html"><span id="remove-floss" class="remove">Remove</span></a></p>
 							<p class="price">£2</p>
 							<p class="freq-p">Delivery frequency:</p>
 							<select class="freq-drop">

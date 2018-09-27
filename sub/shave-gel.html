@@ -5,6 +5,11 @@
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
 	crossorigin="anonymous"></script>
 	<script>
+		$(window).bind("pageshow", function(event) {
+	if (event.originalEvent.persisted) {
+	window.location.reload()
+	}
+	});
 	// $(document).ready(function() {
 	// count = $('.cart-count').text();
 	// parsedCount = parseInt(count);
@@ -34,12 +39,12 @@
 		}
 	});
 	$(document).ready(function() {
-		if (localStorage.razorBlades) {
+		if (localStorage.shaveGel) {
 			$('.cta').hide();
 			$('.added').show();
 		}
 		$('.cta').click(function(){
-			localStorage.setItem('razorBlades', 'added');
+			localStorage.setItem('shaveGel', 'added');
 			location.reload();
 		});
 		$('.added').click(function(){
