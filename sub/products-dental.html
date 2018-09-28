@@ -73,7 +73,176 @@
 	});
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="product-pages.css">
+	<style>
+		* {
+			font-family: Montserrat;
+			/*font-size: 16px;*/
+		}
+	</style>
+	<style>
+		.hidden {
+			display: none;
+		}
+		#clear {
+			position: fixed;
+			z-index: 9999;
+			bottom: 0;
+			font-size: 20px;
+			margin-left: 1em;
+			background: black;
+			color: white;
+			padding: 10px;
+			display: block;
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			color: black;
+		}
+		body {
+			margin: 0 auto;
+		}
+		.prod-div {
+			text-align: center;
+			border: 2px solid transparent;
+		}
+		.prod-div img {
+			max-height: 300px;
+			width: auto;
+			max-width: 100%;
+			cursor: pointer;
+			height: 160px;
+		}
+		.cat-title {
+			text-align: center;
+		}
+		.cat-title p {
+			max-width: 500px;
+			margin: 0 auto;
+			margin-bottom: 15px;
+			margin-top: 30px;
+			padding: 0px 30px;
+		}
+		.more-info {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		hr {
+			opacity: 0.5;
+			margin-top: 5px;
+			margin-bottom: 25px;
+		}
+		.cart-div {
+			width: 100%;
+			max-width: 1300px;
+		}
+		.cart-img {
+			float: right;
+			filter: invert(100%);
+			width: 30px;
+			padding-top: 7px;
+			margin-right: 35px;
+		}
+		.cart-count {
+			float: right;
+			color: #c2002f;
+			background: white;
+			padding: 1px 8px;
+			border-radius: 50px;
+			left: 45px;
+			position: relative;
+			font-size: 15px;
+			margin-top: 1px;
+			/*display: none;*/
+		}
+		.added-banner {
+			background: green;
+			color: white;
+			text-align: center;
+			font-size: 18px;
+			padding: 10px;
+			position: sticky;
+			top: 0;
+			width: 100%;
+			background: green;
+			/*display: none;*/
+			margin-bottom: -42px;
+		}
+		.price-strike {
+			text-decoration: line-through;
+			text-decoration-color: #c2002f !important
+			font-size: 18px;
+			padding-right: 5px;
+		}
+		.bundle-image {
+			height: auto !important;
+		}
+		.selected {
+			border: 2px solid #c2002f;
+		}
+		.product-name {
+			margin-bottom: 0px;
+			font-size: 18px;
+		}
+		.price {
+			margin-top: 10px;
+			font-size: 18px;
+		}
+		.discounted-price {
+			font-size: 22px;
+			margin-top: 10px;
+		}
+		.discounted-banner {
+			color: white;
+			background: green;
+			width: 150px;
+			margin: 0 auto;
+			padding: 5px;
+		}
+		.prod-line-div a {
+			display: contents;
+		}
+		#breadcrumb {
+			max-width: 550px;
+			margin: 0 auto;
+			margin-top: 2em;
+			width: 90%;
+		}
+		.back-prod {
+			display: inline;
+			text-decoration: none;
+			color: #c2002f;
+			font-weight: bold;
+		}
+		@media (max-width: 799px) {
+			.prod-div {
+				width: 50%;
+				padding: 10px;
+				padding-top: 0px;
+			}
+			.prod-line-div {
+				display: flex;
+			}
+			.bundle-add {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		@media (min-width: 800px) {
+			.prod-line-div {
+				display: flex;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+			.prod-div {
+				width: 33.33%;
+				padding: 2em;
+			}
+			.prod-div img {
+				height: 209px;
+			}
+		}
+	</style>
 </head>
 <body>
 	<!-- 	<p style="
@@ -97,15 +266,15 @@
 		<div>
 			<div>
 				<div style="margin-top: 4.5em;" class="cat-title">
-					<div id="breadcrumb"><a href="categories.html" class="back-prod">Categories</a> &gt; Shaving</div>
+					<div id="breadcrumb"><a href="categories.html" class="back-prod">Categories</a> &gt; Dental</div>
 					<h2>Bundles</h2>
-					<p class="cat-description">Our most popular shaving packages</p>
+					<p class="cat-description">Our most popular dental packages</p>
 				</div>
 				<div style="display: block;" class="prod-line-div">
-					<a href="shaving-set-1.html">
+					<a href="dental-set-1.html">
 						<div class="shaving-bundle-selector-1 bundle-add prod-div" style="margin-bottom: 15px;">
 							<div>
-								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/6csPFPAdMcEgWY4cImIGi2/4849521d0318a63d78aee4954bba2658/blades_shave_cream.png?fl=progressive&w=600">
+								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/5grnHQkjFKe2kAas2uESeQ/d179b5a9f678e7704db09d4723b78c4d/Starter.png?fl=progressive&w=600">
 								<p class="discounted-banner">Special offer</p>
 								<p class="product-name">Starter</p>
 								<p class="discounted-price"><span class="price-strike">£20</span> £10</p>
@@ -113,24 +282,13 @@
 							</div>
 						</div>
 					</a>
-					<a href="shaving-set-2.html">
+					<a href="dental-set-2.html">
 						<div class="shaving-bundle-selector-2 bundle-add prod-div" style="margin-bottom: 15px;">
 							<div>
-								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/2Iy47Rsdqg2oCKioqwUcQy/0721d28c6f68e1e8728d33c917bf131a/blades_shave_cream_balm.png?fl=progressive&w=600">
+								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/2VOEbLWyKcSeSewCw2iyIq/72fd9717bf05378ce5d49fe5f20f9faf/Most-Popular.png?fl=progressive&w=600">
 								<p class="discounted-banner">Special offer</p>
 								<p class="product-name">Most Popular</p>
 								<p class="discounted-price"><span class="price-strike">£25</span> £15</p>
-								<!-- <a class="more-info">More info</a> -->
-							</div>
-						</div>
-					</a>
-					<a href="shaving-set-3.html">
-						<div class="shaving-bundle-selector-3 bundle-add prod-div" style="margin-bottom: 15px;">
-							<div>
-								<img class="bundle-image" src="https://images.ctfassets.net/itvcls9imtx8/3F05upY2lyCmOswWSUUSWO/d673552bd5db7a2153e1508d4c7b68f2/blades_shave_cream_balm_scrub.png?fl=progressive&amp;w=600">
-								<p class="discounted-banner">Special offer</p>
-								<p class="product-name">Full Box</p>
-								<p class="discounted-price"><span class="price-strike">£30</span> £20</p>
 								<!-- <a class="more-info">More info</a> -->
 							</div>
 						</div>
@@ -150,7 +308,7 @@
 					</div>
 				</div>
 				<hr>
-				<div>
+				<div style="display: none;">
 					<div class="cat-title" id="shaving">
 						<h2>Products</h2>
 						<p class="cat-description">Everything you need for a smooth, comfortable shave</p>
@@ -212,7 +370,7 @@
 						</a>
 					</div>
 				</div>
-				<div style="display: none;">
+				<div>
 					<div class="cat-title">
 						<h2>Dental</h2>
 						<p class="cat-description">For the perfect smile - all approved by the Oral Health Foundation</p>
