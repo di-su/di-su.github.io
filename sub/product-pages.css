@@ -240,6 +240,12 @@
 		font-size: 17px;
 		font-weight: 500;
 	}
+	.price-strike {
+		text-decoration: line-through;
+		text-decoration-color: #c2002f;
+		font-size: 24px;
+		margin-right: 14px;
+	}
 		* {
 			font-family: Montserrat;
 		}
