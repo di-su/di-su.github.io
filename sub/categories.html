@@ -1,9 +1,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-	crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- 	<script>
 	$( document ).ready(function() {
 	count = $('.cart-count').text();
@@ -70,6 +67,20 @@
 			localStorage.clear();
 			location.reload();
 		});
+			$('.hamburger').click(function() {
+	$("#menu-page").animate({
+	width: 'toggle'
+	}, 200);
+	$('.hamburger').hide();
+	$('.crossmark').show();
+	});
+	$('.crossmark').click(function() {
+	$("#menu-page").animate({
+	width: 'toggle'
+	}, 200);
+	$('.crossmark').hide();
+	$('.hamburger').show();
+	});
 	});
 	</script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
@@ -234,7 +245,47 @@
 			margin-bottom: 15px;
 			background: #c2002f;
 			color: white;
-		}
+			}	.menu{
+	filter: invert(100%);
+	width: 30px;
+	padding-top: 7px;
+	margin-right: 35px;
+	float: left;
+	margin-left: 10px;
+	}
+	#menu-page{
+	z-index: 9999;
+	position: fixed;
+	height: 100%;
+	background: #f7f7f7;
+	top: 40px;
+	width: 100%;
+	display: none;
+	}
+	#menu-page div{
+	padding-top: 15px;
+	}
+	.menu-page-big{
+	font-size: 24px;
+	margin: 15px 0px;
+	margin-left: 50px;
+	}
+	.menu-page-small{
+	font-size: 20px;
+	margin: 15px 0px;
+	margin-left: 80px;
+	}
+	.menu-page-login{
+	font-size: 24px;
+	margin-left: 50px;
+	border-top: 1px solid black;
+	margin-right: 50px;
+	padding-top: 20px;
+	margin-top: 20px;
+	}
+	.crossmark{
+	display: none;
+	}
 		@media (max-width: 799px) {
 			.prod-div {
 				width: 50%;
@@ -266,21 +317,27 @@
 	</style>
 </head>
 <body>
-	<div style="position: fixed;width: 100%;top: 0;z-index: 1;"><a href="basket.html" style="position:relative;z-index: 2;top:0;">
-		<div class="cart-div">
-			<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png">
-			<span class="cart-count">0</span>
-		</div>
-		</a><a id="top" style="position:sticky;top:0;background: #c2002f;height:40px;margin-bottom: 0em;z-index: 1;display: block;"></a></div>
-		<div class="categories-intro">
-			<h1 class="categories-h">All ranges</h1>
-			<p class="categories-p">Description Description Description Description Description Description Description Description Description Description Description Description </p>
-		</div>
-		<div class="categories">
-			<div><a class="categories-a" href="products-shaving.html">Shaving</a></div>
-			<div><a class="categories-a" href="products-dental.html">Dental</a></div>
-		</div>
-		<p id="clear">CLEAR</p>
-		<div class="hidden" id="checkout" style="position: fixed;width: 100%;bottom: 0;z-index: 1;background: #c2002f;height: 60px;"><a href="basket.html" id="top" style="position:sticky;z-index: 1;color: white;display: block;width: 200px;margin: 0 auto;text-align: center;border: 1px solid white;padding: 10px;margin-top: 10px;margin-bottom: 10px;">CONTINUE</a></div>
-		<a id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
-	</body>
+	<div style="position: fixed;width: 100%;top: 0;z-index: 1;"><a style="position:relative;z-index: 2;top:0;">
+		<div><img class="hamburger menu" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"><img class="crossmark menu" src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/close-512.png"></div>
+	</a><a href="basket.html" style="position:relative;z-index: 2;top:0;">
+	<div class="cart-div">
+		<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png">
+		<span class="cart-count">0</span>
+	</div>
+	</a><a id="top" style="position:sticky;top:0;background: #c2002f;height:40px;margin-bottom: 0em;z-index: 1;display: block;"></a></div><div id="menu-page">
+	<div><a href="categories.html" class="menu-page-big">All ranges</a><a href="products-shaving.html" class="menu-page-small">Shaving</a><a href="products-dental.html" class="menu-page-small">Dental</a><a class="menu-page-small">Placeholder</a><a class="menu-page-small">Placeholder</a>
+	<a
+		class="menu-page-big">How it works</a><a class="menu-page-big">Our Story</a><a class="menu-page-big">Blog</a><a class="menu-page-big">Gifts</a><a class="menu-page-login">Login</a></div>
+	</div>
+	<div class="categories-intro">
+		<h1 class="categories-h">All ranges</h1>
+		<p class="categories-p">Description Description Description Description Description Description Description Description Description Description Description Description </p>
+	</div>
+	<div class="categories">
+		<div><a class="categories-a" href="products-shaving.html">Shaving</a></div>
+		<div><a class="categories-a" href="products-dental.html">Dental</a></div>
+	</div>
+	<p id="clear">CLEAR</p>
+	<div class="hidden" id="checkout" style="position: fixed;width: 100%;bottom: 0;z-index: 1;background: #c2002f;height: 60px;"><a href="basket.html" id="top" style="position:sticky;z-index: 1;color: white;display: block;width: 200px;margin: 0 auto;text-align: center;border: 1px solid white;padding: 10px;margin-top: 10px;margin-bottom: 10px;">CONTINUE</a></div>
+	<a id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
+</body>

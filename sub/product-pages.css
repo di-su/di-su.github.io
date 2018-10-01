@@ -263,6 +263,47 @@
 		font-size: 24px;
 		margin-right: 14px;
 	}
+	.menu{
+filter: invert(100%);
+width: 30px;
+padding-top: 7px;
+margin-right: 35px;
+float: left;
+margin-left: 10px;
+}
+#menu-page{
+z-index: 9999;
+position: fixed;
+height: 100%;
+background: #f7f7f7;
+top: 40px;
+width: 100%;
+display: none;
+}
+#menu-page div{
+padding-top: 15px;
+}
+.menu-page-big{
+font-size: 24px;
+margin: 15px 0px;
+margin-left: 50px;
+}
+.menu-page-small{
+font-size: 20px;
+margin: 15px 0px;
+margin-left: 80px;
+}
+.menu-page-login{
+font-size: 24px;
+margin-left: 50px;
+border-top: 1px solid black;
+margin-right: 50px;
+padding-top: 20px;
+margin-top: 20px;
+}
+.crossmark{
+display: none;
+}
 		* {
 			font-family: Montserrat;
 		}
