@@ -9,6 +9,23 @@
 		padding: 10px;
 		display: block;
 	}
+	.added-banner-div {
+		background: green;
+		color: white;
+		top: 40px;
+		position: fixed;
+		width: 100%;
+		z-index: 9999999999;
+		display: none;
+	}
+	.added-banner-div p {
+		margin: 0;
+		text-align: center;
+		padding: 10px;
+		position: sticky;
+		z-index: 99999999;
+	}
+
 	a {
 		display: block;
 	}

@@ -48,7 +48,13 @@
 			localStorage.setItem('shaveBalm', 'added');
 			localStorage.setItem('shaveCream', 'added');
 			localStorage.setItem('faceScrub', 'added');
-			document.location.reload(true)
+			$('.added-banner-div').show();
+			
+			setTimeout(
+	function()
+	{
+	document.location.reload(true);
+	}, 1500);
 		});
 		$('.added').click(function(){
 			$(this).hide();
@@ -76,128 +82,118 @@
 			</a><a id="top" style="position:fixed;width: 100%;top:0;background: #c2002f;height:40px;margin-bottom: 0em;z-index: 1;display: block;"></a></div>
 			</a><a href="products.html" id="top" style="height:40px;margin-bottom: 0em;"></a>
 			<div style="display:none;" class="added-banner">Added to basket</div>
-			<div style="    background: green;
-				color: white;
-				top: 40px;
-				position: fixed;
-				width: 100%;
-				z-index: 9999999999;
-				"><p style="    margin: 0;
-					text-align: center;
-					padding: 10px;
-					position: sticky;
-					z-index: 99999999;
-				">Added to subscription!</p></div>
-				<div>
-					
-					<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> &gt; Shaving Set</div>
-					<div class="prod-div" style="margin-bottom: 0;padding-bottom: 0">
-						<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/6csPFPAdMcEgWY4cImIGi2/4849521d0318a63d78aee4954bba2658/blades_shave_cream.png?fl=progressive&w=405"></div>
-						<div>
-							<div style="padding-bottom: 0;" class="carousel">
-								<div class="carousel-div"><img class="highlighted carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-							</div>
-							<div style="padding-top: 0;" class="carousel">
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-								<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
-							</div>
+			<div class="added-banner-div"><p
+			">Added to subscription!</p></div>
+			<div>
+				
+				<div id="breadcrumb"><a href="products.html" class="back-prod">Products</a> &gt; Shaving Set</div>
+				<div class="prod-div" style="margin-bottom: 0;padding-bottom: 0">
+					<div class="prod-img"><img src="https://images.ctfassets.net/itvcls9imtx8/6csPFPAdMcEgWY4cImIGi2/4849521d0318a63d78aee4954bba2658/blades_shave_cream.png?fl=progressive&w=405"></div>
+					<div>
+						<div style="padding-bottom: 0;" class="carousel">
+							<div class="carousel-div"><img class="highlighted carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
 						</div>
-						<div class="prod-text">
-							<p class="tagline">STARTER</p>
-							<p class="product-name">Shaving Set</p>
-							<p class="product-price"><span class="price-strike">£20</span>£10</p>
-							<hr>
-							<ul class="list-ul">
-								<li class="list-title">
-									Description
-									<ul class="list-items-ul">
-										<li class="list-item">Description</li>
-										<li class="list-item">Description</li>
-										<li class="list-item">Description</li>
-									</ul>
-								</li>
-							</ul>
-							<p class="product-description-title">Description Description</p>
-							<p class="product-description">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description  Description Description  Description Description </p>
-							<div id="initials"><p id="initial-p">Handle personaliation:</p><div class="initial-div"><select class="initial-select">
-							<option value="A">A</option>
-							<option value="B">B</option>
-							<option value="C">C</option>
-						</select>
-						<select class="initial-select">
-							<option value="A">A</option>
-							<option value="B" selected>B</option>
-							<option value="C">C</option>
-						</select class="initial-select"><select class="initial-select">
+						<div style="padding-top: 0;" class="carousel">
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+							<div class="carousel-div"><img class="carousel-div-image" src="http://via.placeholder.com/90x90"></div>
+						</div>
+					</div>
+					<div class="prod-text">
+						<p class="tagline">STARTER</p>
+						<p class="product-name">Shaving Set</p>
+						<p class="product-price"><span class="price-strike">£20</span>£10</p>
+						<hr>
+						<ul class="list-ul">
+							<li class="list-title">
+								Description
+								<ul class="list-items-ul">
+									<li class="list-item">Description</li>
+									<li class="list-item">Description</li>
+									<li class="list-item">Description</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="product-description-title">Description Description</p>
+						<p class="product-description">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description  Description Description  Description Description </p>
+						<div id="initials"><p id="initial-p">Handle personaliation:</p><div class="initial-div"><select class="initial-select">
 						<option value="A">A</option>
 						<option value="B">B</option>
-						<option value="C" selected>C</option>
-					</select></div></div>
-					
-					<a
-					class="cta">Add To Subscription</a>
-					<div class="added"><a class="cta-added">Added!</a></div>
-					<div class="already-added"><a class="cta-already-added">Added!*</a>
-					<p style="text-align: center;">*You cannot add more than 1 to your subscription</p>
-				</div>
-				<a href="javascript:history.back();" style="
-					color: #c2002f;
-					padding: 15px;
-					text-align: center;
-					margin: 0 auto;
-					font-size: 17px;
-					cursor: pointer;
-					text-transform: uppercase;
-					border: 1px solid #c2002f;
-					text-decoration: none;
-					margin-top: 10px;
-				">&lt; Back</a>
+						<option value="C">C</option>
+					</select>
+					<select class="initial-select">
+						<option value="A">A</option>
+						<option value="B" selected>B</option>
+						<option value="C">C</option>
+					</select class="initial-select"><select class="initial-select">
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C" selected>C</option>
+				</select></div></div>
+				
+				<a
+				class="cta">Add To Subscription</a>
+				<div class="added"><a class="cta-added">Added!</a></div>
+				<div class="already-added"><a class="cta-already-added">Added!*</a>
+				<p style="text-align: center;">*You cannot add more than 1 to your subscription</p>
 			</div>
+			<a href="javascript:history.back();" style="
+				color: #c2002f;
+				padding: 15px;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 17px;
+				cursor: pointer;
+				text-transform: uppercase;
+				border: 1px solid #c2002f;
+				text-decoration: none;
+				margin-top: 10px;
+			">&lt; Back</a>
 		</div>
-		<!-- <div class="review-div">
-																	<div>
-																																<div class="toggle" style="margin: 0px 15px;border-left: 0;border-right: 0;">
-																																															<div style="display: flex;">
-																																																														<div style="display: flex;width: 100%;border-left: none;">
-																																																																													<p style="width: 100%;margin-left: 25px;">LEARN MORE </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;"></div>
-																																																														</div>
-																																															</div>
-																																															<div style="display: none;">
-																																																														<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
-																																																																													<div style="display: flex;margin: 0;">
-																																																																																												<div style="display: flex;width: 100%;border-left: 0;">
-																																																																																																											<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
-																																																																																												</div>
-																																																																																												
-																																																																													</div>
-																																																																													<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-																																																																													<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-																																																																													<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
-																																																														</div>
-																										</
-					</div> -->
-					<div class="learn-more-div">
-						<p class="learn-more-title">
-							<p></p><p></p>Description Description Description Description Description
-						</p>
-						<p class="learn-more-paragraph">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
-						</p>
-					</div>
-					<div style="display: none;">
-						<h2 class="also-bought-title">Customers also bought</h2>
-						<div class="more-products">
-							<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
-								<p>Daily Fresh Mint Mouthwash</p>
-								<p>£4</p><a class="more-info">More info</a></div>
-							</div>
-							<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
+	</div>
+	<!-- <div class="review-div">
+																											<div>
+																																																					<div class="toggle" style="margin: 0px 15px;border-left: 0;border-right: 0;">
+																																																																															<div style="display: flex;">
+																																																																																																									<div style="display: flex;width: 100%;border-left: none;">
+																																																																																																																																			<p style="width: 100%;margin-left: 25px;">LEARN MORE </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;"></div>
+																																																																																																									</div>
+																																																																															</div>
+																																																																															<div style="display: none;">
+																																																																																																									<div class="toggle" style="margin: 0;border-left: 0;border-right: 0;margin: 0px 15px;">
+																																																																																																																																			<div style="display: flex;margin: 0;">
+																																																																																																																																																													<div style="display: flex;width: 100%;border-left: 0;">
+																																																																																																																																																																																							<p style="width: 100%;margin-left: 25px;">REVIEWS </p><img src="https://uk.lush.com/sites/all/themes/lush/assets/lush/images/web-kit/arrows/black-down.svg" style="width: 20px;margin-right: 25px;transform: rotate(180deg);"></div>
+																																																																																																																																																													</div>
+																																																																																																																																																													
+																																																																																																																																			</div>
+																																																																																																																																			<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+																																																																																																																																			<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+																																																																																																																																			<p style="width: 90%;margin: 0 auto;margin-top: 1em;font-size: 17px;">★★★★★<br>Great design<br>Really sharp and very well balanced - great design.<br><br>Richard A<br>reviews.co.uk</p>
+																																																																																																									</div>
+																																																																					</
+				</div> -->
+				<div class="learn-more-div">
+					<p class="learn-more-title">
+						<p></p><p></p>Description Description Description Description Description
+					</p>
+					<p class="learn-more-paragraph">Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description
+					</p>
+				</div>
+				<div style="display: none;">
+					<h2 class="also-bought-title">Customers also bought</h2>
+					<div class="more-products">
+						<div class="more-products-item"><img src="https://images.ctfassets.net/itvcls9imtx8/3vlqKkNGRi8yCGogQMGSeE/37d377913b7f27cd7b76fed214b0f870/Mouthwash-Square-2500.png?w=300">
+							<p>Daily Fresh Mint Mouthwash</p>
+							<p>£4</p><a class="more-info">More info</a></div>
 						</div>
+						<div id="bottom" style="background: #c2002f;height:40px;margin-top: 2em;"></div>
 					</div>
-					<p id="clear">CLEAR</p>
-					<a id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
-				</body>
+				</div>
+				<p id="clear">CLEAR</p>
+				<a id="top" style="background: #c2002f;height:40px;margin-top: 2em;"></a>
+			</body>
