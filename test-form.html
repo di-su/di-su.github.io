@@ -1,0 +1,92 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript">var submitted=false;</script>
+	<meta name="robots" content="noindex">
+	<style>
+		* {
+			font-family: 'Montserrat', sans-serif;
+		}
+		.button {
+			background: #c2002f;
+			color: white;
+			font-size: 25px;
+			padding: 12px;
+			cursor: pointer;
+			text-transform: uppercase;
+			width: 300px;
+			font-weight: bold;
+			margin-top: 15px;
+		}
+		#uid {
+			display: none;
+		}
+		#cta-div {
+			text-align: center;
+			margin: 0 auto;
+			width: 90%;
+			max-width: 700px;
+		}
+		#vitamin-image {
+			width: 100%;
+			max-width: 650px;
+		}
+		#header {
+			height: 40px;
+			background: #c2002f;
+			position: relative;
+			top: -1px;
+		}
+		#logo {
+			max-width: 210px;
+			margin-left: 20px;
+			margin-top: 15px;
+		}
+		body {
+			margin: 0;
+		}
+		#success-message {
+			max-width: 350px;
+			margin: 0 auto;
+			margin-top: 15px;
+			display: none;
+		}
+	</style>
+	<script>
+	$(document).ready(function() {
+	var hashParams = window.location.hash.substr(1).split('&');
+	for (var i = 0; i < hashParams.length; i++) {
+	var p = hashParams[i].split('=');
+	document.getElementById(p[0]).value = decodeURIComponent(p[1]);
+		
+	}
+	});
+	function pressedCta() {
+		$('#cta').hide();
+		$('#success-message').show();
+	}
+	</script>
+</head>
+<body>
+	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {pressedCta();}"></iframe>
+	<img id="logo" src="https://cdn.cornerstone.co.uk/317e304cd28af582b6f0a5002a279a62.svg">
+	<div id="header"></div>
+	<div id="cta-div">
+		<div>
+			<h1>Placeholder Placeholder Placeholder </h1>
+			<p>Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+			<!-- <img id="vitamin-image" src="https://i.imgur.com/eAZz857.gif"> -->
+			<img id="vitamin-image" src="http://via.placeholder.com/680x300">
+		</div>
+		<form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScUy9Dpm9AvYB0q_SHrOZP6H4AfMFqzWmwrxMuJks2bpQMHWQ/formResponse" method="post" target="hidden_iframe"
+			onsubmit="submitted=true;">
+			<input id="uid" name="entry.592995347" type="text" />
+			<input id="cta" class="button" type="submit" value="Redeem Offer" />
+			<p id="success-message">Thanks you! Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+		</form>
+	</div>
+</body>
