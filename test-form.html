@@ -1,6 +1,6 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 	<script
 	src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -49,16 +49,58 @@
 		body {
 			margin: 0;
 		}
-		#success-message {
+		.success {
+			display: none;
+		}
+		.success-message {
 			max-width: 350px;
 			margin: 0 auto;
 			margin-top: 15px;
-			display: none;
+			margin-bottom: 15px;
+		}
+		#success-image {
+			width: 100%;
 		}
 		input {
 			-webkit-appearance: none;
 			-webkit-border-radius:0px;
 			border-radius: 0;
+		}
+		.tagline {
+			color: #c2002f;
+			text-transform: uppercase;
+			font-size: 14px;
+			margin: 5px 0px;
+		}
+		.product-name {
+			text-transform: uppercase;
+			font-size: 25px;
+			font-weight: 500;
+			margin: 5px 0px;
+		}
+		.coming-soon {
+			color: rgb(79, 178, 206);
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 5px 0px;
+		}
+		#product-info-image img {
+			width: 100%;
+		}
+		#url {
+			color: #c2002f;
+		}
+		@media (min-width: 700px) {
+			#product-info-div {
+				display: flex;
+			}
+			#product-info-image {
+				max-width: 50%;
+			}
+			#product-info-copy {
+				max-width: 50%;
+				text-align: left;
+			}
 		}
 	</style>
 	<script>
@@ -71,8 +113,8 @@
 	}
 	});
 	function pressedCta() {
-		$('#cta').hide();
-		$('#success-message').show();
+		$('.cta-div').hide();
+		$('.success').show();
 	}
 	</script>
 </head>
@@ -82,16 +124,39 @@
 	<div id="header"></div>
 	<div id="cta-div">
 		<div>
-			<h1>Placeholder Placeholder Placeholder </h1>
-			<p>Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+			<h1>Exclusive members-only offer</h1>
+			<div id="product-info-div">
+				<div id="product-info-image">
+					<img src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/Vitamins_transparent.png">
+				</div>
+				<div id="product-info-copy">
+					<p class="tagline">Daily Energy Boosting</p>
+					<p class="product-name">Multi-Vitamins</p>
+					<p class="coming-soon">Coming soon</p>
+					<hr>
+					<p class="product-copy">An expertly blended combination of vitamins, minerals and micronutrients including: Vitamins C, D3 and B12, Magnesium, Iron and Riboflavin - supporting your immune system, metabolism, energy levels, eyesight and joint health.</p>
+					<ul>
+						<li>30 Tablets</li>
+						<li>Made in the UK</li>
+						<li>Vegeterian Friendly</li>
+					</ul>
+				</div>
+			</div>
 			<!-- <img id="vitamin-image" src="https://i.imgur.com/eAZz857.gif"> -->
-			<img id="vitamin-image" src="http://via.placeholder.com/680x300">
+			<!-- <img id="vitamin-image" src="http://via.placeholder.com/680x300"> -->
 		</div>
 		<form class="form" action="https://docs.google.com/forms/d/e/1FAIpQLScUy9Dpm9AvYB0q_SHrOZP6H4AfMFqzWmwrxMuJks2bpQMHWQ/formResponse" method="post" target="hidden_iframe"
 			onsubmit="submitted=true;">
 			<input id="uid" name="entry.592995347" type="text" />
-			<input id="cta" class="button" type="submit" value="Redeem Offer" />
-			<p id="success-message">Thanks you! Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder </p>
+			<div class="cta-div">
+				<p class="cta-text">Press the button below to accept the offer, and once our Vitamins are ready we'll add them to your next order with an exclusive 10% discount!</p>
+				<input id="cta" class="button" type="submit" value="Redeem Offer" />
+			</div>
+			<div class="success">
+				<p class="success-message">Thank you!</p>
+				<img id="success-image" src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/welcome_celebration.gif">
+				<p class="success-message">Click here to learn more: <a id="url" href="https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/">https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/</a></p>
+			</div>
 		</form>
 	</div>
 </body>
