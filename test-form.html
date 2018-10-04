@@ -29,7 +29,7 @@
 			text-align: center;
 			margin: 0 auto;
 			width: 90%;
-			max-width: 700px;
+			max-width: 800px;
 		}
 		.cta-div {
 			display: none;
@@ -107,6 +107,17 @@
 		#removed {
 			display: none;
 		}
+		#didnt {
+			color: #c2002f;
+			margin-bottom: 4em;
+		}
+		#optout {
+			margin-bottom: 4em;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
 		@media (min-width: 700px) {
 			#product-info-div {
 				display: flex;
@@ -151,6 +162,11 @@
 	<div id="cta-div">
 		<div>
 			<h1>Exclusive members-only offer</h1>
+			<div class="success">
+				<p id="congrats" class="success-message">Congratulations. You'll be amongst the first to try our Multi-vitamins, with an exclusive 10% off applied to your first order (making it just £4.50). Of course, we'll let you know when they're ready!</p>
+				<img id="success-image" src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/welcome_celebration.gif">
+				<!-- <p class="success-message">Click here to learn more: <a id="url" href="https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/">https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/</a></p> -->
+			</div>
 			<div id="product-info-div">
 				<div id="product-info-image">
 					<img src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/Vitamins_transparent.png">
@@ -162,11 +178,15 @@
 					<hr>
 					<p class="product-copy">An expertly blended combination of vitamins, minerals and micronutrients including: Vitamins C, D3 and B12, Magnesium, Iron and Riboflavin - supporting your immune system, metabolism, energy levels, eyesight and joint health.</p>
 					<ul>
-						<li>30 Tablets</li>
-						<li>Made in the UK</li>
-						<li>Vegeterian Friendly</li>
+						<li>■ 30 Tablets</li>
+						<li>■ Made in the UK</li>
+						<li>■ Vegeterian Friendly</li>
 					</ul>
 				</div>
+			</div>
+			<div id="optout" class="success">
+				<p class="success-message">Didn't mean to redeem this offer?</p>
+				<a onclick="pressedRemove()" class="remove-button">Remove offer</a>
 			</div>
 			<!-- <img id="vitamin-image" src="https://i.imgur.com/eAZz857.gif"> -->
 			<!-- <img id="vitamin-image" src="http://via.placeholder.com/680x300"> -->
@@ -180,15 +200,8 @@
 				<p class="cta-text">Press the button below to accept the offer, and once our Vitamins are ready we'll add them to your next order with an exclusive 10% discount!</p>
 				<input id="cta" class="button" type="submit" value="Redeem Offer" />
 			</div>
-			<div class="success">
-				<p id="congrats" class="success-message">Congratulations. You'll be amongst the first to try our Multivitamns, with an exclusive 10% off applied to your first order. Of course, we'll let you know when they're ready!</p>
-				<p class="success-message">Didn't mean to redeem this offer?</p>
-				<a onclick="pressedRemove()" class="remove-button">Remove offer</a>
-				<img id="success-image" src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/welcome_celebration.gif">
-				<!-- <p class="success-message">Click here to learn more: <a id="url" href="https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/">https://blog.cornerstone.co.uk/which-vitamins-are-you-missing/</a></p> -->
-			</div>
 			<div class="offer-removed">
-				<p class="success-message">We've removed this offer from your account.</p>
+				<p id="didnt" class="success-message">We've removed this offer from your account.</p>
 			</div>
 		</form>
 	</div>
