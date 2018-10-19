@@ -7,320 +7,300 @@
     </script>
     <script type="text/javascript">
     $(document).ready(function() {
-        var $tabs = $('.tabs .tab');
-
-        $tabs.click(function(event) {
-            var selectedClass = 'is-tab-selected';
-            $tabs.removeClass(selectedClass);
-            $(event.target).addClass(selectedClass);
-        });
-        $('#tab-1').click(function() {
-            $('#portfolio-div').hide();
-            $('#experience-div').show();
-        });
-
-        $('#tab-2').click(function() {
-            $('#portfolio-div').show();
-            $('#experience-div').hide();
-        });
+    var $tabs = $('.tabs .tab');
+    $tabs.click(function(event) {
+    var selectedClass = 'is-tab-selected';
+    $tabs.removeClass(selectedClass);
+    $(event.target).addClass(selectedClass);
+    });
+    $('#tab-1').click(function() {
+    $('#portfolio-div').hide();
+    $('#experience-div').show();
+    });
+    $('#tab-2').click(function() {
+    $('#portfolio-div').show();
+    $('#experience-div').hide();
+    });
     });
     </script>
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
     <style type="text/css">
     body {
-        margin: 0;
-        background-image: url(https://i.imgur.com/d7tQl5O.png);
+    margin: 0;
+    background-image: url(https://i.imgur.com/d7tQl5O.png);
     }
-
     #wrapper-div {
-        max-width: 750px;
-        margin: 0 auto;
-        margin-bottom: 2em;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 2em;
     }
-
     .tabs {
-        display: flex;
-        border-bottom: 1px solid grey;
-        border-top: 1px solid grey;
-        margin: 1em 0em;
+    display: flex;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    margin: 1em 0em;
     }
-
     .tab {
-        font-weight: bold;
-        font-size: 14px;
-        cursor: pointer;
-        padding: 12px 30px;
-        border-bottom: 4px solid transparent;
-        color: #424B54;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 12px 30px;
+    border-bottom: 4px solid transparent;
+    color: #424B54;
     }
-
     .tab.is-tab-selected {
-        border-bottom-color: black;
-        color: black;
+    border-bottom-color: black;
+    color: black;
     }
-
     h1,
     h2,
     h3 {
-        color: white;
+    color: white;
     }
-
     a {
-        color: white;
+    color: white;
     }
-
     * {
-        font-family: 'Open Sans', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     }
-
     h1 {
-        font-size: 42px;
+    font-size: 42px;
     }
-
     h2 {
-        font-size: 18px;
-        font-weight: normal;
+    font-size: 18px;
+    font-weight: normal;
     }
-
     h3 {
-        font-size: 17px;
-        font-weight: normal;
-        margin-bottom: 0em;
+    font-size: 17px;
+    font-weight: normal;
+    margin-bottom: 0em;
     }
-
     #title {
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding-top: 6em;
-        padding-bottom: 8em;
-        text-align: center;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-        border-radius: 2px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 6em;
+    padding-bottom: 8em;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
     }
-
     #title-wrap {
-        background-position: center !important;
-        background: url(https://i.imgur.com/nZBJAsK.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-position: center !important;
+    background: url(https://i.imgur.com/nZBJAsK.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     }
-
     .contents-div {
-        padding-top: 1em;
-        margin: 0 auto;
-        padding-left: 1em;
-        padding-right: 1em;
-        font-size: 15px;
+    padding-top: 1em;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 15px;
     }
-
     .role-title {
-        margin: 0em;
-        font-weight: bold;
-        text-align: center;
-        font-size: 17px;
+    margin: 0em;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
     }
-
     .role-length {
-        margin-top: 0em;
-        margin-bottom: 1em;
-        text-align: center;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    text-align: center;
     }
-
     .boxes {
-        padding: 1em;
-        margin-bottom: 1em;
-        border: 1px solid #424B54;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-        border-radius: 2px;
-        background: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #424B54;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    background: white;
     }
-
     .role-div {
-        max-width: 450px;
-        margin: 0 auto;
+    max-width: 450px;
+    margin: 0 auto;
     }
-
     .role-focus {
-        text-align: center;
-        padding: 0.5em;
-        margin-bottom: 1em;
-        border: 1px solid #424B54;
-        font-style: italic;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-        border-radius: 2px;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #424B54;
+    font-style: italic;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
     }
-
     .portfolio-link {
-        color: #1a0dab;
-        ;
+    color: #1a0dab;
+    ;
     }
-
     #portfolio-div {
-        max-width: 500px;
-        margin: 0px auto;
-        display: none;
-        min-height: 600px;
+    max-width: 500px;
+    margin: 0px auto;
+    display: none;
+    min-height: 600px;
     }
     </style>
     <title>Di Su</title>
 </head>
-
 <body>
     <script>
     ! function() {
-        var a = new XMLHttpRequest;
-        a.onreadystatechange = function() {
-            if (a.readyState == XMLHttpRequest.DONE)
-                if (200 == a.status) {
-                    var c = document.createElement("script");
-                    c.async = !0, c.type = "text/javascript", c.innerHTML = a.responseText;
-                    var d = document.getElementsByTagName("script")[0];
-                    d.parentNode.insertBefore(c, d)
-                } else console.log("Error while getting Don't Close This Tab settings.")
-        };
-        var b = "https://dontclosethistab.com/serve_reminder?target=" + encodeURIComponent(window.location.href);
-        a.open("GET", b, !0), a.send()
+    var a = new XMLHttpRequest;
+    a.onreadystatechange = function() {
+    if (a.readyState == XMLHttpRequest.DONE)
+    if (200 == a.status) {
+    var c = document.createElement("script");
+    c.async = !0, c.type = "text/javascript", c.innerHTML = a.responseText;
+    var d = document.getElementsByTagName("script")[0];
+    d.parentNode.insertBefore(c, d)
+    } else console.log("Error while getting Don't Close This Tab settings.")
+    };
+    var b = "https://dontclosethistab.com/serve_reminder?target=" + encodeURIComponent(window.location.href);
+    a.open("GET", b, !0), a.send()
     }();
     </script>
     <div id="title-wrap">
         <div id="title">
             <h1> DI SU </h1>
-            <h2> GROWTH MARKETER @ <a target="_blank" href="https://www.cornerstone.co.uk">Cornerstone.co.uk</a> </h2>
+            <h2> HEAD OF LTV @ <a target="_blank" href="https://www.cornerstone.co.uk">Cornerstone.co.uk</a> </h2>
             <div>
                 <h3> disu.personal@gmail.com / <a href="https://www.linkedin.com/in/disu1/" target="_blank">LinkedIn</a> </h3> </div>
-        </div>
-    </div>
-    <div id="wrapper-div">
-        <div class="tabs"> <a id="tab-1" class="tab is-tab-selected" name="tab-1">EXPERIENCE</a> <a id="tab-2" class="tab" name="tab-2" style="display:none">PORTFOLIO</a> </div>
-        <div class="contents-div" id="experience-div">
-            <div class="boxes" id="role-1">
-                <div class="role-div">
-                    <p class="role-title"> Growth Marketer @ Cornerstone.co.uk </p>
-                    <p class="role-length"> Sep 2016 - Present </p>
-                    <p class="role-focus"> LTV, CRM, Optimisation, Marketing UX </p>
-                    <p> Responsibilites / skills include: </p>
-                    <ul>
-                        <li>Web
-                            <ul>
-                                <li>Use of HTML, CSS, Javascript, jQuery to create </li>
-                                <li style="list-style: none; display: inline">
-                                    <ul>
-                                        <li>Landing pages </li>
-                                        <li>Pages on site </li>
-                                        <li>Emails </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>A/B Testing (jQuery) via.
-                            <ul>
-                                <li>Optimizely </li>
-                                <li>In-house tools </li>
-                            </ul>
-                        </li>
-                        <li>Data analysis using
-                            <ul>
-                                <li>SQL </li>
-                                <li>Google's </li>
-                                <li style="list-style: none; display: inline">
-                                    <ul>
-                                        <li>Analytics </li>
-                                        <li>Search Console </li>
-                                        <li>Sheets </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>Acquisiton
-                            <ul>
-                                <li>Adwords </li>
-                                <li>SEO </li>
-                                <li>Native </li>
-                                <li style="list-style: none; display: inline">
-                                    <ul>
-                                        <li>Taboola </li>
-                                        <li>Outbrain </li>
-                                        <li>Revcontent </li>
-                                        <li>Yahoo </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="boxes" id="role-2" style="opacity: 0.9">
-                <div class="role-div">
-                    <p class="role-title"> Customer Champion @ Cornerstone.co.uk </p>
-                    <p class="role-length"> Dec 2015 - Sep 2016 </p>
-                    <p class="role-focus"> Customer Service </p>
-                </div>
-            </div>
-            <div class="boxes" id="role-3" style="opacity: 0.8">
-                <div class="role-div">
-                    <p class="role-title"> Supervisor @ Muffin Break </p>
-                    <p class="role-length"> Sep 2015 - Dec 2015 </p>
-                    <p class="role-focus"> Store Management </p>
-                </div>
-            </div>
-            <div class="boxes" id="role-4" style="opacity: 0.7">
-                <div class="role-div">
-                    <p class="role-title"> Barista @ Muffin Break </p>
-                    <p class="role-length"> June 2015 - Sep 2015 </p>
-                    <p class="role-focus"> Coffee </p>
-                </div>
-            </div>
-            <div class="boxes" id="role-5" style="opacity: 0.6">
-                <div class="role-div">
-                    <p class="role-title"> Sales @ Ogury.com </p>
-                    <p class="role-length"> Sep 2014 - Nov 2014 </p>
-                    <p class="role-focus"> Acquisiton </p>
-                </div>
             </div>
         </div>
-        <div class="contents-div" id="portfolio-div">
-            <ul>
-                <li>Cornerstone</li>
+        <div id="wrapper-div">
+            <div class="tabs"> <a id="tab-1" class="tab is-tab-selected" name="tab-1">EXPERIENCE</a> <a id="tab-2" class="tab" name="tab-2" style="display:none">PORTFOLIO</a> </div>
+            <div class="contents-div" id="experience-div">
+                <div class="boxes" id="role-1">
+                    <div class="role-div">
+                        <p class="role-title"> Head of LTV @ Cornerstone.co.uk </p>
+                        <p class="role-length"> July 2016 - Present </p>
+                        <p class="role-focus"> LTV, Churn, CRM, Optimisation, Marketing UX </p>
+                        <p> Responsibilites / skills include: </p>
+                        <ul>
+                            <li>Email
+                                <ul>
+                                    <li>Seasonal campaigns</li>
+                                    <li>Automatic campaigns</li>
+                                    <li>Abandon carts</li>
+                                    <li>Regular promotions</li>
+                                    <li>Increasing LTV</li>
+                                </ul>
+                            </li>
+                            <li>Web
+                                <ul>
+                                    <li>Use of HTML, CSS, Javascript, jQuery to create </li>
+                                    <li style="list-style: none; display: inline">
+                                        <ul>
+                                            <li>Wireframes of new pages </li>
+                                            <li>Landing pages </li>
+                                            <li>Promotional emails </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>A/B Testing (using jQuery & in-house tools)
+                                <ul>
+                                    <li>Increase CR</li>
+                                    <li>Increase AOV</li>
+                                    <li>Increase LTV</li>
+                                    <li>Lower churn</li>
+                                </ul>
+                            </li>
+                            <li>Data analysis using
+                                <ul>
+                                    <li>SQL (Basic)</li>
+                                    <li>Google's </li>
+                                    <li style="list-style: none; display: inline">
+                                        <ul>
+                                            <li>Analytics </li>
+                                            <li>Search Console </li>
+                                            <li>Sheets </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxes" id="role-1">
+                    <div class="role-div">
+                        <p class="role-title"> Growth Marketer @ Cornerstone.co.uk </p>
+                        <p class="role-length"> Sep 2016 - July 2016 </p>
+                        <p class="role-focus"> Native Acquisiton, Optimisation, CRM</p>
+                    </div>
+                </div>
+                <div class="boxes" id="role-2" style="opacity: 0.9">
+                    <div class="role-div">
+                        <p class="role-title"> Customer Champion @ Cornerstone.co.uk </p>
+                        <p class="role-length"> Dec 2015 - Sep 2016 </p>
+                        <p class="role-focus"> Customer Service </p>
+                    </div>
+                </div>
+                <div class="boxes" id="role-3" style="opacity: 0.8">
+                    <div class="role-div">
+                        <p class="role-title"> Supervisor @ Muffin Break </p>
+                        <p class="role-length"> Sep 2015 - Dec 2015 </p>
+                        <p class="role-focus"> Store Management </p>
+                    </div>
+                </div>
+                <div class="boxes" id="role-4" style="opacity: 0.7">
+                    <div class="role-div">
+                        <p class="role-title"> Barista @ Muffin Break </p>
+                        <p class="role-length"> June 2015 - Sep 2015 </p>
+                        <p class="role-focus"> Coffee </p>
+                    </div>
+                </div>
+                <div class="boxes" id="role-5" style="opacity: 0.6">
+                    <div class="role-div">
+                        <p class="role-title"> Sales @ Ogury.com </p>
+                        <p class="role-length"> Sep 2014 - Nov 2014 </p>
+                        <p class="role-focus"> Acquisiton </p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents-div" id="portfolio-div">
                 <ul>
-                    <li>Site pages</li>
+                    <li>Cornerstone</li>
                     <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/sp1.png">Site page 1</a></li>
+                        <li>Site pages</li>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/sp1.png">Site page 1</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/sp2.png">Site page 2</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/sp3.png">Site page 3</a></li>
+                        </ul>
                     </ul>
                     <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/sp2.png">Site page 2</a></li>
+                        <li>Landing pages</li>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/lp1.png">Landing page 1</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/lp2.png">Landing page 2</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/lp3.png">Landing page 3</a></li>
+                        </ul>
                     </ul>
                     <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/sp3.png">Site page 3</a></li>
+                        <li>Emails</li>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/email1.png">Email 1</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/email2.png">Email 2</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="portfolio-link" target="_blank" href="images/email3.png">Email 3</a></li>
+                        </ul>
                     </ul>
                 </ul>
-                <ul>
-                    <li>Landing pages</li>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/lp1.png">Landing page 1</a></li>
-                    </ul>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/lp2.png">Landing page 2</a></li>
-                    </ul>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/lp3.png">Landing page 3</a></li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>Emails</li>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/email1.png">Email 1</a></li>
-                    </ul>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/email2.png">Email 2</a></li>
-                    </ul>
-                    <ul>
-                        <li><a class="portfolio-link" target="_blank" href="images/email3.png">Email 3</a></li>
-                    </ul>
-                </ul>
-            </ul>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
