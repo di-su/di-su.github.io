@@ -17,7 +17,7 @@
         if ($('#active').is(':visible')) {
         $('#active').hide();
         $('#cancelled').show();
-        $(this).html('<p class="status">Cancelled</p>');
+        $(this).html('<p class="status">This is cancelled, press to see active</p>');
         } else {
         $('#cancelled').hide();
         $('#active').show();
@@ -213,7 +213,7 @@
     </head>
     <body style="margin: 0;">
         <div id="top">
-            <p id="status">Active</p>
+            <p id="status">This is active, press to see cancelled</p>
         </div>
         <div id="active">
             <div class="next-october">
