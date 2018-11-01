@@ -1,0 +1,282 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function (){
+			$('#blades').click(function(){
+				$('#blades-overlay').show();
+			});
+			$('#shave-gel').click(function(){
+				$('#shave-gel-overlay').show();
+			});
+			$('.save-cta').click(function(){
+				$('#blades-overlay').hide();
+			});
+			$('.remove-cta').click(function(){
+				$('#blades-overlay').hide();
+			});
+			$('.add-cta').click(function(){
+				$('#shave-gel-overlay').hide();
+			});
+		});
+		</script>
+		<style>
+		 *{
+		    font-family:Montserrat,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+		}
+		.hidden {
+			display: none;
+		}
+		#top{
+		    cursor:pointer;
+		    background:#c2002f;
+		    height:40px;
+		}
+		.title-div {
+			text-align: center;
+		}
+		.product-div {
+			display: flex;
+			width: 100%;
+			padding: 5px;
+		}
+		.product-image-div {
+			width: 30%;
+			text-align: center;
+		}
+		.product-image-div img {
+			width: 70px;
+		}
+		.product-text-div {
+			width: 70%;
+		}
+		.product-price {
+			float: right;
+			margin-right: 10px;
+		}
+		.product-category-wrap {
+			margin: 0em 1em;
+		}
+		.overlay {
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			overflow-y: scroll;
+			display: none;
+		}
+		.overlay-div {
+			background: white;
+			max-width: 350px;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+		.overlay-product-name {
+			font-size: 26px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+		}
+		.overlay-product-price {
+			font-size: 22px;
+			margin-top: 5px;
+			color: rgb(79, 178, 206);
+			margin-bottom: 5px;
+		}
+		.overlay-contents {
+			padding: 10px 15px;
+		}
+		select {
+			border: 1px solid lightgray;
+			padding: 10px;
+			width: 100%;
+			font-size: 15px;
+		}
+		select option {
+			text-align: center;
+		}
+		.select-title {
+			font-size: 15px;
+		}
+		.save-cta {
+			text-transform: uppercase;
+			border: 2px solid black;
+			font-size: 15px;
+			margin-top: 20px;
+			padding: 15px;
+			text-align: center;
+		}
+		.save-cta p {
+			margin: 0;
+		}
+		.remove-cta {
+			text-align: center;
+			text-decoration: underline;
+			color: #c2002f;
+		}
+		.add-cta {
+			text-transform: uppercase;
+			color: white;
+			font-size: 15px;
+			margin-top: 20px;
+			padding: 15px;
+			text-align: center;
+			background: #c2002f;
+		}
+		.add-cta p {
+			margin: 0;
+		}
+		.overlay-product-title-div {
+			border-bottom: 1px solid lightgray;
+		}
+		.overlay-product-image-div {
+			text-align: center;
+		}
+		.overlay-product-image-div img {
+			width: 220px;
+		}
+		p {
+			font-size: 15px;
+		}
+		.selected {
+			background: #c2002f;
+			height: 80px;
+			width: 25px;
+			margin: 0;
+			color: white;
+			text-align: center;
+		}
+		.selected p {
+			padding-top: 10px;
+		}
+		.product-wrap {
+			display: flex;
+			max-height: 80px;
+			border: 1px solid lightgray;
+			margin-bottom: 10px;
+		}
+	}
+		</style>
+	</head>
+	<div id="blades-overlay" class="overlay">
+		<div class="overlay-div">
+			<div class="overlay-contents">
+				<div class="overlay-product-title-div">
+					<p class="overlay-product-name">6 Razor Blades</p>
+					<p class="overlay-product-price">£14</p>
+				</div>
+				<div class="overlay-product-image-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/1VPXxhNGyAyg44euIg0kaO/eb95c481e96ab2032f61b197b8896358/Blades-min.png?w=300">
+					<p>Precision ground to stay sharper for longer.</p>
+				</div>
+				<div>
+					<p class="select-title">Next sent on:</p>
+					<select>
+						<option>13th November</option>
+						<option>13th December</option>
+					  	<option>13th January</option>
+					  	<option>13th February</option>
+					  	<option>13th March</option>
+					  	<option>13th April</option>
+					  	<option>13th May</option>
+					</select>
+					<p class="select-title">and then sent every:</p>
+					<select>
+					  <option>2 weeks</option>
+					  <option>1 month</option>
+					  <option>2 months</option>
+					  <option>3 months</option>
+					  <option>5 months</option>
+					  <option>6 months</option>
+					</select>
+				</div>
+				<div class="save-cta">
+					<p>Save changes</p>
+				</div>
+				<div class="remove-cta">
+					<p>Remove from subscription</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="shave-gel-overlay" class="overlay">
+		<div class="overlay-div">
+			<div class="overlay-contents">
+				<div class="overlay-product-title-div">
+					<p class="overlay-product-name">Shave Gel</p>
+					<p class="overlay-product-price">£6</p>
+				</div>
+				<div class="overlay-product-image-div">
+					<img src="https://images.ctfassets.net/itvcls9imtx8/6aoNsBi4QoOkAs4SQ4OmOQ/0ce194ddfde75067c5bf2cccfc0517ed/Shave-Gel-min.png?fm=jpg&fl=progressive&bg=rgb:fff&w=300">
+					<p>Protects and rehydrates your skin to help reduce shaving irritation. 150ml.</p>
+				</div>
+				<div>
+					<p class="select-title">Next sent on:</p>
+					<select>
+						<option>13th November</option>
+						<option>13th December</option>
+					  	<option>13th January</option>
+					  	<option>13th February</option>
+					  	<option>13th March</option>
+					  	<option>13th April</option>
+					  	<option>13th May</option>
+					</select>
+					<p class="select-title">and then sent every:</p>
+					<select>
+					  <option>2 weeks</option>
+					  <option>1 month</option>
+					  <option>2 months</option>
+					  <option>3 months</option>
+					  <option>5 months</option>
+					  <option>6 months</option>
+					</select>
+				</div>
+				<div class="add-cta">
+					<p>Add to subscription</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<body style="margin: 0;">
+		<div id="top"></div>
+		<div class="title-div">
+			<h1>Change ongoing products</h1>
+			<hr>
+		</div>
+		<div class="product-category-wrap"> 
+			<p>Shaving</p>
+			<div id="blades" class="product-wrap">
+				<div class="selected">
+					<p>✓</p>
+				</div>
+				<div class="product-div">
+					<div class="product-image-div">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/1VPXxhNGyAyg44euIg0kaO/eb95c481e96ab2032f61b197b8896358/Blades-min.png?fm=jpg&fl=progressive&bg=rgb:fff&w=150">	
+					</div>
+					<p class="product-text-div">6 Razor Blades<span class="product-price">£14</span></p>
+				</div>
+			</div>
+			<div id="shave-gel" class="product-wrap">
+				<div class="product-div">
+					<div class="product-image-div">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/6aoNsBi4QoOkAs4SQ4OmOQ/0ce194ddfde75067c5bf2cccfc0517ed/Shave-Gel-min.png?fm=jpg&fl=progressive&bg=rgb:fff&w=150">	
+					</div>
+					<p class="product-text-div">Shave Gel<span class="product-price">£6</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="product-category-wrap"> 
+			<p>Dental</p>
+			<div class="product-wrap">
+				<div class="product-div">
+					<div class="product-image-div">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&fl=progressive&bg=rgb:fff&w=150">	
+					</div>
+					<p class="product-text-div">Gentle Whitening <br>Toothpaste<span class="product-price">£4</span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
