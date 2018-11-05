@@ -171,9 +171,10 @@
 		.product-wrap {
 			display: flex;
 			max-height: 80px;
-			border: 1px solid lightgray;
+			border: 1px solid rgb(238, 238, 238);
 			margin-bottom: 10px;
 			cursor: pointer;
+			background: white;
 		}
 		.close {
 			cursor: pointer;
@@ -185,15 +186,22 @@
 		}
 		.product-name {
 			margin-bottom: 0;
+			font-weight: bold;
+			margin-top: 6px;
 		}
 		.product-next-sent {
 			margin-top: 5px;
-			font-size: 14px;
+			font-size: 13px;
+			margin-bottom: 0;
+		}
+		.product-frequency {
+			margin-top: 0;
+			font-size: 13px;
 		}
 	}
 		</style>
 	</head>
-	<body style="max-width: 450px;margin: 0 auto;"><div id="blades-overlay" class="overlay" style="display: none;">
+	<body style="max-width: 450px;margin: 0 auto;background: rgb(247, 247, 247);"><div id="blades-overlay" class="overlay" style="display: none;">
 		<div class="overlay-div">
 			<div class="overlay-contents">
 				<div class="overlay-product-title-div">
@@ -391,12 +399,13 @@
 	</div>
 		<div id="top"></div>
 		<div class="title-div">
-			<h1>Change ongoing products</h1>
+			<h1>Subscription</h1>
 			<hr>
+			<p style="text-align: center;width: 330px;margin: 0 auto;margin-top: 1em;">Add/remove or change the scheduling of the products in your subscription below</p>
 		</div>
 		<div class="product-category-wrap"> 
 			<p style="margin-bottom:10px;font-size: 20px;">In your subscription</p><hr>
-			<p>Shaving</p><div id="blades" class="product-wrap">
+			<div id="blades" class="product-wrap">
 				<div class="selected">
 					<p>✓</p>
 				</div>
@@ -406,7 +415,8 @@
 					</div>
 					<div class="product-text-div">
 						<p class="product-name">6 Razor Blades<span class="product-price">£14</span></p>
-						<p class="product-next-sent">Next sent on: 13th November</p>
+						<p class="product-next-sent">Next send on: 13th Nov</p>
+						<p class="product-frequency">then every 1.5: months</p>
 					</div>
 				</div>
 			</div>
@@ -420,20 +430,22 @@
 					</div>
 					<div class="product-text-div">
 						<p class="product-name">Face Scrub<span class="product-price">£5</span></p>
-						<p class="product-next-sent">Next sent on: 13th November</p>
+						<p class="product-next-sent">Next sent on: 13th Nov</p>
+						<p class="product-frequency">then every: 2 months</p>
 					</div>
 				</div>
-			</div><p>Dental</p><div id="toothpaste" class="product-wrap">
-				<div class="selected">
-					<p>✓</p>
+			</div><div style="max-height: 95px;" id="toothpaste" class="product-wrap">
+				<div class="selected" style="height: 95px;">
+					<p style="margin-top: 25px;">✓</p>
 				</div>
 				<div class="product-div">
-					<div class="product-image-div">
+					<div style="margin-top: 8px;" class="product-image-div">
 						<img src="https://images.ctfassets.net/itvcls9imtx8/61V7sSJRgAoMmIEgcsqcoY/3a7e7268a11087bb06f2b6dd1509005d/Toothpaste-Square-2500.png?fm=jpg&amp;fl=progressive&amp;bg=rgb:fff&amp;w=150">	
 					</div>
 					<div class="product-text-div">
 						<p style="margin-top: 5px;" class="product-name">Gentle Whitening<br>Toothpaste<span class="product-price">£4</span></p>
 						<p class="product-next-sent">Next sent on: 13th December</p>
+						<p class="product-frequency">then every: 2 months</p>
 					</div>
 				</div>
 			</div>

@@ -286,6 +286,22 @@
 	.crossmark{
 	display: none;
 	}
+	.icon {
+		width: 250px;
+		position: relative;
+		top: 2px;
+	}
+	.hero {
+		background: #fbf8f5;
+		height: 400px;
+	}
+	.hero-copy-div {
+		max-width: 500px;
+	}
+	.hero-copy-title {
+		margin: 0;
+		padding-top: 150px;
+	}
 		@media (max-width: 799px) {
 			.prod-div {
 				width: 50%;
@@ -317,17 +333,29 @@
 	</style>
 </head>
 <body>
-	<div style="position: fixed;width: 100%;top: 0;z-index: 1;"><a style="position:relative;z-index: 2;top:0;">
+
+	<div style="position: fixed;width: 100%;top: 0;z-index: 1;display:contents;">
+		<img class="icon" src="https://cdn.cornerstone.co.uk/317e304cd28af582b6f0a5002a279a62.svg">
+		<a style="position:relative;z-index: 2;top:0;">
 		<div><img class="hamburger menu" src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png"><img class="crossmark menu" src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/close-512.png"></div>
 	</a><a href="basket.html" style="position:relative;z-index: 2;top:0;">
 	<div class="cart-div">
 		<img class="cart-img" src="https://www.shareicon.net/download/2016/09/10/828167_cart_512x512.png">
 		<span class="cart-count">0</span>
 	</div>
-	</a><a id="top" style="position:sticky;top:0;background: #c2002f;height:40px;margin-bottom: 0em;z-index: 1;display: block;"></a></div><div id="menu-page">
+	</a>
+	<a id="top" style="position:sticky;top:0;background: #c2002f;height:40px;margin-bottom: 0em;z-index: 1;display: block;"></a></div><div id="menu-page">
 	<div><a href="categories.html" class="menu-page-big">All ranges</a><a href="products-shaving.html" class="menu-page-small">Shaving</a><a href="products-dental.html" class="menu-page-small">Dental</a><a class="menu-page-small">Placeholder</a><a class="menu-page-small">Placeholder</a>
 	<a
 		class="menu-page-big">How it works</a><a class="menu-page-big">Our Story</a><a class="menu-page-big">Blog</a><a class="menu-page-big">Gifts</a><a class="menu-page-login">Login</a></div>
+	</div>
+	<div class="hero">
+		<div class="hero-copy-div">
+			<h1 class="hero-copy-title">Placeholder placeholder</h1>
+		</div>
+		<div>
+			
+		</div>
 	</div>
 	<div class="categories-intro">
 		<h1 class="categories-h">All ranges</h1>
