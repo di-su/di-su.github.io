@@ -11,6 +11,7 @@ body {
 .content-1 {
 	background: lightgray;
 	height: 300px;
+	margin-bottom: 20px;
 }
 .content-1-div {
 	max-width: 800px;
@@ -20,6 +21,11 @@ body {
 .content-1-div-contents {
 	max-width: 50%;
 	margin-left: 50px;
+}
+.content-2-div-contents {
+	max-width: 50%;
+	margin-right: 50px;
+	float: right;
 }
 .centered-content {
 	max-width: 500px;
@@ -75,12 +81,18 @@ hr {
 	max-width: 900px;
 	margin: 0 auto;
 	height: 500px;
+	display: flex;
+	margin-bottom: 20px;
+
 }
 .product-image {
 	border: 1px solid black;
 	height: 100%;
+	width: 50%;
 }
 .product-copy {
 	border: 1px solid black;
-	height: 100%;
+	height: 300px;
+	width: 50%;
+	margin-left: 10px;
 }
