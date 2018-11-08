@@ -13,9 +13,13 @@
 }
 .box_3 {
 }
+.ellipse {
+}
 .image {
 }
 .placeholder {
+}
+.button {
 }
 .primary_button {
   color:#FFFFFF;
@@ -76,6 +80,12 @@
 }
 .droplist {
   color:#000000;
+  text-align:left;
+}
+.sticky_1 {
+  text-align:left;
+}
+.sticky_2 {
   text-align:left;
 }
 .flow_shape {
