@@ -24,11 +24,18 @@
 			});
 			$('.remove-cta').click(function(){
 				$('.overlay').hide();
+				$('#confirmation-overlay').show();
+			});
+			$('.remove-again').click(function(){
+				$('.overlay').hide();
 			});
 			$('.add-cta').click(function(){
 				$('.overlay').hide();
 			});
 			$('.close').click(function(){
+				$('.overlay').hide();
+			});
+			$('.back-cta').click(function(){
 				$('.overlay').hide();
 			});
 		});
@@ -113,6 +120,17 @@
 		.select-title {
 			font-size: 15px;
 		}
+		.back-cta {
+			text-transform: uppercase;
+			font-size: 15px;
+			margin-top: 20px;
+			padding: 15px;
+			text-align: center;
+			background: white;
+			border: 2px solid #c2002f;
+			color: #c2002f;
+			cursor: pointer;
+		}
 		.save-cta {
 			text-transform: uppercase;
 			font-size: 15px;
@@ -123,7 +141,7 @@
 			color: white;
 			cursor: pointer;
 		}
-		.save-cta p {
+		.save-cta p, .back-cta p {
 			margin: 0;
 		}
 		.remove-cta {
@@ -201,50 +219,93 @@
 	}
 		</style>
 	</head>
-	<body style="max-width: 450px;margin: 0 auto;background: rgb(247, 247, 247);"><div id="blades-overlay" class="overlay" style="display: none;">
-		<div class="overlay-div">
-			<div class="overlay-contents">
-				<div class="overlay-product-title-div">
-					<p class="overlay-product-name">6 Razor Blades<span class="close">x</span></p>
-					<p class="overlay-product-price">£14</p>
-				</div>
-				<div class="overlay-product-image-div">
-					<img src="https://images.ctfassets.net/itvcls9imtx8/1VPXxhNGyAyg44euIg0kaO/eb95c481e96ab2032f61b197b8896358/Blades-min.png?w=300">
-					<p>Precision ground to stay sharper for longer.</p>
-				</div>
-				<div>
-					<p class="select-title">Next sent on:</p>
-					<select>
-						<option>13th November</option>
-						<option>13th December</option>
-					  	<option>13th January</option>
-					  	<option>13th February</option>
-					  	<option>13th March</option>
-					  	<option>13th April</option>
-					  	<option>13th May</option>
-					</select>
-					<p class="select-title">and then sent every:</p>
-					<select>
-					  <option>2 weeks</option>
-					  <option>1 month</option>
-					  <option>2 months</option>
-					  <option>3 months</option>
-					  <option>5 months</option>
-					  <option>6 months</option>
-					</select>
-				</div>
-<div style="background: #fff7b0;padding: 5px;margin-top:10px;">
-				<p>Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder</p>
-			</div>
-				<div class="save-cta">
-					<p>Save changes</p>
-				</div>
-				<div class="remove-cta">
-					<p>Remove from subscription</p>
+	<body style="max-width: 450px;margin: 0 auto;background: rgb(247, 247, 247);">
+		<div id="confirmation-overlay" class="overlay" style="display: none;">
+			<div class="overlay-div">
+				<div class="overlay-contents">
+					<div class="overlay-product-title-div">
+						<p class="overlay-product-name" style="text-align: center;color: #c2002f;">Are you sure?</p>
+					</div>
+					<div style="background: #fff7b0;padding: 10px;margin-top:10px;text-align: center;">
+					<p>Are you sure you want to remove [Product Name] from your subscription? Why not delay the day it's next sent instead?</p>
+					</div>
+					<div>
+						<p class="select-title">Next sent on:</p>
+						<select>
+							<option>13th November</option>
+							<option>13th December</option>
+						  	<option>13th January</option>
+						  	<option>13th February</option>
+						  	<option>13th March</option>
+						  	<option>13th April</option>
+						  	<option>13th May</option>
+						</select>
+						<p class="select-title">and then sent every:</p>
+						<select>
+						  <option>2 weeks</option>
+						  <option>1 month</option>
+						  <option>2 months</option>
+						  <option>3 months</option>
+						  <option>5 months</option>
+						  <option>6 months</option>
+						</select>
+					</div>
+					<div class="save-cta">
+						<p>Save changes</p>
+					</div>
+					<div class="back-cta">
+						<p>Go back</p>
+					</div>
+					<div class="remove-cta remove-again">
+						<p>No, I still want to remove</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		<div id="blades-overlay" class="overlay" style="display: none;">
+			<div class="overlay-div">
+				<div class="overlay-contents">
+					<div class="overlay-product-title-div">
+						<p class="overlay-product-name">6 Razor Blades<span class="close">x</span></p>
+						<p class="overlay-product-price">£14</p>
+					</div>
+					<div class="overlay-product-image-div">
+						<img src="https://images.ctfassets.net/itvcls9imtx8/1VPXxhNGyAyg44euIg0kaO/eb95c481e96ab2032f61b197b8896358/Blades-min.png?w=300">
+						<p>Precision ground to stay sharper for longer.</p>
+					</div>
+					<div>
+						<p class="select-title">Next sent on:</p>
+						<select>
+							<option>13th November</option>
+							<option>13th December</option>
+						  	<option>13th January</option>
+						  	<option>13th February</option>
+						  	<option>13th March</option>
+						  	<option>13th April</option>
+						  	<option>13th May</option>
+						</select>
+						<p class="select-title">and then sent every:</p>
+						<select>
+						  <option>2 weeks</option>
+						  <option>1 month</option>
+						  <option>2 months</option>
+						  <option>3 months</option>
+						  <option>5 months</option>
+						  <option>6 months</option>
+						</select>
+					</div>
+				<div style="background: #fff7b0;padding: 10px;margin-top:10px;text-align: center;">
+					<p>Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder</p>
+				</div>
+					<div class="save-cta">
+						<p>Save changes</p>
+					</div>
+					<div class="remove-cta">
+						<p>Remove from subscription</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	<div id="shave-gel-overlay" class="overlay" style="display: none;">
 		<div class="overlay-div">
 			<div class="overlay-contents">
