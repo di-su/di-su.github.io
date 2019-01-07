@@ -17,6 +17,8 @@
 }
 .image {
 }
+.placeholder {
+}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -76,5 +78,8 @@
 .connector {
 }
 .sticky_1 {
+  text-align:left;
+}
+.sticky_4 {
   text-align:left;
 }
