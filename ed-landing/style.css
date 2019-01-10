@@ -112,6 +112,7 @@ h1 {
 .cta-button-div:hover {
   background-color: #009952; 
   cursor: pointer;
+  transform: scale(1.03);
 }
 
 .panel {
