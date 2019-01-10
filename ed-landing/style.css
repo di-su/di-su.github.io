@@ -72,6 +72,7 @@ h1 {
 	margin: 0 auto;
 	margin-bottom: 1.5em;
 	transition: 0.4s;
+	position: relative;
 }
 
 .cta-p {
@@ -112,7 +113,7 @@ h1 {
 .cta-button-div:hover {
   background-color: #009952; 
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .panel {
