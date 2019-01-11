@@ -153,6 +153,15 @@ h1 {
   padding: 8px;
 }
 
+.compare-check {
+	font-size: 22px;
+	text-align: center;
+}
+
+.compare-feature {
+	font-size: 16px;
+}
+
 #compare tr:nth-child(even){background-color: #f2f2f2;}
 
 #compare tr:hover {background-color: #ddd;}
@@ -163,6 +172,7 @@ h1 {
   text-align: left;
   background-color: #4CAF50;
   color: white;
+  text-align: center;
 }
 
 .compare-div {
