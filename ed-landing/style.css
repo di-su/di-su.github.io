@@ -29,7 +29,7 @@ h1 {
 }
 
 .content-div {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-bottom: 180px;
 	padding-top: 100px;
@@ -176,7 +176,7 @@ h1 {
 }
 
 .compare-div {
-	width: 1000px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-bottom: 90px;
 	padding-top: 50px;
