@@ -13,6 +13,21 @@ document.addEventListener("DOMContentLoaded", function(){
 	    } 
 	  });
 	}
+
+	var acci = document.getElementsByClassName("accordion-inline");
+	var x;
+
+	for (x = 0; x < acci.length; x++) {
+	  acci[x].addEventListener("click", function() {
+	    this.classList.toggle("active-inline");
+	    var panelInline = this.nextElementSibling;
+	    if (panelInline.style.maxHeight){
+	      panelInline.style.maxHeight = null;
+	    } else {
+	      panelInline.style.maxHeight = panelInline.scrollHeight + "px";
+	    } 
+	  });
+	}
 });
 
 
