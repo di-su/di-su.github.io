@@ -28,6 +28,11 @@ h1 {
 	margin-top: 0;
 }
 
+.link-cta {
+	text-decoration: underline;
+
+}
+
 .content-image-right, .content-image {
 	max-width: 500px;	
 	width: 100%;
@@ -206,9 +211,7 @@ table caption {
 }
 
 table tr {
-  /*background-color: #f8f8f8;*/
   border: 1px solid #ddd;
-  /*padding: .35em;*/
 }
 
 table th,
@@ -280,39 +283,6 @@ table thead {
   }
 }
 
-/*#compare {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#compare td, #compare th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-.compare-check {
-	font-size: 22px;
-	text-align: center;
-}
-
-.compare-feature {
-	font-size: 16px;
-}
-
-#compare th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-}
-
-}*/
-
-
-/*#compare tr:hover {background-color: #ddd;}*/
 
 .compare-div {
 	max-width: 1000px;
