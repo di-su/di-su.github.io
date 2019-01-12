@@ -1,4 +1,5 @@
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="script.js"></script>	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
@@ -15,7 +16,7 @@
 				</div>
 			</div>
 			<div class="content-image-div-right">
-				<img style="width: 500px;" src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/mike_dorner_173502_unsplash.png">
+				<img class="content-image-right" src="https://csprd-uploads.s3.eu-west-1.amazonaws.com/mike_dorner_173502_unsplash.png">
 			</div>
 		</div>
 	</div>
@@ -28,51 +29,68 @@
 				</div>
 			</div>
 			<div class="content-image-div">
-				<img src="http://via.placeholder.com/300x300">
+				<img class="content-image" src="http://via.placeholder.com/300x300">
 			</div>
 		</div>
 	</div>
 	<div class="compare-div">
 		<h1 class="why-h">Why Cornerstone?</h1>
 		<p class="why-p">If you're considering ED treatment, we think we're a great choice. Here's how we measure up.</p>
-		<table id="compare">
-			<tr>
-				<th></th>
-				<th>Cornerstone</th>
-		  		<th>Typical Online Pharmacy</th>
-		  		<th>Doctor's Prescription</th>
-		 	</tr>
-		 	<tr>
-		  		<td class="compare-feature">Discreet delivery</td>
-		  		<td class="compare-check" style="color: #007941 !important">✔</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		 	</tr>
-		 	<tr>
-		  		<td class="compare-feature">Made in the UK</td>
-		  		<td class="compare-check" style="color: #007941 !important">✔</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		 	</tr>
-		 	<tr>
-		  		<td class="compare-feature">Excellent Customer Service</td>
-		  		<td class="compare-check" style="color: #007941 !important">✔</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		 	</tr>
-		 	<tr>
-		  		<td class="compare-feature">Competitive pricing</td>
-		  		<td class="compare-check" style="color: #007941 !important">✔</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		 	</tr>
-		 	<tr>
-		  		<td class="compare-feature">Simple ordering process</td>
-		  		<td class="compare-check" style="color: #007941 !important">✔</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		  		<td class="compare-check" style="color: red !important;">✖</td>
-		 	</tr>
-		</table>
+	<table id="compare">
+	  <thead>
+	    <tr>
+	      <th scope="col"></th>
+	      <th scope="col">Cornerstone</th>
+	      <th scope="col">Typical Online Pharmacy</th>
+	      <th scope="col">Doctor's Prescription</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td data-label="" class="feature">Discreet delivery</td>
+	      <td data-label="Cornerstone"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/green/checkmark-xxl.png"></img></td>
+	      <td data-label="Typical Online Pharmacy"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+  	      <td data-label="Doctor's Prescription"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+	    </tr>
+	    <tr>
+	      <td data-label="" class="feature">Made in the UK</td>
+	      <td data-label="Cornerstone"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/green/checkmark-xxl.png"></img></td>
+	      <td data-label="Typical Online Pharmacy"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+  	      <td data-label="Doctor's Prescription"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+	    </tr>
+	    <tr>
+	      <td data-label="" class="feature">Excellent Customer Service</td>
+	      <td data-label="Cornerstone"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/green/checkmark-xxl.png"></img></td>
+	      <td data-label="Typical Online Pharmacy"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+  	      <td data-label="Doctor's Prescription"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+	    </tr>
+	    <tr>
+	      <td data-label="" class="feature">Competitive pricing</td>
+	      <td data-label="Cornerstone"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/green/checkmark-xxl.png"></img></td>
+	      <td data-label="Typical Online Pharmacy"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+  	      <td data-label="Doctor's Prescription"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+	    </tr>
+	    <tr>
+	      <td data-label="" class="feature">Simple ordering process</td>
+	      <td data-label="Cornerstone"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/green/checkmark-xxl.png"></img></td>
+	      <td data-label="Typical Online Pharmacy"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+  	      <td data-label="Doctor's Prescription"><img style="width: 15px;" src="https://www.iconsdb.com/icons/preview/soylent-red/x-mark-xxl.png"></img></td>
+	    </tr>
+	  </tbody>
+	</table>		
+	</div>
+	<div style="background: lightblue;" class="section-div">
+		<div class="content-div">
+			<div class="text-div">
+				<div class="text-width">
+					<h1>How do I start?</h1>
+					<p>Just continue to start your short consultation to see if Sildenafil is right for you. Our pharmacists will review your application and we'll let you know the outcome as soon as possible.</p>
+				</div>
+			</div>
+			<div class="content-image-div">
+				<img class="content-image" src="http://via.placeholder.com/300x300">
+			</div>
+		</div>
 	</div>
 	<div style="background: lightgreen;">
 		<div class="content-div">
@@ -87,20 +105,7 @@
 				</div>
 			</div>
 			<div class="content-image-div">
-				<img src="http://via.placeholder.com/300x300">
-			</div>
-		</div>
-	</div>
-	<div style="background: lightblue;" class="section-div">
-		<div class="content-div">
-			<div class="text-div">
-				<div class="text-width">
-					<h1>How do I start?</h1>
-					<p>Just continue to start your short consultation to see if Sildenafil is right for you. Our pharmacists will review your application and we'll let you know the outcome as soon as possible.</p>
-				</div>
-			</div>
-			<div class="content-image-div-right">
-				<img src="http://via.placeholder.com/300x300">
+				<img class="content-image" src="http://via.placeholder.com/300x300">
 			</div>
 		</div>
 	</div>
@@ -121,7 +126,7 @@
 				</div>
 			</div>
 			<div class="content-image-div">
-				<img src="http://via.placeholder.com/300x300">
+				<img class="content-image" src="http://via.placeholder.com/300x300">
 			</div>
 		</div>
 	</div>
