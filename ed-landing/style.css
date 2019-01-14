@@ -182,6 +182,7 @@ h1 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  margin-top: 0px;
 }
 
 .active, .accordion:hover {
