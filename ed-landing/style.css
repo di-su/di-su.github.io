@@ -14,6 +14,10 @@ h1 {
 @media (min-width: 900px) {
 	.content-div {
 		display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 180px;
+    padding-top: 100px;
 	}
 	.text-div {
 		width: 500px;
@@ -22,6 +26,33 @@ h1 {
 	width: 400px;
 	margin: 0 auto;
 	}
+  .compare-div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .accordion-div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em 0em;
+  }
+}
+
+@media (max-width: 899px) {
+  .content-div {
+    padding: 40px 20px;
+  }
+  .compare-div {
+    padding: 40px 20px; 
+  }
+  #first-section {
+    padding-top: 40px;
+  }
+  .accordion-div {
+    padding: 40px 20px; 
+  }
 }
 
 h1 {
@@ -53,13 +84,6 @@ h1 {
 
 .right {	
 	order: 1;
-}
-
-.content-div {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-bottom: 180px;
-	padding-top: 100px;
 }
 
 .text-div-right {
@@ -130,6 +154,7 @@ h1 {
   font-size: 16px;
   text-align: left;
   text-decoration: underline;
+  margin-bottom: 16px;
 }
 
 .accordion-inline:after {
@@ -187,12 +212,6 @@ h1 {
 
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.accordion-div {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 2em 0em;
 }
 
 table {
@@ -280,15 +299,6 @@ table thead {
   table td:last-child {
     border-bottom: 0;
   }
-}
-
-
-.compare-div {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding-bottom: 90px;
-	padding-top: 50px;
-	text-align: center;
 }
 
 .why-p {
