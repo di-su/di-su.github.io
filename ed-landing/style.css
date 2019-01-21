@@ -11,6 +11,21 @@ h1 {
 	font-family: Montserrat;
 }
 
+#logo {
+    max-width: 210px;
+    margin-left: 20px;
+    margin-top: 15px;
+    bottom: -6px;
+    position: relative;
+}
+
+#header {
+    height: 40px;
+    background: #c2002f;
+    position: relative;
+    /*top: -6px;*/
+}
+
 @media (min-width: 900px) {
 	.content-div {
 		display: flex;
