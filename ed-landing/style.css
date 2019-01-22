@@ -53,9 +53,23 @@ h1 {
     margin: 0 auto;
     padding: 2em 0em;
   }
+  .text-div-right {
+    width: 500px;
+    order: 1;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .content-image-right, .content-image {
+    max-width: 500px; 
+    width: 100%;
+  }
 }
 
 @media (max-width: 899px) {
+/*  .text-width {
+    max-width: 500px;
+    margin: 0 auto;
+  }*/
   .content-div {
     padding: 40px 20px;
   }
@@ -68,6 +82,13 @@ h1 {
   .accordion-div {
     padding: 40px 20px; 
   }
+  .content-image-right, .content-image {
+    width: 100%;
+  }
+}
+
+.why-h {
+  text-align: center;
 }
 
 h1 {
@@ -76,11 +97,6 @@ h1 {
 
 .link-cta {
 	text-decoration: underline;
-}
-
-.content-image-right, .content-image {
-	max-width: 500px;	
-	width: 100%;
 }
 
 .content-image-div-right, .content-image-div {
@@ -99,13 +115,6 @@ h1 {
 
 .right {	
 	order: 1;
-}
-
-.text-div-right {
-	width: 500px;
-	order: 1;
-	max-width: 100%;
-	margin: 0 auto;
 }
 
 .cta-div {
