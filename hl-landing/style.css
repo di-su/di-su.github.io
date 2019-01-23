@@ -1,14 +1,14 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
 h1 {
-	font-weight: 800;
-	font-size: 40px;
+  font-weight: 800;
+  font-size: 40px;
 }
 
 * {
-	font-family: Montserrat;
+  font-family: Montserrat;
 }
 
 #logo {
@@ -30,20 +30,20 @@ h1 {
   .hero-title {
     font-size: 60px;
   }
-	.content-div {
-		display: flex;
+  .content-div {
+    display: flex;
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 120px;
     padding-top: 100px;
-	}
-	.text-div {
-		width: 500px;
-	}
-	.text-width {
-	width: 400px;
-	margin: 0 auto;
-	}
+  }
+  .text-div {
+    width: 500px;
+  }
+  .text-width {
+  width: 400px;
+  margin: 0 auto;
+  }
   .compare-div {
     max-width: 1000px;
     margin: 0 auto;
@@ -98,65 +98,65 @@ h1 {
 }
 
 h1 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 .link-cta {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content-image-div-right, .content-image-div {
-	text-align: center;
+  text-align: center;
 }
 
 .discount-div {
-	background: black;
-	color:white;
-	text-align: center;
-	padding: 9px 0px;
-	position: fixed;
-	width: 100%;
-	z-index: 1;	
+  background: black;
+  color:white;
+  text-align: center;
+  padding: 9px 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 1; 
 }
 
-.right {	
-	order: 1;
+.right {  
+  order: 1;
 }
 
 .cta-div {
-	background: #007941;
+  background: #007941;
 }
 
 .cta-contents-div {
-	max-width: 400px;
-	margin: 0 auto;
-	padding: 3em 0em;
-	text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 3em 0em;
+  text-align: center;
 }
 
 .cta-button-div {
-	border: 1px solid white;
-	padding: 1em;
-	border-radius: 5px;
-	color: white;
-	max-width: 250px;
-	margin: 0 auto;
-	margin-bottom: 1.5em;
-	transition: 0.2s;
-	position: relative;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 5px;
+  color: white;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  transition: 0.2s;
+  position: relative;
 }
 
 .cta-p {
-	color: white;
-	font-style: italic;
+  color: white;
+  font-style: italic;
 }
 
 .title {
-	text-align: center;
+  text-align: center;
 }
 
 .text-width p {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 .accordion {
@@ -204,7 +204,7 @@ h1 {
 }
 
 .accordion-inline:focus {
-	outline: none;
+  outline: none;
 }
 
 .panel-inline {
@@ -284,13 +284,13 @@ table thead {
 }
 
 @media (min-width: 601px) {
-	tr:nth-child(even){background-color: #f7f7f7;}
+  tr:nth-child(even){background-color: #f7f7f7;}
 }
 
 @media (max-width: 600px) {
-	.feature {
-		background: #f7f7f7;
-	}
+  .feature {
+    background: #f7f7f7;
+  }
   table {
     border: 0;
   }
@@ -336,9 +336,9 @@ table thead {
 }
 
 .why-p {
-	max-width: 500px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 
