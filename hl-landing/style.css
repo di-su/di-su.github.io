@@ -66,9 +66,15 @@ h1 {
     max-width: 500px; 
     width: 100%;
   }
+  .why-h {
+    text-align: center;
+  }
 }
 
 @media (max-width: 899px) {
+  .why-h {
+    text-align: left;
+  }
   .hero-title {
     font-size: 55px;
   }
@@ -91,10 +97,6 @@ h1 {
   .content-image-right, .content-image {
     width: 100%;
   }
-}
-
-.why-h {
-  text-align: center;
 }
 
 h1 {
