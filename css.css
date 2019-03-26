@@ -1,7 +1,8 @@
 p {
 	font-family: 'Knewave', cursive;
-	font-size: 500px;
-	
+    font-size: 300px;
+    text-align: center;
+    color: white;
 }
 
 html { 
@@ -10,4 +11,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+html, body {
+  overflow: hidden;
 }
