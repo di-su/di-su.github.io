@@ -1,3 +1,7 @@
-body {
-	margin: 0; 
+html { 
+  background: url(https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
