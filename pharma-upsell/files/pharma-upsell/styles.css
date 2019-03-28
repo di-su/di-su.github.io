@@ -3,7 +3,7 @@
   background-image:none;
   position:static;
   left:auto;
-  width:1528px;
+  width:1360px;
   margin-left:0;
   margin-right:0;
   text-align:left;
@@ -382,7 +382,7 @@
   width:1016px;
   height:52px;
   background:inherit;
-  background-color:rgba(0, 121, 65, 1);
+  background-color:rgba(0, 0, 0, 1);
   border:none;
   border-radius:0px;
   -moz-box-shadow:none;
@@ -415,7 +415,7 @@
   left:0px;
   top:0px;
   width:504px;
-  height:282px;
+  height:370px;
   background:inherit;
   background-color:rgba(255, 223, 37, 1);
   border:none;
@@ -427,10 +427,10 @@
 #u12 {
   border-width:0px;
   position:absolute;
-  left:1024px;
-  top:247px;
+  left:856px;
+  top:218px;
   width:504px;
-  height:282px;
+  height:370px;
 }
 #u12_text {
   border-width:0px;
