@@ -72,7 +72,7 @@
       <div id="u11" class="ax_default sticky_1">
         <div id="u11_div" class=""></div>
         <div id="u11_text" class="text ">
-          <p><span>ED</span></p>
+          <p><span>if order contains ED</span></p>
         </div>
       </div>
 
@@ -85,7 +85,7 @@
       <div id="u13" class="ax_default sticky_1">
         <div id="u13_div" class=""></div>
         <div id="u13_text" class="text ">
-          <p><span>Non Pharma</span></p>
+          <p><span>if order does not contain Pharma</span></p>
         </div>
       </div>
 
@@ -119,31 +119,59 @@
       <div id="u18" class="ax_default sticky_1">
         <div id="u18_div" class=""></div>
         <div id="u18_text" class="text ">
-          <p><span>all: </span></p><p><span><br></span></p><p><span>Increase the time between receiving the delivery and sending this email to 10 days.</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Rectangle) -->
-      <div id="u19" class="ax_default sticky_1">
-        <div id="u19_div" class=""></div>
-        <div id="u19_text" class="text ">
           <p><span>these two blocks already exist in ed-consultation-success.blade.php</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u20" class="ax_default paragraph">
-        <div id="u20_div" class=""></div>
-        <div id="u20_text" class="text ">
+      <div id="u19" class="ax_default paragraph">
+        <div id="u19_div" class=""></div>
+        <div id="u19_text" class="text ">
           <p><span>Have any questions? </span><span style="text-decoration:underline;color:#C2002F;">Visit our help centre</span><span> or reply to this email. We’re here to help.</span></p><p><span><br></span></p><p><span>Best wishes,</span></p><p><span><br></span></p><p><span>Lucy at Cornerstone</span></p>
         </div>
       </div>
 
       <!-- Unnamed (Rectangle) -->
-      <div id="u21" class="ax_default sticky_1">
-        <div id="u21_div" class=""></div>
-        <div id="u21_text" class="text ">
+      <div id="u20" class="ax_default sticky_1">
+        <div id="u20_div" class=""></div>
+        <div id="u20_text" class="text ">
           <p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">reviews should be going to reviews.co.uk</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">4 star and 5 star should be using the reviews.co.uk's &quot;dynamic link&quot;, click to see example:</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">http://www.reviews.co.uk/store/landing_new_review?store=cornerstone</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;user=</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">Di%20Su</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;order_id</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">=251626</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;email=</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">di%40cornerstone.co.uk</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;products=</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">SILD8X;DEO</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;type=</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">combined</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;color:#FF0000;">&amp;rating=</span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">5</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'Arial-ItalicMT', 'Arial Italic', 'Arial';font-weight:400;font-style:italic;">1. store = leave this as cornerstone</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">2. user = full name of user</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">3. order_id = generate a random number </span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">4. email = email address of user</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">5. products = we assign a SKU in reviews.co.uk to every product, </span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;font-style:normal;">see product key</span></p><p><span style="font-family:'Arial-ItalicMT', 'Arial Italic', 'Arial';font-weight:400;font-style:italic;">6. type = leave this as combined</span></p><p><span style="font-family:'Arial-ItalicMT', 'Arial Italic', 'Arial';font-weight:400;font-style:italic;">7. </span><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">rating = number to represent stars out of 5. so we will have &quot;4&quot; for the 4th star, and &quot;5&quot; for the 5th star</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">product key: </span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">razor: C1003</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">gel: C1001</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">cream: C1011</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">balm: C1002</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">scrub: C1000</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">moisturiser: C1012</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">sildenafil: SILD8X</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">hair loss treatment: HLTREATMENT</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">deodorant: DEO</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">facewash: C1006</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">shampoo: SHAMPOO</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">bodywash: BODYWASH</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">toothpaste: PASTE</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">mouthwash: MOUTHWASH</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">floss: FLOSS</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">toothbrush heads: 4BRUSHCART</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">note sildenafil is only one product &quot;SILD8X&quot;. this is because we don't want to collect separate reviews for 2 different &quot;products&quot; (50mg and 100mg), we want to collect it as one. https://www.reviews.co.uk/product-reviews/store/cornerstone/SILD8X</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">therefore, anyone with database SKU &quot;SILD8X100&quot; or &quot;SILD8X50&quot; should be assigned &quot;&amp;products=SILD8X&quot;</span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;"><br></span></p><p><span style="font-family:'ArialMT', 'Arial';font-weight:400;font-style:normal;">I believe the majority of this review work has already been set-up by Jamie (previous developer)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u21" class="ax_default image">
+        <img id="u21_img" class="img " src="images/1__-_next_sprint/u21.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u22" class="ax_default box_2">
+        <div id="u22_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u23" class="ax_default image">
+        <img id="u23_img" class="img " src="images/1__-_next_sprint/u23.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u24" class="ax_default paragraph">
+        <div id="u24_div" class=""></div>
+        <div id="u24_text" class="text ">
+          <p><span>Fancy a good read? Check out our blog for a wide range of articles on grooming, men's health and dental care.</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u25" class="ax_default image">
+        <img id="u25_img" class="img " src="images/1__-_next_sprint/u25.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u26" class="ax_default sticky_1">
+        <div id="u26_div" class=""></div>
+        <div id="u26_text" class="text ">
+          <p><span>all audiences: 10 days after 1st delivery</span></p>
         </div>
       </div>
     </div>
