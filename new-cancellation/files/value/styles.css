@@ -3,7 +3,7 @@
   background-image:none;
   position:static;
   left:auto;
-  width:998px;
+  width:996px;
   margin-left:0;
   margin-right:0;
   text-align:left;
@@ -30,7 +30,7 @@
 #u147 {
   border-width:0px;
   position:absolute;
-  left:0px;
+  left:-2px;
   top:99px;
   width:1000px;
   height:1080px;
@@ -273,7 +273,7 @@
   border-width:0px;
   position:absolute;
   left:-2px;
-  top:1444px;
+  top:1475px;
   width:1000px;
   height:115px;
 }
@@ -298,7 +298,7 @@
   border-width:0px;
   position:absolute;
   left:122px;
-  top:1229px;
+  top:1258px;
   width:756px;
   height:342px;
 }
@@ -432,7 +432,7 @@
   border-width:0px;
   position:absolute;
   left:210px;
-  top:759px;
+  top:850px;
   width:543px;
   height:67px;
   font-size:16px;
@@ -508,7 +508,7 @@
   border-width:0px;
   position:absolute;
   left:210px;
-  top:836px;
+  top:927px;
   width:543px;
   height:67px;
   font-size:16px;
@@ -546,7 +546,7 @@
   border-width:0px;
   position:absolute;
   left:210px;
-  top:913px;
+  top:1004px;
   width:543px;
   height:67px;
   font-size:16px;
@@ -584,7 +584,7 @@
   border-width:0px;
   position:absolute;
   left:210px;
-  top:990px;
+  top:1081px;
   width:543px;
   height:67px;
   font-size:16px;
@@ -617,7 +617,7 @@
   border-width:0px;
   position:absolute;
   left:202px;
-  top:760px;
+  top:851px;
   width:559px;
   height:66px;
   opacity:0.5;
@@ -629,5 +629,44 @@
   top:0px;
   width:0px;
   visibility:hidden;
+  word-wrap:break-word;
+}
+#u166_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:452px;
+  height:45px;
+  background:inherit;
+  background-color:rgba(255, 255, 255, 0);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:20px;
+}
+#u166 {
+  border-width:0px;
+  position:absolute;
+  left:210px;
+  top:771px;
+  width:452px;
+  height:45px;
+  font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';
+  font-weight:700;
+  font-style:normal;
+  font-size:20px;
+}
+#u166_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:452px;
   word-wrap:break-word;
 }
