@@ -725,3 +725,36 @@
   visibility:hidden;
   word-wrap:break-word;
 }
+#u100_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:170px;
+  height:141px;
+  background:inherit;
+  background-color:rgba(255, 255, 0, 1);
+  border:none;
+  border-radius:0px;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
+#u100 {
+  border-width:0px;
+  position:absolute;
+  left:593px;
+  top:695px;
+  width:170px;
+  height:141px;
+  opacity:0.5;
+}
+#u100_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  visibility:hidden;
+  word-wrap:break-word;
+}
