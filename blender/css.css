@@ -46,6 +46,18 @@ p {
 }
 
 @media (min-width: 900px) {
+
+  .benefits-list-div {
+    display: flex; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top: 20px;
+  }
+
+  .benefits-list-div li {
+    width: 400px;
+  }
+
   .large-paragraph {
     font-size: 20px;
   }
@@ -113,6 +125,14 @@ p {
   .product-name {
     font-size: 45px;
   }
+}
+
+.benefits-list-div li {
+  list-style: none; 
+}
+
+.benefits-list-div li ul {
+  padding-left: 0;
 }
 
 .block-title {
