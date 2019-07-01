@@ -9,7 +9,6 @@
 
 body {
   margin: 0;
-
 }
 
 h2 {
@@ -51,9 +50,11 @@ p {
   .block {
     margin-bottom: 50px !important;
   }
+
 }
 
 @media (min-width: 900px) {
+
 
   .hero {
     height: 580px;
@@ -145,6 +146,21 @@ p {
 
 .benefits-list-div li ul {
   padding-left: 0;
+}
+
+.header {
+  position:fixed;
+  background: #e44377; 
+  text-align: center; 
+  width: 100%;
+}
+
+.header p {
+  color: white; 
+  padding: 0px; 
+  font-weight: 700; 
+  font-size: 17px;
+  margin: 15px 0px;
 }
 
 .block-title {
