@@ -1,4 +1,5 @@
 /*<style>*/
+
 * {
   font-family: Lato;
   color: black;
@@ -19,6 +20,10 @@ h2 {
 
 p {
   margin: 20px 0px;
+}
+
+.hero {
+   background: rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 899px) {
@@ -43,9 +48,16 @@ p {
   .product-name {
     font-size: 35px;
   }
+  .block {
+    margin-bottom: 50px !important;
+  }
 }
 
 @media (min-width: 900px) {
+
+  .hero {
+    height: 580px;
+  }
 
   .benefits-list-div {
     display: flex; 
