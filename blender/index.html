@@ -1,4 +1,4 @@
-<!-- {% layout none %} -->
+{% layout none %}
 <style>
 
 * {
@@ -426,6 +426,12 @@ margin: 0 auto;
   text-align: left;
 }
 
+.cta {
+  text-decoration: none;
+  display: block;
+  padding: 10px 0px;
+}
+
   .trust-icons-div {
     display: flex;
     max-width: 350px;
@@ -525,12 +531,12 @@ margin: 0 auto;
           <p class="product-quantity" style="font-size: 20px; margin-top: 10px;"><span style="color: white;padding: 5px 15px; background: #e44377">SAVE 50% TODAY!</span><br><br><span style="text-decoration: line-through;">£240</span> £120 plus Free UK delivery</p>
           <p>Diligently designed to deliver professional grade performance, our easy-to-use Blender creates the smooth and creamy concoctions your body craves. Say sayonara to unblended bits, chewy chunks, and grainy lumps—for good.</p>
           <!-- <p style="font-weight: 700;">Choose your product to begin:</p> -->
-          <div href="{{CTA}}" class="product-option-div">
+          <div class="product-option-div">
             <!-- <p class="product-strength">8 x 50mg strength</p> -->
-            <p class="product-price">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</p>
+            <a href="https://mightyblender.myshopify.com/cart/29244384804963:1?channel=buy_button&discount=flashsale50" class="product-price cta">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</a>
             <!-- <p class="product-breakdown">£25/month ongoing (£3.13 per tablet)</p> -->
           </div>
-  <!--         <div href="{{CTA}}" class="product-option-div">
+  <!--         <div class="product-option-div">
             <p class="product-strength">8 x 100mg strength</p>
             <p class="product-price">First month for £15</p>
             <p class="product-breakdown">£30/month ongoing (£3.75 per tablet)</p>
@@ -562,7 +568,7 @@ margin: 0 auto;
   </div>
   <!-- <div class="cta-banner-div">
     <div class="cta-banner-copy-div">
-      <div href="{{CTA}}" class="cta-banner-button">BUY NOW</div>
+      <div class="cta-banner-button">BUY NOW</div>
       <p class="cta-banner-text">Your 50% discount has been applied!</p>
     </div>
   </div> -->
@@ -599,7 +605,7 @@ margin: 0 auto;
       <div class="centered">
         <h1 class="large-title" style="color: #e44377;">Effortlessly eat your five a day 🍑</h1>
         <!-- <p>More time, more nutrition, and way more flavour.</p> -->
-        <div href="{{CTA}}" class="cta-banner-button" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</div>
+        <a href="https://mightyblender.myshopify.com/cart/29244384804963:1?channel=buy_button&discount=flashsale50" class="cta-banner-button cta" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</a>
       </div>
     </div>
   </div>
@@ -666,7 +672,7 @@ margin: 0 auto;
       <div class="centered">
         <h1 class="large-title" style="color: #e44377;">Save time, eat healthy and make delicious smoothies 😍</h1>
         <!-- <p>More time, more nutrition, and way more flavour.</p> -->
-        <div href="{{CTA}}" class="cta-banner-button" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</div>
+        <a href="https://mightyblender.myshopify.com/cart/29244384804963:1?channel=buy_button&discount=flashsale50" class="cta-banner-button cta" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</a>
       </div>
     </div>
   </div>
@@ -706,19 +712,44 @@ margin: 0 auto;
         <h1 class="large-title">Full Specifications</h1>
         <div style="display: flex;">
           <p>Power (W): 2200W
-            <br>Voltage (V): 220-240V
+            <br>Voltage (V): 220V / 110V
             <br>Container Material: Plastic
             <br>Capacity: 2 Litres, BPA-Free
             <br>Blades: 6 Japan Stainless Steel Blades
             <br>Variable Speed: 10 Speeds
+            <br>Weight: 4kg
           </p>
           <p style="padding-left: 20px;">
             Overload protection
             <br>Food grade rubber cover
-            <br>Food grade ABS stirring rod
+            <br>Food grade tamper
             <br>Zinc alloy base
             <br>Steel teeth axis
             <br>Import Peer self-lubricating bearing 
+          </p>
+        </div>
+      </div>
+    </div>
+  <!--   <div class="section">
+      <div class="centered left">
+        <h1 class="large-title">Shhhhh, secret.</h1>
+        <p>No doctors appointments, no awkwardness, no funny business. Your secret weapon will be sent with free tracked delivery in a subtle, small, plain white box.</p>
+      </div>
+    </div> -->
+  </div>
+  <div style="background: #f1f1f1"> 
+    <div class="section">
+      <div class="centered left">
+        <h1 class="large-title">Parts included</h1>
+        <div style="display: flex;">
+          <p>2 Litre BPA-Free Container
+            <br>Extra secure food grade lid
+            <br>Intruction manual
+          </p>
+          <p style="padding-left: 20px;">
+            2200W Blender Unit with Japanese Stainless Steel Blades
+            <br>Food grade tamper
+            <br>UK Plug
           </p>
         </div>
       </div>
@@ -735,7 +766,7 @@ margin: 0 auto;
       <div class="centered">
         <h1 class="large-title" style="color: #e44377;">Feel amazing, all year round ☀️</h1>
         <!-- <p>More time, more nutrition, and way more flavour.</p> -->
-        <div href="{{CTA}}" class="cta-banner-button" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</div>
+        <a href="https://mightyblender.myshopify.com/cart/29244384804963:1?channel=buy_button&discount=flashsale50" class="cta-banner-button cta" style="background: #e44377;color:white;border: 1px solid #e44377;">BUY NOW FOR <span style="text-decoration: line-through; color: white;">£240</span> <br>£120</a>
       </div>
     </div>
   </div>
@@ -762,7 +793,7 @@ margin: 0 auto;
   </div> -->
   <!-- <div class="cta-banner-div">
     <div class="cta-banner-copy-div">
-      <div href="{{CTA}}" class="cta-banner-button">BUY NOW</div>
+      <div class="cta-banner-button">BUY NOW</div>
       <p class="cta-banner-text">Your 50% discount has been applied!</p>
     </div>
   </div> -->
