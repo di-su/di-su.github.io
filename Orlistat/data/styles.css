@@ -17,6 +17,8 @@
 }
 .image {
 }
+.placeholder {
+}
 .heading_1 {
   font-family:'ArialMT', 'Arial';
   font-weight:bold;
@@ -56,6 +58,10 @@
   font-weight:bold;
   font-style:normal;
   font-size:10px;
+  text-align:left;
+}
+.label {
+  font-size:14px;
   text-align:left;
 }
 .paragraph {
