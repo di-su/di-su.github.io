@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 1050px) {
 	.section {
 		display: flex;
 		max-width: 900px;
@@ -30,7 +30,7 @@
 	}
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1049px) {
 /*	.wrapper {
 		margin: 0em 1em;
 	}*/
