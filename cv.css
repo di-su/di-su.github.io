@@ -17,14 +17,28 @@
 		max-width: 1000px;
 		margin: 0 auto;
 	}
+
+	.filter {
+		background: rgba(0, 0, 0, 0.5);
+		padding-top: 30px;
+		padding-bottom: 50px;
+		/*height: 100%;*/
+	}
+	.wrapper {
+		background: white;
+		border: 1px solid black;
+	}
 }
 
 @media (max-width: 799px) {
-	.wrapper {
+/*	.wrapper {
 		margin: 0em 1em;
-	}
+	}*/
 	.section {
 		padding: 0 30px;
+	}
+	.wrapper {
+		padding: 10px 0px;
 	}
 }
 
@@ -33,19 +47,11 @@
 	font-family: Roboto;
 }
 
-.wrapper {
-	background: white;
-	border: 1px solid black;
-}
 
 
 
-.filter {
-	background: rgba(0, 0, 0, 0.5);
-	padding-top: 30px;
-	padding-bottom: 50px;
-	/*height: 100%;*/
-}
+
+
 
 h1 {
 	font-weight: 900;
