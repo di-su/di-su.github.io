@@ -8,11 +8,15 @@
   margin-right:0;
   text-align:left;
 }
+.form_sketch {
+  border-color:transparent;
+  background-color:transparent;
+}
 #base {
   position:absolute;
   z-index:0;
 }
-#u208_div {
+#u197_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -27,24 +31,29 @@
   -webkit-box-shadow:none;
   box-shadow:none;
 }
-#u208 {
+#u197 {
   border-width:0px;
   position:absolute;
   left:0px;
   top:0px;
   width:696px;
   height:41px;
+  display:flex;
 }
-#u208_text {
-  border-width:0px;
+#u197 .text {
   position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  visibility:hidden;
-  word-wrap:break-word;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
 }
-#u209_div {
+#u197_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
+#u198_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -59,24 +68,29 @@
   -webkit-box-shadow:none;
   box-shadow:none;
 }
-#u209 {
+#u198 {
   border-width:0px;
   position:absolute;
   left:0px;
   top:41px;
   width:696px;
   height:343px;
+  display:flex;
 }
-#u209_text {
-  border-width:0px;
+#u198 .text {
   position:absolute;
-  left:0px;
-  top:0px;
-  width:0px;
-  visibility:hidden;
-  word-wrap:break-word;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
 }
-#u210_div {
+#u198_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
+#u199_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -91,19 +105,24 @@
   -webkit-box-shadow:none;
   box-shadow:none;
 }
-#u210 {
+#u199 {
   border-width:0px;
   position:absolute;
   left:63px;
   top:415px;
   width:571px;
   height:535px;
+  display:flex;
 }
-#u210_text {
-  border-width:0px;
+#u199 .text {
   position:absolute;
-  left:0px;
-  top:0px;
-  width:571px;
+  align-self:flex-start;
+  padding:0px 0px 0px 0px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u199_text {
+  border-width:0px;
   word-wrap:break-word;
+  text-transform:none;
 }

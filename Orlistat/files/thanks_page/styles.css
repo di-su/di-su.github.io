@@ -8,11 +8,15 @@
   margin-right:0;
   text-align:left;
 }
+.form_sketch {
+  border-color:transparent;
+  background-color:transparent;
+}
 #base {
   position:absolute;
   z-index:0;
 }
-#u89_div {
+#u78_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -29,21 +33,26 @@
   font-size:14px;
   text-align:center;
 }
-#u89 {
+#u78 {
   border-width:0px;
   position:absolute;
   left:84px;
   top:42px;
   width:242px;
   height:99px;
+  display:flex;
   font-size:14px;
   text-align:center;
 }
-#u89_text {
-  border-width:0px;
+#u78 .text {
   position:absolute;
-  left:10px;
-  top:33px;
-  width:222px;
+  align-self:center;
+  padding:10px 10px 10px 10px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u78_text {
+  border-width:0px;
   word-wrap:break-word;
+  text-transform:none;
 }
