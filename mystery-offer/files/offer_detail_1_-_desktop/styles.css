@@ -232,7 +232,7 @@
   border-width:0px;
   position:absolute;
   left:295px;
-  top:239px;
+  top:244px;
   width:236px;
   height:44px;
   display:flex;
@@ -272,7 +272,7 @@
   border-width:0px;
   position:absolute;
   left:866px;
-  top:259px;
+  top:264px;
   width:43px;
   height:5px;
   display:flex;
@@ -492,7 +492,7 @@
   border-width:0px;
   position:absolute;
   left:853px;
-  top:239px;
+  top:244px;
   width:68px;
   height:44px;
   display:flex;
@@ -514,37 +514,7 @@
   word-wrap:break-word;
   text-transform:none;
 }
-#u109_img {
-  border-width:0px;
-  position:absolute;
-  left:0px;
-  top:0px;
-  width:705px;
-  height:2px;
-}
-#u109 {
-  border-width:0px;
-  position:absolute;
-  left:294px;
-  top:307px;
-  width:704px;
-  height:1px;
-  display:flex;
-}
-#u109 .text {
-  position:absolute;
-  align-self:center;
-  padding:2px 2px 2px 2px;
-  box-sizing:border-box;
-  width:100%;
-}
-#u109_text {
-  border-width:0px;
-  word-wrap:break-word;
-  text-transform:none;
-  visibility:hidden;
-}
-#u110_div {
+#u109_div {
   border-width:0px;
   position:absolute;
   left:0px;
@@ -564,11 +534,11 @@
   font-size:30px;
   text-align:center;
 }
-#u110 {
+#u109 {
   border-width:0px;
   position:absolute;
   left:921px;
-  top:239px;
+  top:244px;
   width:68px;
   height:44px;
   display:flex;
@@ -578,10 +548,43 @@
   font-size:30px;
   text-align:center;
 }
-#u110 .text {
+#u109 .text {
   position:absolute;
   align-self:center;
   padding:0px 0px 0px 0px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u109_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+}
+#u110_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:31px;
+  height:30px;
+}
+#u110 {
+  border-width:0px;
+  position:absolute;
+  left:1000px;
+  top:223px;
+  width:31px;
+  height:30px;
+  display:flex;
+  font-family:'Montserrat-Regular', 'Montserrat';
+  font-weight:400;
+  font-style:normal;
+  font-size:26px;
+}
+#u110 .text {
+  position:absolute;
+  align-self:flex-end;
+  padding:2px 2px 2px 2px;
   box-sizing:border-box;
   width:100%;
 }
@@ -589,4 +592,34 @@
   border-width:0px;
   word-wrap:break-word;
   text-transform:none;
+}
+#u111_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:705px;
+  height:2px;
+}
+#u111 {
+  border-width:0px;
+  position:absolute;
+  left:294px;
+  top:307px;
+  width:704px;
+  height:1px;
+  display:flex;
+}
+#u111 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u111_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
 }
