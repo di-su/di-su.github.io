@@ -5,6 +5,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
+
       <link rel="stylesheet" type="text/css" href="css.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
     <meta charset="utf-8">
@@ -147,7 +148,20 @@
   
   
   
+<script>
+  var divs = $('[id^="msg-"]').hide(),
+    i = 0;
 
+(function cycle() { 
+
+    divs.eq(i).fadeIn(400)
+              .delay(1000)
+              .fadeOut(400, cycle);
+
+    i = ++i % divs.length;
+
+})();
+</script>
 
 
 
