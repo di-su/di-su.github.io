@@ -27,8 +27,9 @@ h1, h2, .navbar-brand {
 	font-weight: bold;
 }
 
-p {
+p, ul {
 	font-family: 'Georgia', sans-serif;	
+  font-size: 18px;
 }
 
 .bg-overlay {
