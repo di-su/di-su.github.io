@@ -44,24 +44,7 @@
   </head>
 <body style="">
 
-  
-    <nav class="navbar navbar-expand-md navbar-light border-bottom border-light">
-      <a class="navbar-brand py-4 ml-4" href="https://www.di-su.com">DI SU</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.di-su.com">Articles</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.di-su.com/cv" class="nav-link pr-4">CV</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+ <div id="nav"></div>
 <div class="container col-md-7 py-4" style="max-width: 700px;">
 
   <h1 class="mt-5 mb-5 text-center">How I built this website</h1>
@@ -90,10 +73,27 @@
   <p>If you want to build your own website, I recommend starting with an online HTML and CSS course. There's loads of free info out there, so there's no need to spend any cash. Good luck!</p>
 
 
-  <a style="display: block;" class="mt-4 mb-4" href="https://www.di-su.com">See more posts</a>
+  <a style="display: block;" class="mt-4 mb-4" href="/">See more posts</a>
   
 
   
 
 
-</body></html>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+
+<script>
+
+$(function() {
+    $("#nav").load("../nav.html");
+});
+
+window.onload = function() {
+  $('#nav-articles a').attr("href","/");
+  $('#nav-cv a').attr("href","/cv");
+}
+
+</script></html>

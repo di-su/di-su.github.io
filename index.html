@@ -1,10 +1,4 @@
-
-
-
-
-<html>
-
-<head>
+<html><head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -40,23 +34,25 @@
 <body style="">
 
 
-    <nav class="navbar navbar-expand-md navbar-light border-bottom border-light">
-      <a class="navbar-brand py-4 ml-4" href="https://www.di-su.com">DI SU</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<div id="nav"><nav class="navbar navbar-expand-md navbar-light border-bottom border-light">
+  <a class="navbar-brand py-4 ml-4" href="/">DI SU</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link">Articles <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link pr-4" href="https://www.di-su.com/cv">CV</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <div class="collapse navbar-collapse" id="navbarsExample04">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" id="nav-articles">
+        <a class="nav-link" href="/">Articles <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" id="nav-cv">
+        <a class="nav-link pr-4" href="/">CV</a>
+      </li>
+    </ul>
+  </div>
+</nav></div>
+
+
 <div class="container col-md-7 py-4 mt-5">
 
   <h1 class="text-center" style="font-size: 60px;">Hey there 👋, I'm Di.</h1>
@@ -67,20 +63,20 @@
         <div class="col-lg-6 themed-grid-col mb-4">
           <div class="row">
               <div class="col-lg-6 themed-grid-col mb-4">
-                <a href="https://www.di-su.com/articles/how-i-built-this-website">
+                <a href="/articles/how-i-built-this-website">
                 <img src="https://i.imgur.com/gshFmxH.png" class="img-fluid" alt="Responsive image">
                 </a>
                   <p class="mt-2 cat"><span>Tech</span></p>
                   <h5>How I built this website</h5>
-                  <a href="https://www.di-su.com/articles/how-i-built-this-website">read more</a>
+                  <a href="/articles/how-i-built-this-website">read more</a>
               </div>
               <div class="col-lg-6 themed-grid-col mb-4">
-                <a href="https://www.di-su.com/articles/apple-notes">
+                <a href="/articles/apple-notes">
                 <img src="https://i.imgur.com/WKbdc7E.png" class="img-fluid" alt="Responsive image">
                 </a>
                   <p class="mt-2 cat"><span>Productivity</span></p>
                   <h5>The 3 ways I use Apple Notes</h5>
-                  <a href="https://www.di-su.com/articles/apple-notes">read more</a>
+                  <a href="/articles/apple-notes">read more</a>
               </div>
 
           </div>
@@ -154,7 +150,19 @@
   </div>
 
 
-
-
 </div>
+<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+
+<script>
+
+$(function() {
+    $("#nav").load("../nav.html");
+});
+
+window.onload = function() {
+  $('#nav-articles').addClass("active");
+  $('#nav-cv a').attr("href","/cv");
+}
+
+</script>
 </body></html>
