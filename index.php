@@ -1,10 +1,9 @@
+<?
+php include 'header.php';
+?>
 
 
-
-
-<html>
-
-<head>
+<html><head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -52,7 +51,7 @@
             <a class="nav-link">Articles <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link pr-4" href="https://www.di-su.com/cv">CV</a>
+            <a class="nav-link pr-4" href="https://www.di-su.com/cv.html">CV</a>
           </li>
         </ul>
       </div>
@@ -67,20 +66,20 @@
         <div class="col-lg-6 themed-grid-col mb-4">
           <div class="row">
               <div class="col-lg-6 themed-grid-col mb-4">
-                <a href="https://www.di-su.com/articles/how-i-built-this-website">
+                <a href="https://www.di-su.com/articles/how-i-built-this-website.html">
                 <img src="https://i.imgur.com/gshFmxH.png" class="img-fluid" alt="Responsive image">
                 </a>
                   <p class="mt-2 cat"><span>Tech</span></p>
                   <h5>How I built this website</h5>
-                  <a href="https://www.di-su.com/articles/how-i-built-this-website">read more</a>
+                  <a href="https://www.di-su.com/articles/how-i-built-this-website.html">read more</a>
               </div>
               <div class="col-lg-6 themed-grid-col mb-4">
-                <a href="https://www.di-su.com/articles/apple-notes">
+                <a href="https://www.di-su.com/articles/apple-notes.html">
                 <img src="https://i.imgur.com/WKbdc7E.png" class="img-fluid" alt="Responsive image">
                 </a>
                   <p class="mt-2 cat"><span>Productivity</span></p>
                   <h5>The 3 ways I use Apple Notes</h5>
-                  <a href="https://www.di-su.com/articles/apple-notes">read more</a>
+                  <a href="https://www.di-su.com/articles/apple-notes.html">read more</a>
               </div>
 
           </div>
