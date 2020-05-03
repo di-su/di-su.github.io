@@ -38,7 +38,7 @@
     <div class="container col-md-7 py-4 mt-5">
 
         <h1 class="text-center" style="font-size: 60px;">Hey there 👋, I'm Di.</h1>
-        <p class="lead text-center pb-4">Have a read.</p>
+        <p class="lead text-center pb-4">Have a read</p>
 
         <h3 class="pt-2 mb-3 mt-5">Recent posts</h3>
         <div class="row mb-3">
@@ -141,6 +141,7 @@
         });
 
         function loadNav() {
+            $('#nav-contact a').attr("href", "/contact-me");
             $('#nav-articles').addClass("active");
             $('#nav-cv a').attr("href", "/cv");
         };
