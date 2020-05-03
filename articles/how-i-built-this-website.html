@@ -76,13 +76,15 @@
         <p>If you want to build your own website, I recommend starting with an online HTML and CSS course. There's loads of free info out there, so there's no need to spend any cash. Good luck!</p>
 
         <a style="display: block;" class="mt-4 mb-4" href="/">See more posts</a>
-
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 
+<div id="footer"></div>
 <script>
     $(document).ready(function() {
         $("#nav").load("../nav.html");
+        $("#footer").load("../footer.html");
     });
 
     function loadNav() {
