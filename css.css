@@ -23,6 +23,10 @@
   font-size: 14px;
 }
 
+.cat span {
+  /*letter-spacing: 0.8px;*/
+}
+
 .cat:after {
     content:"";
     position: absolute;
