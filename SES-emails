@@ -1,0 +1,273 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+
+	td, th {
+		border: 0.5px solid lightgrey;
+	}
+	table {
+		border-collapse: collapse;
+		overflow: overlay;
+		display: block;
+		/*height: 200px;*/
+		padding: 20px 0px;
+	}
+	input {
+		border: 0.5px solid lightgrey;
+		width: 280px;
+	}
+
+	body {
+		padding: 15px;
+		padding-bottom: 40px;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		background: lightgrey;
+	}
+	.hl {
+		background: pink;
+	}
+</style>
+<h1 class="p-2">SES email Campaigns</h1>
+<ul>
+	<li>The goal is to build a email campaign tool to replace Mailchimp (which costs us ~£750 p/m).</li>
+	<li>GDoc: <a target="_blank" href="https://docs.google.com/document/d/1AVE7TGAPr_F--Gg1_q13_qDASzCk07dfvlWFDfTsWbU/edit?usp=sharing">https://docs.google.com/document/d/1AVE7TGAPr_F--Gg1_q13_qDASzCk07dfvlWFDfTsWbU/edit?usp=sharing</a></li>
+</ul>
+<h1 class="p-2 border">Merge tags</h1>
+<div>
+	<table style="width:100%;margin-top: 10px;">
+	  <tr>
+	    <th>merge field</th>
+	    <th>default merge field</th>
+	  </tr>
+	  <tr>
+	    <td style="color: red">*|<span style="color: black
+	    ">FNAME</span>|*</td>
+	    <td>there</td>
+	  </tr>
+	  <tr>
+	    <td style="color: red">*|<span style="color: black
+	    ">WL</span>|*</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td style="color: red">*|<span style="color: black
+	    ">ED</span>|*</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td style="color: red">*|<span style="color: black
+	    ">3FOR2</span>|*</td>
+	    <td></td>
+	  </tr>
+	</table>
+</div>
+<h3 class="mt-2">create merge field</h3>
+<div>
+	<label class="mr-2">merge field</label>
+	<span style="color: red;">*|<input style="width: 120px;" value="XMAS">|*</span>
+</div>
+<div>
+	<label class="mr-2">default</label>
+	<span style="color: red;"><input style="width: 120px;" value=""></span>
+</div>
+<button>create</button>
+<h1 class="mt-3 p-2 border">Audience</h1>
+<div>
+	<label class="mr-2">search: </label>
+	<input value="">
+	<button>search</button>
+</div>
+<div>
+	<label class="mr-2">results:</label>
+	<table style="width:100%;margin-top: 10px;">
+	  <tr>
+	    <th>user_id</th>
+	    <th>FNAME</th>
+	    <th>email address</th>
+	    <th>tags</th>
+	    <th>WL</th>
+	    <th>ED</th>
+	    <th>3FOR2</th>
+	  </tr>
+	  <tr>
+	    <td>26612</td>
+	    <td>Di</td>
+	    <td>disu.personal@gmail.com</td>
+	    <td>01-01-20_EXAMPLE_CAMPAIGN, 01-01-20_ANOTHER_CAMPAIGN, SOMETHINGELSE, PLACEHOLDER2, CAMPAIGNX</td>
+	    <td>6YCfULGmCv5U7I3EMTloVoq0lu4hPFTH</td>
+	    <td>WKsbkYFBwcyVYqf8te2bTvCL5JAWQDnd</td>
+	    <td></td>
+	  </tr>
+	  <tr>
+	    <td>203110</td>
+	    <td>Di</td>
+	    <td>di@cornerstone.co.uk</td>
+	    <td>01-01-20_ANOTHER_CAMPAIGN, SOMETHINGELSE, PLACEHOLDER2</td>
+	    <td>jrEmLd6174DOCXmvtfovpGgMvfJuGYQ1</td>
+	    <td></td>
+	    <td></td>
+	  </tr>
+	</table>
+</div>
+<h1 class="p-2 mt-3 border">Import .csv</h1>
+<div>
+	<table style="width:100%;margin-top: 10px;background: lightyellow;">
+	  <tr>
+	    <th>user_id</th>
+	    <th>first_name</th>
+	    <th>email address</th>
+	    <th>tags</th>
+	    <th>WL</th>
+	  </tr>
+	  <tr>
+	    <td>26612</td>
+	    <td>Di</td>
+	    <td>disu.personal@gmail.com</td>
+	    <td>01-01-20_EXAMPLE_CAMPAIGN</td>
+	    <td>6YCfULGmCv5U7I3EMTloVoq0lu4hPFTH</td>
+	  </tr>
+	  <tr>
+	    <td>203110</td>
+	    <td>Di</td>
+	    <td>di@cornerstone.co.uk</td>
+	    <td>01-01-20_EXAMPLE_CAMPAIGN</td>
+	    <td>jrEmLd6174DOCXmvtfovpGgMvfJuGYQ1</td>
+	  </tr>
+	</table>
+</div>
+<div class="mt-3">
+	<input value="01-01-20_EXAMPLE_CAMPAIGN.csv">
+	<button>browse</button>
+	<button>check fields</button>
+	<button>upload</button>
+</div>
+<p class="pb-1 hl">importing fields: user_id, first_name, email address, tags, WL</p>
+
+<h1 class="p-2 mt-4 border">Send email</h1>
+<h3>target audience</h3>
+<div>
+	<label class="mr-2">campaign name:</label>
+	<input value="01-01-20_EXAMPLE_CAMPAIGN_SEND_1">
+	<button>update</button>
+</div>
+<p class="pb-1 hl">campaign name: 01-01-20_EXAMPLE_CAMPAIGN_SEND_1</p>
+<div>
+	<label class="mr-2">target users tagged:</label>
+	<input value="01-01-20_EXAMPLE_CAMPAIGN">
+	<button>check count</button>
+</div>
+<p class="mt-0 pb-1 hl">user count: 25,202</p>
+<div>
+	<label class="mr-2">subject: </label>
+	<input value="Hey *|FNAME|*, stay stocked up with Cornerstone">
+	<button>update</button>
+</div>
+<p class="pb-1 hl"> subject: Hey *|FNAME|*, stay stocked up with Cornerstone</p>
+<div>
+	<label class="mr-2">email HTML: </label>
+	<input value='<title></title>
+    <!--[if !mso]><!-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!--<![endif]-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">........ETC'>
+	<button>update</button>
+</div>
+<p><a href="">template preview</a></p>
+<!-- <img style="width: 50px;" src="https://i.imgur.com/VCBfkl1.png"> -->
+<h3>schedule</h3>
+<label class="mr-2">Date:</label><input type="date"><br>
+<label class="mr-2">Time:</label><input type="time"><br>
+<button>schedule</button>
+<h1 class="p-2 mt-4 border">Email history</h1>
+<h3>pending</h3>
+<table style="width:100%;margin-top: 10px;">
+  <tr>
+    <th>campaign name</th>
+    <th>target tag</th>
+    <th>user count</th>
+    <th>subject</th>
+    <th>template</th>
+    <th>date</th>
+    <th>time</th>
+    <th>cancel?</th>
+  </tr>
+  <tr>
+    <td>03-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
+    <td>03-01-20_EXAMPLE_CAMPAIGN</td>
+    <td>64,298</td>
+    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
+    <td><a href="">see html</a></td>
+    <td>03-01-2020</td>
+    <td>14:00</td>
+    <td><button>cancel</button></td>
+  </tr>
+</table>
+<h3 class="mt-4">sent</h3>
+<div>
+	<label class="mr-2">search campaign name: </label>
+	<input value="">
+	<button>search</button>
+</div>
+<table style="width:100%;margin-top: 10px;">
+  <tr>
+  	<label class="mr-2">results:</label>
+    <th>campaign name</th>
+    <th>target tag</th>
+    <th>subject</th>
+    <th>sent date</th>
+    <th>sent time</th>
+    <th>sent</th>
+    <th>opened</th>
+    <th>OR</th>
+    <th>unsubbed</th>
+    <th>clicked</th>
+    <th>template</th>
+  </tr>
+  <tr>
+    <td>01-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
+    <td>01-01-20_EXAMPLE_CAMPAIGN</td>
+    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
+    <td>01-01-2020</td>
+    <td>14:00</td>
+    <td>25,202</td>
+    <td>11,022</td>
+    <td>43.7%</td>
+    <td>8</td>
+    <td><a href="">340</a></td>
+    <td><a href="">see html</a></td>
+  </tr>
+</table>
+<div style="border-left: 4px solid pink;" class="pl-4">
+	<h3 class="mt-4">click stats for "01-01-20_EXAMPLE_CAMPAIGN_SEND_1"</h3>
+	<!-- <div>
+		<label class="mr-2">search: </label>
+		<input value="">
+		<button>update</button>
+	</div> -->
+	<table style="width:100%;margin-top: 10px;">
+	  <tr>
+	    <th>url</th>
+	    <th>total clicks</th>
+	    <th>unique clicks</th>
+	  </tr>
+	  <tr>
+	    <td>https://www.cornerstone.co.uk/token/*|WL|*</td>
+		<td><a href="">200</a></td>
+	    <td><a href="">180</a></td>
+	  </tr>
+	  <tr>
+		<td>https://www.cornerstone.co.uk/help</td>
+		<td><a href="">8</a></td>
+		<td><a href="">8</a></td>
+	  </tr>
+	  <tr>
+		<td>https://www.facebook.com/CornerstoneHQ</td>
+		<td><a href="">1</a></td>
+		<td><a href="">1</a></td>
+	  </tr>
+	</table>
+</div>
