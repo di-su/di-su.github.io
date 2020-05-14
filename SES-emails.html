@@ -118,7 +118,7 @@
 	<input value="">
 	<button>search</button>
 </div>
-<div>
+<div style="overflow: overlay;">
 	<label class="mr-2">results:</label>
 	<table style="width:100%;margin-top: 10px;">
 	  <tr>
@@ -191,63 +191,67 @@
 </div>
 <h1 class="p-2 mt-4 border">5. Email history & reporting</h1>
 <h3>pending</h3>
-<table style="width:100%;margin-top: 10px;">
-  <tr>
-    <th>campaign_name</th>
-    <th>target_tag</th>
-    <th>user_count</th>
-    <th>subject</th>
-    <th>template</th>
-    <th>date</th>
-    <th>time</th>
-    <th>cancel?</th>
-  </tr>
-  <tr>
-    <td>03-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
-    <td>03-01-20_EXAMPLE_CAMPAIGN</td>
-    <td>64,298</td>
-    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
-    <td><a href="">see html</a></td>
-    <td>03-01-2020</td>
-    <td>14:00</td>
-    <td><button>cancel</button></td>
-  </tr>
-</table>
+<div style="overflow: overlay;">
+	<table style="width:100%;margin-top: 10px;">
+	  <tr>
+	    <th>campaign_name</th>
+	    <th>target_tag</th>
+	    <th>user_count</th>
+	    <th>subject</th>
+	    <th>template</th>
+	    <th>date</th>
+	    <th>time</th>
+	    <th>cancel?</th>
+	  </tr>
+	  <tr>
+	    <td>03-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
+	    <td>03-01-20_EXAMPLE_CAMPAIGN</td>
+	    <td>64,298</td>
+	    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
+	    <td><a href="">see html</a></td>
+	    <td>03-01-2020</td>
+	    <td>14:00</td>
+	    <td><button>cancel</button></td>
+	  </tr>
+	</table>
+</div>
 <h3 class="mt-4">sent</h3>
 <div>
 	<label class="mr-2">search campaign name: </label>
 	<input value="">
 	<button>search</button>
 </div>
-<table style="width:100%;margin-top: 10px;">
-  <tr>
-  	<label class="mr-2">results:</label>
-    <th>campaign_name</th>
-    <th>target_tag</th>
-    <th>subject</th>
-    <th>sent_date</th>
-    <th>sent_time</th>
-    <th>sent</th>
-    <th>opened</th>
-    <th>OR</th>
-    <th>unsubbed</th>
-    <th>clicked</th>
-    <th>template</th>
-  </tr>
-  <tr>
-    <td>01-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
-    <td>01-01-20_EXAMPLE_CAMPAIGN</td>
-    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
-    <td>01-01-2020</td>
-    <td>14:00</td>
-    <td>25,202</td>
-    <td>11,022</td>
-    <td>43.7%</td>
-    <td>8</td>
-    <td><a href="">340</a></td>
-    <td><a href="">see html</a></td>
-  </tr>
-</table>
+<div style="overflow: overlay;">
+	<table style="width:100%;margin-top: 10px;">
+	  <tr>
+	  	<label class="mr-2">results:</label>
+	    <th>campaign_name</th>
+	    <th>target_tag</th>
+	    <th>subject</th>
+	    <th>sent_date</th>
+	    <th>sent_time</th>
+	    <th>sent</th>
+	    <th>opened</th>
+	    <th>OR</th>
+	    <th>unsubbed</th>
+	    <th>clicked</th>
+	    <th>template</th>
+	  </tr>
+	  <tr>
+	    <td>01-01-20_EXAMPLE_CAMPAIGN_SEND_1</td>
+	    <td>01-01-20_EXAMPLE_CAMPAIGN</td>
+	    <td>Hey *|FNAME|*, stay stocked up with Cornerstone</td>
+	    <td>01-01-2020</td>
+	    <td>14:00</td>
+	    <td>25,202</td>
+	    <td>11,022</td>
+	    <td>43.7%</td>
+	    <td>8</td>
+	    <td><a href="">340</a></td>
+	    <td><a href="">see html</a></td>
+	  </tr>
+	</table>
+</div>
 <div style="border-left: 4px solid pink;" class="pl-4">
 	<h3 class="mt-4">click stats for "01-01-20_EXAMPLE_CAMPAIGN_SEND_1"</h3>
 	<!-- <div>
