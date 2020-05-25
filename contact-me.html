@@ -55,9 +55,9 @@
 <body style="">
     <div id="nav"></div>
     <div class="container col-md-7 py-4">
-        <h1 class="mt-5 mb-2 text-center">Contact me</h1>
+        <h1 class="mt-5 mb-4 text-center">Contact me</h1>
         <div class="text-center m-auto" style="max-width: 500px;">
-            <p class="lead text-center pb-4">Have feedback about my site? Want to work with me? Whatever's on your mind, drop me a line</p>
+            <p style="max-width: 450px;" class="lead text-center pb-4 m-auto">Have feedback about my site? Want to work with me? Whatever's on your mind, drop me a line</p>
         </div>
         <div class="container py-4 mb-5" style="max-width: 400px;">
             <form id="contact-form" class="m-auto" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSebFr_G3DGwOCOSLS1gk0C9XloIhBsQBQ21CJYSeD6DEzd3aw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
@@ -88,6 +88,7 @@
     });
 
     function loadNav() {
+        $('#nav-hire a').attr("href", "/hire-me");
         $('#nav-articles a').attr("href", "/");
         $('#nav-cv a').attr("href", "/cv");
         $('#nav-contact').addClass("active");
