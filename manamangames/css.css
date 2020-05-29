@@ -1,7 +1,7 @@
 .circle-illu {
     /*border-radius:500px;*/
-    height:250px;
-    width: 280px;
+    height:256px;
+    width: 256px;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -31,4 +31,17 @@
 
 div:focus {
 	outline: 0;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+p {
+	font-size: 17px;
+}
+
+.send:hover {
+	opacity: 0.9;
 }
