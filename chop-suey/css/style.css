@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5,
   font-weight: bold;
 }
 
+h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
 .text-primary {
   color: #FDA403 !important;
 }
@@ -177,7 +181,7 @@ h1, h2, h3, h4, h5,
 }
 
 .navbar-brand {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: .1em;
 }
 
@@ -536,7 +540,7 @@ textarea.form-control {
 }
 
 .site-bg-dark {
-  background: #222;
+  background: #333333;
 }
 
 .site-footer {
@@ -999,6 +1003,9 @@ textarea.form-control {
   font-weight: bold;
   text-align: left;
   font-size: 22px;
+  background: #f9ae34;
+  color: white; 
+  padding: 0px 10px;
 }
 .media-body {
   border: 1px solid #ececec;
