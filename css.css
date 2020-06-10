@@ -132,6 +132,16 @@ min-height: 120px;
   background: #ee5522 !important;
   color: white !important;
 }
+
+.secondary-button:active {
+  background: #ee5522 !important;
+  color: white !important;
+}
+
+.secondary-button:focus {
+  background: #ee5522 !important;
+  color: white !important;
+}
 /*.themed-grid-col {
   padding-top: 15px;
   padding-bottom: 15px;
