@@ -103,6 +103,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 min-height: 550px;
+background-repeat: no-repeat;
         }
 
         #hero-2 {
@@ -111,6 +112,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 min-height: 120px;
+background-repeat: no-repeat;
         }
 
 .cta {
