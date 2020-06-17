@@ -1,3 +1,10 @@
+.brand-logo {
+  width: 100px;
+  /*padding-bottom: 5px;*/
+  /*position: relative;
+  top: -7px;*/
+}
+
 .site-header {
   background: white;
   position: fixed;
@@ -45026,12 +45033,12 @@ label {
          HERO AREA
 ///////////////////////////////*/
 .hero-area {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
 @media (min-width: 768px) {
   .hero-area {
-    padding: 120px 0;
+    padding: 160px 0;
   }
 }
 
