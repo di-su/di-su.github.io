@@ -1,4 +1,17 @@
+.site-header {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
 
+.icon-check-2 {
+  font-weight: bold;
+}
+
+label {
+  font-size: 17px;
+}
 
 #view {
   background-color: #ececec;
@@ -21655,13 +21668,13 @@
 //////////////////////////// */
 @media (min-width: 768px) {
   .site-header {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
   }
 }
 
 @media (min-width: 992px) {
   .site-header {
-    padding-top: 15px;
+    /*padding-top: 15px;*/
   }
 }
 
@@ -21928,8 +21941,8 @@
 }
 
 .hero-area {
-  padding-bottom: 35px;
-  padding-top: 100px;
+  padding-bottom: 45px;
+  padding-top: 120px;
   background: url(https://i.imgur.com/ckkyrXo.jpg);
   background-position: center;
   background-size: cover;
@@ -21938,8 +21951,8 @@
 
 @media (min-width: 992px) {
   .hero-area {
-    padding-top: 165px;
-    padding-bottom: 165px;
+    padding-top: 185px;
+    padding-bottom: 175px;
   }
 }
 
@@ -22824,7 +22837,7 @@
   width: 18px;
   height: 18px;
   font-size: 18px;
-  color: #1f1f1f;
+  color: #258aff;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22848,7 +22861,7 @@
 }
 
 .pricing-card .card-content p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: -0.6px;
   line-height: 28px;
@@ -22864,7 +22877,7 @@
   border-radius: 500px;
   height: 26px;
   color: #fff;
-  width: 83px;
+  width: 120px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -22879,33 +22892,33 @@
 
 @media (min-width: 992px) {
   .pricing-card .card-badge {
-    width: 60px;
+    width: 120px;
   }
 }
 
 @media (min-width: 480px) {
   .pricing-card .card-badge {
-    width: 60px;
+    width: 120px;
   }
 }
 
 @media (min-width: 768px) {
   .pricing-card .card-badge {
-    width: 83px;
+    width: 120px;
   }
 }
 
 @media (min-width: 1200px) {
   .pricing-card .card-badge {
-    width: 83px;
+    width: 120px;
   }
 }
 
 .pricing-card .card-btn {
   -webkit-transition: .4s;
   transition: .4s;
-  padding-top: 33px;
-  padding-bottom: 5px;
+  /*padding-top: 5px;
+  padding-bottom: 5px;*/
   margin-left: 1px;
 }
 

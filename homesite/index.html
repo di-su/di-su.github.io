@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  var submitted=false;
+</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="
+        if(submitted) {
+            $('#contact-form').html('<p class=\'text-center\'>Thanks! Your message has been sent and we will get in touch with you as soon as possible.</p>');
+        }
+">
+</iframe>
 
 <head>
   <!-- AOS -->
@@ -34,7 +43,7 @@
                 </div>
                 <div class="col-sm-8 col-lg-3 col-xl-3 d-none d-sm-block order-lg-3 offset-xl-1">
                     <div class="header-btns justify-content-end">
-                        <a href="" class="btn btn-outlined--primary btn-sm">Get started</a>
+                        <a href="#quote" class="btn btn-sm btn--orange btn--hover-shine">Get a FREE quote</a>
                     </div>
                 </div>
                 <!-- Menu Block -->
@@ -74,9 +83,10 @@
                     
                             <li class="menu-item"><a href="#">Services</a></li> -->
                     
-                            <li class="menu-item"><a href="#pricing">Demo</a></li>
+                            <li class="menu-item"><a target="_blank" href="./demo">Demo</a></li>
+                            <li class="menu-item"><a target="_blank" href="#quote">Get a quote</a></li>
                     
-                            <li class="menu-item"><a href="#contact">Contact us</a></li>   
+                            <!-- <li class="menu-item"><a href="#contact">Contact us</a></li>    -->
                             </ul>
                     </div>
                     <div class="mobile-menu"></div>
@@ -362,47 +372,70 @@
     <div class="content-wrapper" data-aos="fade-up">
       <h1 class="text-center mb--10">Interested? See our Demo</h1>
       <h5 class="text-center mb--40">See an example of a house website made by us below</h5>  
-      <div class="text-center content-btn"><a href="#" class="btn btn--primary">View demo</a></div>
+      <div class="text-center content-btn"><a target="_blank" href="./demo" class="btn btn--primary">View demo</a></div>
   </div>
 </div>
 <!-- Pricing Section -->
-<section class="pricing-section section-spacing">
+<section id="quote" class="pricing-section section-spacing">
     <div class="container">
       <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-7 col-md-8 col-sm-11">
-              <div class="section-title pb-lg--85">
-                  <span class="title-sm-text">Let's do this</span>
-                  <h2>Ready to take your house selling seriously?<br><br><u>Contact us</u> now.</h2>
+              <div class="section-title pb-lg--85" data-aos="fade-up">
+                  <span class="title-sm-text">Ready to sell your home?</span>
+                  <h2><u>Contact us</u> now for a quote.</h2>
                 </div>
           </div>
       </div>
         
             <div class="row mb-d-30 justify-content-center">
 
-                <div class="col-lg-5 col-xl-4 col-md-6 mb--30">
-                    <div class="pricing-card">
+                <div class="col-lg-8 col-xl-7 col-md-10 mb--30">
+                    <div class="pricing-card" data-aos="fade-up">
 
                         <div class="card-head">
-                            <h6>Pro</h6>
-                            <span class="card-badge">Popular</span>
-                            <h2><span class="small-title">$</span><span class="big-txt">29</span><span class="month" >/month</span></h2>
-                            <p>Good for small business launching their products less then once a year</p>
+                            <h6>Estimated one-off cost</h6>
+                            <span class="card-badge">Safe & secure&nbsp;<i class="icon icon-lock"></i></span>
+                            <!-- <p style="background: #258aff;color: white;padding: 5px;
+                            width: 150px;font-size: 16px;" class="text-center mb-2">Save 20%!</p> -->
+                            <h2><span class="small-title">£</span><span class="big-txt">100 - <span class="small-title">£</span>500<span class="small-title">+</span></span><!-- <span class="month" >/month</span> --></h2>
+                            <p style="font-size: 20px;">Price dependent on the amount of customisation required for your home website. Your website will stay online as long as you need to sell your house.</p>
                         </div>
 
 
                         <div class="card-content">
                             <ul class="pricing-list">
-                                <li><span><i class="icon icon-check-2"></i></span>Unlimited Blocks</li>
-                                <li><span><i class="icon icon-check-2"></i></span>5GB Clould Storages</li>
-                                <li><span><i class="icon icon-check-2"></i></span>Custom Domain Names</li>
-                                <li><span><i class="icon icon-check-2"></i></span>Unlimited
-                                    Emails
-                                </li>
+                                <li><span><i class="icon icon-check-2"></i></span>Don't pay full price until you're happy</li>
+                                <li><span><i class="icon icon-check-2"></i></span>No extra or ongoing fees</li>
+                                <li><span><i class="icon icon-check-2"></i></span>Free friendly support</li>
+                                <li><span><i class="icon icon-check-2"></i></span>Complete within 7 days</li>
+                                <li><span><i class="icon icon-check-2"></i></span>Custom domain name</li>
+                                <li><span><i class="icon icon-check-2"></i></span>Optimised for mobile devices</li>
                             </ul>
-                            <div class="card-btn">
-                                <a href="" class="btn btn--orange btn--hover-shine">Start Free Trial</a>
+                            <div style="padding: 20px 0px;">
+                              <form id="contact-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScdXvx1bMKSUXxw23CdGIL9taJbk7GlqRvXqvzT1a3cCHYuLQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                                <div class="form-group">
+                                  <label>Your name (required)</label>
+                                  <input name="entry.1256309107" type="text" class="form-control" placeholder="John" required>
+                                </div>
+                                <div class="form-group">
+                                  <label>Your email address (required)</label>
+                                  <input name="entry.1084637096" type="email" class="form-control" placeholder="John@example.com" required>
+                                </div>
+                                <div class="form-group">
+                                  <label>Your existing house listings e.g. rightmove, zoopla (optional)</label>
+                                  <textarea name="entry.358825843" type="text" class="form-control" placeholder="https://www.rightmove.co.uk/property-for-sale/property-91613357.html"></textarea>
+                                </div>
+                                <div class="form-group">
+                                  <label>Your message (optional)</label>
+                                  <textarea name="entry.1084080696" type="text" class="form-control" placeholder="Hey! I've love a website for my house."></textarea>
+                                </div>
+                                <div class="card-btn">
+                                    <button type="submit" class="btn btn--orange btn--hover-shine">Get a FREE quote</button>
+                                </div>
+                              </form>
                             </div>
-                            <p>No credit card required</p>
+
+                            <!-- <p>No credit card required</p> -->
                         </div>
                     </div>
                 </div>
@@ -480,7 +513,7 @@
     </div>
 </section> -->
 <!-- Footer Section -->
-  <div class="footer-section">
+  <div class="footer-section" data-aos="fade-up">
     <div class="container">
           <div class="row margin-decrese">
             <div class="col-xl-4 col-lg-5 col-margin">
@@ -492,7 +525,7 @@
                   </div>
                 </div>
                 <div class="footer-text">
-                  <p>Big, small, online, offline, local. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups. </p>
+                  <p></p>
                 </div>
                 <ul class="footer-social-list">
                     <li>
@@ -513,7 +546,7 @@
                   </ul>
               </div>
             </div>
-            <div class="col-lg-2 col-sm-4 col-6 offset-xl-1 col-margin">
+            <!-- <div class="col-lg-2 col-sm-4 col-6 offset-xl-1 col-margin">
                 <div class="single-footer">
                     <div class="footer-title">
                         <h6>Help Menu</h6>
@@ -551,7 +584,7 @@
                         <li><a href="">vApp Landing Page</a></li>
                       </ul>
                 </div>
-            </div> 
+            </div>  -->
           </div>
     </div>
   </div>
