@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     var submitted=false;
     </script>
@@ -56,8 +58,8 @@
     <div id="hero">
         <div id="nav"></div>
             <div class="container col-md-7 py-4">
-        <h1 class="mt-5 mb-4 text-center" style="color: white;">Contact me</h1>
-        <div class="text-center m-auto" style="max-width: 500px;">
+        <h1 data-aos="fade-up" class="mt-5 mb-4 text-center" style="color: white;">Contact me</h1>
+        <div data-aos="fade-up" class="text-center m-auto" style="max-width: 500px;">
             <p style="max-width: 420px;color: white;" class="lead text-center pb-4 m-auto">Have feedback about my site? Want to work with me? Whatever's on your mind, drop me a line</p>
         </div>
     </div>
@@ -66,7 +68,7 @@
 
     <div class="container col-md-7 py-4">
         <div class="container py-4 mb-5" style="max-width: 400px;">
-            <form id="contact-form" class="m-auto" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSebFr_G3DGwOCOSLS1gk0C9XloIhBsQBQ21CJYSeD6DEzd3aw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            <form data-aos="fade-up" id="contact-form" class="m-auto" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSebFr_G3DGwOCOSLS1gk0C9XloIhBsQBQ21CJYSeD6DEzd3aw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="form-group">
                     <label>Your name (required)</label>
                     <input name="entry.1968515368" type="text" class="form-control" placeholder="John" required>
@@ -106,12 +108,26 @@
         $('#nav-showcase a').attr("href", "/");
     };
 
+    // window.onload = function() {
+    //     for (let i = 0; i < 10; i++) {
+    //         setTimeout(loadNav, 100 * i);
+    //     }
+    // };
+
+    </script>
+    <script>
+    function animate() {
+       AOS.init();
+       console.log("yes");
+    }
     window.onload = function() {
+         for (let i = 0; i < 10; i++) {
+             setTimeout(loadNav, 100 * i);
+         }
         for (let i = 0; i < 10; i++) {
-            setTimeout(loadNav, 100 * i);
+            setTimeout(animate, 100 * i);
         }
     };
-
     </script>
 </body>
 

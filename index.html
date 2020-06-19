@@ -2,6 +2,8 @@
 
 
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -109,16 +111,42 @@
    <div id="nav"></div>
    <div class="container py-4 mt-5" style="max-width: 950px;">
       <div class="m-auto" style="max-width: 600px;">
-         <h1 class="text-center" style="font-size: 4em;color: white;">Hey there 👋, I'm Di.</h1>
-         <p class="lead text-center pb-4 m-auto pt-2 px-1" style="max-width: 550px;font-size: 18px;line-height: 26px;color: white;">Welcome! I'm a digital marketer based in London, currently working as Head of LTV for <a style="color: white;text-decoration: underline; " target="_blank" href="https://www.cornerstone.co.uk/">Cornerstone.co.uk.</a> Here are some things I've built - landing pages, emails and websites.</p>
+         <h1 class="text-center" style="font-size: 4em;color: white;" data-aos="fade-up">Hey there 👋, I'm Di.</h1>
+         <p data-aos="fade-up" class="lead text-center pb-4 m-auto pt-2 px-1" style="max-width: 550px;font-size: 18px;line-height: 26px;color: white;">Welcome! I'm a digital marketer based in London, currently working as Head of LTV for <a style="color: white;text-decoration: underline; " target="_blank" href="https://www.cornerstone.co.uk/">Cornerstone.co.uk.</a> Here are some things I've built - landing pages, emails and websites.</p>
       </div>
       <!-- <p class="lead text-center pb-4">Welcome! Have a read</p> -->
    </div>
  </div>
    <div>
+    <div style="background: #f7f7f7;position: relative;">
+       <div class="container">
+          <div class="row preview-row">
+             <div data-aos="fade-right" class="col-md preview">
+                <img src="/showcase-img/poply.jpg">
+             </div>
+          <div data-aos="fade-left" class="col-md preview-copy-right">
+             <p style="background: #338cd1;color: white;width: 130px;text-align: center;border-radius: 50px;font-size: 13px;" class="mb-1">Personal project</p>
+             <h2 class="mb-0">Poply</h2>
+             <p style="font-size: 16px;" class="mb-3 mt-0">poply.co.uk</p>
+             <p>Poply helps homeowners sell their houses with bespoke, professional websites, dedicated to the listing of their property.</p>
+             <div>
+                 <p class="attr"><i class="fa fa-info-circle" aria-hidden="true"></i> Website</p>
+                 <!-- <p class="attr"><i class="fa fa-paint-brush" aria-hidden="true"></i></p> -->
+                 <p class="attr"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Complete Implementation</p>
+                 <p class="attr"><i class="fa fa-code" aria-hidden="true"></i> HTML/CSS/JS</p>
+                 <p class="attr"><i class="fa fa-mobile" aria-hidden="true"></i> Optimised for mobile</p>
+             </div>
+             <a style="display: block;" class="mt-3" href="https://www.poply.co.uk">
+              <button type="submit" class="secondary-button btn btn-primary" style="max-width: 150px;width: 100%;height: 40px;">See website
+              </button>
+             </a>
+          </div>
+          </div>
+       </div>
+    </div>
       <div class="container" style="background: white; position: relative;">
          <div class="row preview-row">
-            <div class="col-md preview-copy-left">
+            <div data-aos="fade-right" class="col-md preview-copy-left">
                <h2 class="mb-0">All about the razor</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">cornerstone.co.uk</p>
                <p>An acquisition page dedicated to Cornerstone's most popular product - the chrome-plated personalised razor. A simple introduction to the service and high-quality product shots. Intended for Facebook and Adwords.</p>
@@ -134,18 +162,18 @@
                 </button>
                </a>
             </div>
-            <div class="col-md preview">
+            <div data-aos="fade-left" class="col-md preview">
                <img src="/showcase-img/razor-lp.jpg">
             </div>
          </div>
       </div>
-      <div style="background: #ececec;position: relative;">
+      <div style="background: #f7f7f7;position: relative;">
          <div class="container">
             <div class="row preview-row">
-               <div class="col-md preview">
+               <div data-aos="fade-right" class="col-md preview">
                   <img src="/showcase-img/christmas-email.jpg">
                </div>
-            <div class="col-md preview-copy-right">
+            <div data-aos="fade-left" class="col-md preview-copy-right">
                <h2 class="mb-0">Christmas discount</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">cornerstone.co.uk</p>
                <p>Last chance Christmas offer email built for Cornerstone's gifting period. Sent to existing members.</p>
@@ -167,8 +195,8 @@
       <div style="border-bottom: 1px solid #ececec;background: white;position: relative;">
           <div class="container py-5 mb-3">
               <div id="mailing-list">
-                  <h5 class="text-center mb-4 px-4">Ready for growth? 🚀</h5>
-                  <div class="text-center">
+                  <h5 data-aos="fade-up" class="text-center mb-4 px-4">Ready for growth? 🚀</h5>
+                  <div data-aos="fade-up" class="text-center">
                   <a href="/contact-me">
                       <button type="submit" class="btn btn-primary cta" style="max-width: 280px;width: 100%;height: 55px;">Get in touch</button>
                   </a>
@@ -178,7 +206,7 @@
       </div>
       <div class="container" style="background: white; position: relative;">
          <div class="row preview-row">
-            <div class="col-md preview-copy-left">
+            <div data-aos="fade-right" class="col-md preview-copy-left">
                <h2 class="mb-0">Configurable template for European launch</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">bakenight.com</p>
                <p>A configurable, mobile-friendly landing page built on unbounce for Bakenight's European launch of their baking masterclass service.</p>
@@ -194,18 +222,18 @@
                 </button>
                </a>
             </div>
-            <div class="col-md preview">
+            <div data-aos="fade-left" class="col-md preview">
                <img src="/showcase-img/bakenight-lp.jpg">
             </div>
          </div>
       </div>
-      <div style="background: #ececec;position: relative;">
+      <div style="background: #f7f7f7;position: relative;">
          <div class="container">
             <div class="row preview-row">
-               <div class="col-md preview">
+               <div data-aos="fade-right" class="col-md preview">
                   <img src="/showcase-img/hons-site.jpg">
                </div>
-            <div class="col-md preview-copy-right">
+            <div data-aos="fade-left" class="col-md preview-copy-right">
                <h2 class="mb-0">Hon's restaurant</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">honsrestaurant.co.uk</p>
                <p>The online home for a restaurant based in Rainham, Kent. With essential information and menu's in .pdf format.</p>
@@ -228,8 +256,8 @@
       <div style="border-bottom: 1px solid #ececec;background: white;position: relative;">
           <div class="container py-5 mb-3">
               <div id="mailing-list">
-                  <h5 class="text-center mb-4 px-4">Got a question?</h5>
-                  <div class="text-center">
+                  <h5 data-aos="fade-up" class="text-center mb-4 px-4">Got a question?</h5>
+                  <div data-aos="fade-up" class="text-center">
                   <a href="/contact-me">
                       <button type="submit" class="btn btn-primary cta" style="max-width: 280px;width: 100%;height: 55px;">Get in touch</button>
                   </a>
@@ -239,7 +267,7 @@
       </div>
       <div class="container" style="background: white; position: relative;">
          <div class="row preview-row">
-            <div class="col-md preview-copy-left">
+            <div data-aos="fade-right" class="col-md preview-copy-left">
                <h2 class="mb-0">Blender dropshipping</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">n/a</p>
                <p>A draft mockup page for the Shopify dropshipping of a blender available from aliexpress.</p>
@@ -255,18 +283,18 @@
                 </button>
                </a>
             </div>
-            <div class="col-md preview">
+            <div data-aos="fade-left" class="col-md preview">
                <img src="/showcase-img/blender.jpg">
             </div>
          </div>
       </div>
-      <div style="background: #ececec;position: relative;">
+      <div style="background: #f7f7f7;position: relative;">
          <div class="container">
             <div class="row preview-row">
-               <div class="col-md preview">
+               <div data-aos="fade-right" class="col-md preview">
                   <img src="/showcase-img/chop.jpg">
                </div>
-            <div class="col-md preview-copy-right">
+            <div data-aos="fade-left" class="col-md preview-copy-right">
                <h2 class="mb-0">Chop Suey Centre</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">n/a</p>
                <p>The online home for a restaurant based in Romford, Essex. With essential information and menu's all available in text format.</p>
@@ -287,7 +315,7 @@
       </div>
       <div class="container" style="background: white; position: relative;">
          <div class="row preview-row">
-            <div class="col-md preview-copy-left">
+            <div data-aos="fade-right" class="col-md preview-copy-left">
                <h2 class="mb-0">Instagram influencer capture</h2>
                <p style="font-size: 16px;" class="mb-3 mt-0">cornerstone.co.uk</p>
                <p>A page linked with google forms to capture information submitted by potential instagram influencers for Cornerstone.</p>
@@ -303,7 +331,7 @@
                 </button>
                </a>
             </div>
-            <div class="col-md preview">
+            <div data-aos="fade-left" class="col-md preview">
                <img src="/showcase-img/influencer.jpg">
             </div>
          </div>
@@ -311,12 +339,12 @@
       <div style="border-top: 1px solid #ececec;background: white;position: relative;">
           <div class="container py-5 mb-3">
               <div id="mailing-list">
-                  <h5 class="text-center mb-4 px-4">There's plenty more to see..</h5>
-                  <div class="text-center">
-                  <a class="pb-2" style="display:block" href="/articles/landing-pages-built">Landing pages</a>
-                  <a class="pb-2" style="display:block" href="/articles/emails-built">Emails</a>
-                  <a class="pb-2" style="display:block" href="/articles/cornerstone-gallery">Cornerstone.co.uk projects gallery</a>
-                  <a class="pb-2" style="display:block" href="/articles/client-work">Client work only</a>
+                  <h5 data-aos="fade-up" class="text-center mb-4 px-4">There's plenty more to see..</h5>
+                  <div data-aos="fade-up" class="text-center">
+                    <a class="pb-2" style="display:block" href="/articles/landing-pages-built">Landing pages</a>
+                    <a class="pb-2" style="display:block" href="/articles/emails-built">Emails</a>
+                    <a class="pb-2" style="display:block" href="/articles/cornerstone-gallery">Cornerstone.co.uk projects gallery</a>
+                    <a class="pb-2" style="display:block" href="/articles/client-work">Client work only</a>
                   </div>
               </div>
           </div>
@@ -324,8 +352,8 @@
       <div style="border-top: 1px solid #ececec;background: white;position: relative;">
           <div class="container py-5 mb-3">
               <div id="mailing-list">
-                  <h5 class="text-center mb-4 px-4">Seen enough?</h5>
-                  <div class="text-center">
+                  <h5 data-aos="fade-up" class="text-center mb-4 px-4">Seen enough?</h5>
+                  <div data-aos="fade-up" class="text-center">
                   <a href="/contact-me">
                       <button type="submit" class="btn btn-primary cta" style="max-width: 280px;width: 100%;height: 55px;">Get in touch</button>
                   </a>
@@ -351,12 +379,29 @@
 
       };
       
-      window.onload = function() {
-          for (let i = 0; i < 10; i++) {
-              setTimeout(loadNav, 100 * i);
-          }
-      };
+      // window.onload = function() {
+      //     for (let i = 0; i < 10; i++) {
+      //         setTimeout(loadNav, 100 * i);
+      //     }
+      // };
    </script>
+   <script>
+   function animate() {
+      AOS.init();
+      console.log("yes");
+   }
+   window.onload = function() {
+        for (let i = 0; i < 10; i++) {
+            setTimeout(loadNav, 100 * i);
+        }
+       for (let i = 0; i < 10; i++) {
+           setTimeout(animate, 100 * i);
+       }
+   };
+   </script>
+   <script>
+      // AOS.init();
+    </script>
 </body>
 
 </html>
