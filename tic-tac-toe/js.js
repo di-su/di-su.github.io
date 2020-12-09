@@ -61,6 +61,7 @@ const displayController = (() => {
     addClickEvent();
     playerWon = false;
     tie = false;
+    currentPlayer = 'player1';
   }
 
   const makeTable = () => {
