@@ -1,3 +1,5 @@
+// Factory function https://www.theodinproject.com/courses/javascript/lessons/factory-functions-and-the-module-pattern
+
 // MODULE
 // const Gameboard = (() => {
 //   const board = [];

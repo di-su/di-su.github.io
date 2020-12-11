@@ -1,4 +1,7 @@
-var database = firebase.database();
+// Object constructor https://www.theodinproject.com/courses/javascript/lessons/objects-and-object-constructors
+
+
+// var database = firebase.database();
 
 let myLibrary = [];
 
