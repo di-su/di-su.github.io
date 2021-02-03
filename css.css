@@ -103,7 +103,11 @@ img {
 }
 
         #hero {
-              background: #ff8400;
+          background: rgb(255,183,106);
+          background: -moz-linear-gradient(90deg, rgba(255,183,106,1) 0%, rgba(255,132,0,1) 50%, rgba(230,119,0,1) 100%);
+          background: -webkit-linear-gradient(90deg, rgba(255,183,106,1) 0%, rgba(255,132,0,1) 50%, rgba(230,119,0,1) 100%);
+          background: linear-gradient(90deg, rgba(255,183,106,1) 0%, rgba(255,132,0,1) 50%, rgba(230,119,0,1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffb76a",endColorstr="#e67700",GradientType=1);
 background-attachment: fixed;
 background-size: cover;
 min-height: 550px;
