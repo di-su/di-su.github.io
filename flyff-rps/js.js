@@ -161,19 +161,19 @@ function computerScissors() {
 
 
 function setRock() {
-	document.getElementById("computer-choice-image").src = "./images/rock.jpg";
+	document.getElementById("computer-choice-image").src = "./flyff-rps/images/rock.jpg";
 	document.getElementById("computer-selection").innerHTML = "Rock"		
 	cloneAndPlayChime();
 }
 
 function setPaper() {
-	document.getElementById("computer-choice-image").src = "./images/paper.jpg";
+	document.getElementById("computer-choice-image").src = "./flyff-rps/images/paper.jpg";
 	document.getElementById("computer-selection").innerHTML = "Paper"		
 	cloneAndPlayChime();
 }
 
 function setScissors() {
-	document.getElementById("computer-choice-image").src = "./images/scissors.jpg";
+	document.getElementById("computer-choice-image").src = "./flyff-rps/images/scissors.jpg";
 	document.getElementById("computer-selection").innerHTML = "Scissors"		
 	cloneAndPlayChime();
 }
@@ -293,61 +293,61 @@ function savePrize() {
 
 let prizesObject = {
 	'prize1' : {
-		'image' : './images/prizes/Mysterious_Pill.png',
+		'image' : './flyff-rps/images/prizes/Mysterious_Pill.png',
 		'item_name' : 'Mysterious Pill',
 		'item_description' : 'Recovers HP by 12,000',
 		'quantity' : '10' 
 	},
 	'prize2' : {
-		'image' : './images/prizes/Scroll_of_Sprint.png',
+		'image' : './flyff-rps/images/prizes/Scroll_of_Sprint.png',
 		'item_name' : 'Scroll of Sprint',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '3' 
 	},
 	'prize3' : {
-		'image' : './images/prizes/Moonstone.gif',
+		'image' : './flyff-rps/images/prizes/Moonstone.gif',
 		'item_name' : 'Event Moonstone',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '7'
 	},
 	'prize4' : {
-		'image' : './images/prizes/Moonstone.gif',
+		'image' : './flyff-rps/images/prizes/Moonstone.gif',
 		'item_name' : 'Event Moonstone',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '13'
 	},
 	'prize5' : {
-		'image' : './images/prizes/ScrollofPartyEXP7-days.png',
+		'image' : './flyff-rps/images/prizes/ScrollofPartyEXP7-days.png',
 		'item_name' : 'Scroll of Party EXP (7-days)',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '1'
 	},
 	'prize6' : {
-		'image' : './images/prizes/BlessingoftheGoddess.png',
+		'image' : './flyff-rps/images/prizes/BlessingoftheGoddess.png',
 		'item_name' : 'Blessing of the Goddess',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '2'
 	},
 	'prize7' : {
-		'image' : './images/prizes/ScrollofReversion.png',
+		'image' : './flyff-rps/images/prizes/ScrollofReversion.png',
 		'item_name' : 'Scroll of Reversion',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '6'
 	},
 	'prize8' : {
-		'image' : './images/prizes/Ragdoll.png',
+		'image' : './flyff-rps/images/prizes/Ragdoll.png',
 		'item_name' : 'Patches',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '8'
 	},
 	'prize9' : {
-		'image' : './images/prizes/Feather_Wings_Black.png',
+		'image' : './flyff-rps/images/prizes/Feather_Wings_Black.png',
 		'item_name' : 'Elegant Black Wings',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '1'
 	},
 	'prize10' : {
-		'image' : './images/prizes/Dragon_Cloak_of_the_Initiate.png',
+		'image' : './flyff-rps/images/prizes/Dragon_Cloak_of_the_Initiate.png',
 		'item_name' : 'Dragon Cloak of the Initiate',
 		'item_description' : 'Substantially increases your run speed. Lasts 3 Minutes.',
 		'quantity' : '1'
@@ -492,26 +492,26 @@ function play() {
 
 function playerImageChange() {
 	if (count == 0) {
-		document.getElementById("user-choice-image").src = "./images/rock.jpg";
+		document.getElementById("user-choice-image").src = "./flyff-rps/images/rock.jpg";
 		// console.log("rock image");
 	} else if (count == 1) {
-		document.getElementById("user-choice-image").src = "./images/paper.jpg";
+		document.getElementById("user-choice-image").src = "./flyff-rps/images/paper.jpg";
 		// console.log("paper image");
 	} else {
-		document.getElementById("user-choice-image").src = "./images/scissors.jpg";
+		document.getElementById("user-choice-image").src = "./flyff-rps/images/scissors.jpg";
 		// console.log("scissor image");
 	}
 }
 
 function computerImageChange(computerSelection) {
 	if (computerSelection == "Scissors") {
-		document.getElementById("computer-choice-image").src = "./images/scissors.jpg";
+		document.getElementById("computer-choice-image").src = "./flyff-rps/images/scissors.jpg";
 	}
 	if (computerSelection == "Rock") {
-		document.getElementById("computer-choice-image").src = "./images/rock.jpg";
+		document.getElementById("computer-choice-image").src = "./flyff-rps/images/rock.jpg";
 	}
 	if (computerSelection == "Paper") {
-		document.getElementById("computer-choice-image").src = "./images/paper.jpg";
+		document.getElementById("computer-choice-image").src = "./flyff-rps/images/paper.jpg";
 	}
 
 }
